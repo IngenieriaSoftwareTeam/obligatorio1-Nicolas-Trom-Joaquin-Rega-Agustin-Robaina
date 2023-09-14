@@ -1,4 +1,6 @@
-  **Numero de Estudiante:** 267736 **M4B**
+  **Nicolas Trombotti, Numero de Estudiante:** 267736 **M4B**
+  **Joaquin Rega, Numero de Estudiante:** 284817 **M4B**
+  **Agustin Robaina, Numero de Estudiante:** 269622 **M4B**
 
   ## Objetivo
   
