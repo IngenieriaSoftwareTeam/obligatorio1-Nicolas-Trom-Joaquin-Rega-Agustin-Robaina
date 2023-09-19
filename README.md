@@ -12,7 +12,7 @@
   ## Creacion y uso de respositorios locales y remotos
    * Para la creacion del repositorio utilizamos el template propocionado por el docente. Una vez creado el repositorio cada uno de los integrantes del equipo trabajara en un su repositorio local utilizando check-in y check-out al respositorio remoto compartido.
   
-  ## Comandos Git
+  ## Comandos 
   * git clone
     * Lo utilizamos para crear una copia local de un repositorio remoto de Git. Cuando se ejecuta este comando, se descarga una copia completa del repositorio remoto en nuestra computadora y se crea una copia local del repositorio. Puede trabajar en la copia local del repositorio y hacer cambios en el código sin afectar el repositorio remoto.
 * git add .
@@ -44,7 +44,7 @@
 ### Uso de ramas separadas de "main"
 
 * Hacer commits pequeños y frecuentes, en lugar de grandes y poco precisos.
-* El versionado de Git es una herramienta importante para cualquier desarrollador de software como explicamos en la parte anterior. Por lo tanto, utilizaremos distintas ramas para cada parte del proyecto. (ejemplo: *¨dev¨*)
+* El versionado de Git es una herramienta importante para cualquier desarrollador de software como explicamos en la parte anterior. Por lo tanto, utilizaremos distintas ramas para cada parte del proyecto.
 
 
 ### Resumen de commits y evolución del proyecto
