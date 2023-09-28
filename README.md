@@ -52,3 +52,28 @@
 * Realizar pruebas antes de realizar el commit para asegurarse de que el código funcione correctamente.
 * Escribir mensajes de commits claros que describan lo realizado en el código.
 
+## Elicitación
+
+### Investigación:
+### Entrevista:
+
+
+
+### LLuvia de ideas: 
+
+Basándonos en la información recolectada a través de la téncnica de investigación y la entrevista hicimos una lluvia de ideas para determinar features de la aplicación y el alcance de la misma.
+Algunos puntos que se definieron fueron los siguientes:
+
+
+* El sistema mostrará sugerencia de recetas que se encuentran disponibles
+* El usuario podrá filtar las recetas por dificultad de y tiempo estimada de la misma.
+* El usuario podrá agregar comida a favoritos
+* Recomendación de locales que vendan productos aptos para celíacos
+* Foro donde los usuarios de la aplicación podrán interactuar e intercambiar ideas, opiniones incluso recetas.
+
+
+ 
+
+
+
+## Especificación:
