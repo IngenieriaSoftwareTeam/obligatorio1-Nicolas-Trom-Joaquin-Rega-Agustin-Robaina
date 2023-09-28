@@ -69,11 +69,6 @@ Algunos puntos que se definieron fueron los siguientes:
 * El usuario podrá filtar las recetas por dificultad de y tiempo estimada de la misma.
 * El usuario podrá agregar comida a favoritos
 * Recomendación de locales que vendan productos aptos para celíacos
-* Foro donde los usuarios de la aplicación podrán interactuar e intercambiar ideas, opiniones incluso recetas.
-
-
- 
-
 
 
 ## Especificación:
