@@ -103,7 +103,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 **Prioridad :** Alta
 
-### RF(5): Filtrar por Tiempo Estiado
+### RF(5): Filtrar por Tiempo Estimado
 **Actor :** Usuario
 
 **Descripcion :** El usuario debera filtrar las recetas segun el tiempo estimado de la misma
