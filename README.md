@@ -36,23 +36,23 @@
 * git merge
     * Fusiona dos ramas en el repositorio local de Git.
 
-## Versionado
-### Buenas prácticas
+# Versionado
+## Buenas prácticas
 
 * Las buenas prácticas de Git son importantes para cualquier desarrollador de software y pueden ayudar a garantizar que el código sea fácil de mantener y actualizar. Algunas buenas prácticas de versionado de Git incluyen:
 
-### Uso de ramas separadas de "main"
+## Uso de ramas separadas de "main"
 
 * Hacer commits pequeños y frecuentes, en lugar de grandes y poco precisos.
 * El versionado de Git es una herramienta importante para cualquier desarrollador de software como explicamos en la parte anterior. Por lo tanto, utilizaremos distintas ramas para cada parte del proyecto.
 
 
-### Resumen de commits y evolución del proyecto
+## Resumen de commits y evolución del proyecto
 
 * Realizar pruebas antes de realizar el commit para asegurarse de que el código funcione correctamente.
 * Escribir mensajes de commits claros que describan lo realizado en el código.
 
-## Elicitación
+# Elicitación
 
 ### Investigación:
 ### Entrevista:
@@ -71,4 +71,70 @@ Algunos puntos que se definieron fueron los siguientes:
 * Recomendación de locales que vendan productos aptos para celíacos
 
 
-## Especificación:
+# ESPECIFICACIÓN
+## Requerimientos Funcionales (RF)
+
+### RF(1): Agregar a Favorito
+**Actor :** Usuario
+
+**Descripcion :** El usuario debera poder agregar una receta a su lista de favoritos
+
+**Prioridad :** Baja
+
+### RF(2): Filtrar por Comida del Dia
+**Actor :** Usuario
+
+**Descripcion :** El usuario debera poder filtrar las recetas segun el momento del dia
+
+**Prioridad :** Media
+
+### RF(3): Ingreso a la Aplicacion
+**Actor :** Usuario
+
+**Descripcion :** Al ingresar a la aplicacion debera mostrar sugerencias de recetas
+
+**Prioridad :** Media
+
+
+### RF(4): Filtrar por Dificultad
+**Actor :** Usuario
+
+**Descripcion :** El usuario debera filtrar las recetas segun la dificultad de la misma
+
+**Prioridad :** Alta
+
+### RF(5): Filtrar por Tiempo Estiado
+**Actor :** Usuario
+
+**Descripcion :** El usuario debera filtrar las recetas segun el tiempo estimado de la misma
+
+**Prioridad :** Alta
+
+### RF(6): Foro 
+**Actor :** Usuario
+
+**Descripcion :** El usuario podra interactura e interacmbiar ideas 
+
+**Prioridad :** Media
+
+### RF(7): Responsive 
+**Actor :** Sistema
+
+**Descripcion :** El sistema debera ser responsive 
+
+**Prioridad :** Alta
+
+## Requerimientos No Funcionales (RNF)
+
+### RNF(1):  Idiomas
+**Descripcion :** El sistema debera soportar multiples lenguanjes
+
+### RNF(2):  Reseñas
+**Descripcion :** El usuario podra dar una reseña de las recetas
+
+### RNF(3):  Diseño y Usabilidad
+**Descripcion :** El sistema debera ser atractivo y facil de usar
+
+### RNF(4):  Seguridad
+**Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
+
