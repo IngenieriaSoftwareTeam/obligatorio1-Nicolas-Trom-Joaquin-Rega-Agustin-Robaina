@@ -138,9 +138,34 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RNF(4):  Seguridad
 **Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
 
-# BOCETOS DE LA INTERFAZ GRAFICA
+# USE CASES 
+## Caso de uso 1
+#### Actor:
+Usuario
+#### Referencia a RF:
+RF2
+#### Imagenes:
+Imagen 1 y 2
+#### Pre condicion:
+No hay
+#### Pos condicion:
+La aplicacion mustra las recetas que son para ese alimento del dia
 
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
+| 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
+
+# BOCETOS DE LA INTERFAZ GRAFICA
+## Imagen 1
+### Menu
 ![Boceto Menu](img\BocetoUI-Menu.png)
+## Imagen 2
+### Seccion desayunos
 ![Boceto Desayuno](img\BocetoUI-Desayuno.png)
+## Imagen 3
+### Mas info sobre galletas
 ![Boceto Galletas info](img\BocetoUI-GalletasInfo.png)
+## imagen 4
+### Receta de las galletas
 ![Boceto Galletas receta](img\BocetoUI-GalletasReceta.png)
