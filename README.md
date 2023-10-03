@@ -56,13 +56,35 @@
 
 ### Investigación:
 
-La primera técnica de elicitación que decidimos usar fue la investigación ya que ninguno de los integrantes del grupo tenía muy presente el tema del celiaquismo. Por lo cual nos pareció una buena herramientar para lograr un primer acercamiento y extraer las primeras necesidades que podría tener un usario de la aplicación.   
+La primera técnica de elicitación que decidimos usar fue la investigación ya que ninguno de los intergrantes del grupo tenía muy presente la condición de la celiaquía. Por lo cual realizamos un trabajo de investigación basándonos en diversas páginas que tuvieran un contenido avalado. Para así empezar a profundizar en el tema e identificar las primeras necesidades que podría tener un cliente potencial de nuesetra aplicación.
+
+* La celiaquía es una enfermedad digestiva que daña el intestino delgado y altera la abosrbción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. 
+
+*  Algunas de las consecuencias de la enfermedad son : deficit nutricionales , bajo peso, retraso en el crecimiento.
+
+* Es una enfermedad difícil de diagnosticar.
+
+* Una de cada cien personas es celíaca en Uruguay.
+
+* El precio de los productos sin glúten puede llegar a ser hasta 87 % mas cáros.
 
 ### Entrevista:
 
-La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amploa de la situación y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
+La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amplia de la condición y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
 
-Para realizar la entrevista nos decidimos por 4 preguntas abiertas para que así el entrevistado se pudiera explayar y no sesgar o frozar las respuestas.
+Para realizar la entrevista decidimos basarnos en un prototipo de pregutnas, las cuales son abiertas para así no sesgar o forzar las respuestas y que el entrevistado pudiera explayarse en sus respuestas. 
+
+A través de la entrevistas de las entrevistas realizadas obtuvimos las siguientes conclusiones:
+
+* Las dificultades que se presentan a la hora de cocinar son el costo de los ingredientes y la preparación de las recetas, ya que son mas elaboradas al tener que utilizar otros tipos de harina que no contengan gluten.
+
+* A la hora de buscar recetas en internet estas no son claras ni precisas.
+
+* Una de los entrevistados nos comentó que le gustaría encontrar recetas que son difíciles de adaptar en una dieta sin gluten.
+
+* A la hora de comprar hay baja disponibilidad y variedad de productos aptos para celíacos comparado con los que tienen glúten.
+
+* En el caso de comer fuera de casa hay poca oferta de restaurantes que tengan un menú apto para celíacos o de locales de venta de comida sin glúten.
 
 ### LLuvia de ideas: 
 
@@ -71,8 +93,11 @@ Algunos puntos que se definieron fueron los siguientes:
 
 
 * El sistema mostrará sugerencia de recetas que se encuentran disponibles
+
 * El usuario podrá filtar las recetas por dificultad de y tiempo estimada de la misma.
+
 * El usuario podrá agregar comida a favoritos
+
 * Recomendación de locales que vendan productos aptos para celíacos
 
 
