@@ -167,22 +167,22 @@ La aplicacion mustra las recetas que son para ese alimento del dia
 ![Boceto Menu](img\BocetoUI-Menu.png)
 ## Imagen 2
 ### Seccion favoritos
-![Boceto Desayuno](img\BocetoUI-Favoritos.png)
+![Boceto Favoritos](img\BocetoUI-Favoritos.png)
 ## Imagen 3
 ### Seccion desayunos
 ![Boceto Desayuno](img\BocetoUI-Desayuno.png)
 ## Imagen 4
 ### Seccion filtro
-![Boceto Desayuno](img\BocetoUI-Filtro.png)
+![Boceto Filtro](img\BocetoUI-Filtro.png)
 ## Imagen 5
 ### Seccion desayunos filtrados
-![Boceto Desayuno](img\BocetoUI-DesayunoFiltrado.png)
+![Boceto Desayuno Filtrado](img\BocetoUI-DesayunoFiltrado.png)
 ## Imagen 6
 ### Seccion mas info sobre galletas
 ![Boceto Galletas info](img\BocetoUI-GalletasInfo.png)
 ## imagen 7
 ### Seccion receta de las galletas
-![Boceto Galletas receta](img\BocetoUI-GalletasReceta.png)
+![Boceto Galletas Receta](img\BocetoUI-GalletasReceta.png)
 ## Imagen 8
 ### Seccion foro de las galletas
 ![Boceto Desayuno](img\BocetoUI-GalletasForo.png)
