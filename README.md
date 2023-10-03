@@ -162,7 +162,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 ## Historias de Usuario 3
 
-### Titulo: Interacuar en el Foro
+### Titulo: Interactuar en el Foro
 
 * **Como** usuario
 * **Quiero** poder comparir y leer resañas sobre las recetas 
