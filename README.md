@@ -141,6 +141,8 @@ Algunos puntos que se definieron fueron los siguientes:
 
 ### Titulo: Filtrar por Dificultad
 * **Para** saber que tan dificl puede ser la receta
+* **Como** usuario
+* **Quiero** poder filtrar recetas por dificultad
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
@@ -169,6 +171,89 @@ Algunos puntos que se definieron fueron los siguientes:
 * El usuario debrera tener un nombre de usuario asociado
 * Debe estar conectado a Internet
 
+# USE CASES 
+## Caso de uso 1
+### Actor:
+Usuario
+### Referencia a RF:
+RF1
+### Imagenes:
+Imagen 1 y 2
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion 
+agrega a la lista de favoritos el plato elegido
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
+| 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
+|4. El usuario aprieta la estrella de una receta que no tenga la estrella dorada|5. La estrella se vuelve dorada significando que se agrego correctamente a la lista de favoritos|
+
+## Caso de uso 2
+### Actor:
+Usuario
+### Referencia a RF:
+RF2
+### Imagenes:
+Imagen 1 y 3
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion muestra las recetas que son para ese alimento del dia
+
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
+| 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
+
+## Caso de uso 3
+### Actor:
+Usuario
+### Referencia a RF:
+RF3
+### Imagenes:
+Imagen 1
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion muestra sugeridos
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con platos sugeridos |
+
+## Caso de uso 4
+### Actor:
+Usuario
+### Referencia a RF:
+RF4 y RF5
+### Imagenes:
+Imagen 3, 4 y 5
+### Pre condicion:
+El usuario esta en una seccion con una lista de platos
+### Pos condicion:
+La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacion
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario aprieta el icono de filtros| 2. El sistema muestra una ventana con opciones para filtrar |
+|3. El usuario elige la dificultad y rango de tiempo que quiere y aprieta en aplicar filtros|4. La lista seleccionada anteriormente se filtra entre los platos que cumplen los requerimientos pedidos|
+
+## Caso de uso 5
+### Actor:
+Usuario
+### Referencia a RF:
+RF6
+### Imagenes:
+Imagen 6 y 8
+### Pre condicion:
+El usuario esta en una seccion de mas info sobre un plato
+### Pos condicion:
+La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacion
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario aprieta en el boton de foro| 2. El sistema una lista de comentarios sobre la receta.|
+
+
 # BOCETOS DE LA INTERFAZ GRAFICA
 ## Imagen 1
 ### Seccion Menu
@@ -194,5 +279,3 @@ Algunos puntos que se definieron fueron los siguientes:
 ## Imagen 8
 ### Seccion foro de las galletas
 ![Boceto Desayuno](img\BocetoUI-GalletasForo.png)
-* **Como** usuario
-* **Quiero** poder filtrar recetas por dificultad
