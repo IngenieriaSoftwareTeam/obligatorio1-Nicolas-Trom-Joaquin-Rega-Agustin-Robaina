@@ -248,7 +248,7 @@ Imagen 6 y 8
 ### Pre condicion:
 El usuario esta en una seccion de mas info sobre un plato
 ### Pos condicion:
-La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacion
+La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobre cada receta
 | **Accion de los actores:**| **Respuesta del sistema:**|
 |-|-|
 | 1. El usuario aprieta en el boton de foro| 2. El sistema una lista de comentarios sobre la receta.|
