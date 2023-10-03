@@ -117,12 +117,6 @@ Algunos puntos que se definieron fueron los siguientes:
 
 **Prioridad :** Media
 
-### RF(7): Responsive 
-**Actor :** Sistema
-
-**Descripcion :** El sistema debera ser responsive 
-
-**Prioridad :** Alta
 
 ## Requerimientos No Funcionales (RNF)
 
@@ -138,3 +132,41 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RNF(4):  Seguridad
 **Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
 
+### RNF(5): Responsive
+**Descripcion :** El sistema debera ser responsive  
+
+
+## Historias de Usuario 1
+
+### Titulo: Filtrar por Dificultad
+
+* **Como** usuario
+* **Quiero** poder filtrar recetas por dificultad
+* **Para** saber que tan dificl puede ser la receta
+
+### Criterios de Aceptación:
+* El usuario debera estar en una de las pestañas de las comidas del dia 
+
+
+## Historias de Usuario 2
+
+### Titulo: Agregar a Favoritos
+
+* **Como** usuario
+* **Quiero** poder agregar a favoritos un plato en especifico
+* **Para** poder visualizarlo mas tarde
+
+### Criterios de Aceptación:
+* Una misma receta no podra estar agregada dos veces
+
+## Historias de Usuario 3
+
+### Titulo: Interacuar en el Foro
+
+* **Como** usuario
+* **Quiero** poder comparir y leer resañas sobre las recetas 
+* **Para** conocer distintas opinones sobre la misma
+
+### Criterios de Aceptación:
+* El usuario debrera tener un nombre de usuario asociado
+* Debe estar conectado a Internet
