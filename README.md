@@ -56,13 +56,35 @@
 
 ### Investigación:
 
-La primera técnica de elicitación que decidimos usar fue la investigación ya que ninguno de los integrantes del grupo tenía muy presente el tema del celiaquismo. Por lo cual nos pareció una buena herramientar para lograr un primer acercamiento y extraer las primeras necesidades que podría tener un usario de la aplicación.   
+La primera técnica de elicitación que decidimos usar fue la investigación ya que ninguno de los intergrantes del grupo tenía muy presente la condición de la celiaquía. Por lo cual realizamos un trabajo de investigación basándonos en diversas páginas que tuvieran un contenido avalado. Para así empezar a profundizar en el tema e identificar las primeras necesidades que podría tener un cliente potencial de nuesetra aplicación.
+
+* La celiaquía es una enfermedad digestiva que daña el intestino delgado y altera la abosrbción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. 
+
+*  Algunas de las consecuencias de la enfermedad son : deficit nutricionales , bajo peso, retraso en el crecimiento.
+
+* Es una enfermedad difícil de diagnosticar.
+
+* Una de cada cien personas es celíaca en Uruguay.
+
+* El precio de los productos sin glúten puede llegar a ser hasta 87 % mas cáros.
 
 ### Entrevista:
 
-La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amploa de la situación y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
+La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amplia de la condición y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
 
-Para realizar la entrevista nos decidimos por 4 preguntas abiertas para que así el entrevistado se pudiera explayar y no sesgar o frozar las respuestas.
+Para realizar la entrevista decidimos basarnos en un prototipo de pregutnas, las cuales son abiertas para así no sesgar o forzar las respuestas y que el entrevistado pudiera explayarse en sus respuestas. 
+
+A través de la entrevistas de las entrevistas realizadas obtuvimos las siguientes conclusiones:
+
+* Las dificultades que se presentan a la hora de cocinar son el costo de los ingredientes y la preparación de las recetas, ya que son mas elaboradas al tener que utilizar otros tipos de harina que no contengan gluten.
+
+* A la hora de buscar recetas en internet estas no son claras ni precisas.
+
+* Una de los entrevistados nos comentó que le gustaría encontrar recetas que son difíciles de adaptar en una dieta sin gluten.
+
+* A la hora de comprar hay baja disponibilidad y variedad de productos aptos para celíacos comparado con los que tienen glúten.
+
+* En el caso de comer fuera de casa hay poca oferta de restaurantes que tengan un menú apto para celíacos o de locales de venta de comida sin glúten.
 
 ### LLuvia de ideas: 
 
@@ -71,8 +93,11 @@ Algunos puntos que se definieron fueron los siguientes:
 
 
 * El sistema mostrará sugerencia de recetas que se encuentran disponibles
+
 * El usuario podrá filtar las recetas por dificultad de y tiempo estimada de la misma.
+
 * El usuario podrá agregar comida a favoritos
+
 * Recomendación de locales que vendan productos aptos para celíacos
 
 
@@ -118,7 +143,7 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RF(6): Foro 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podra interactura e interacmbiar ideas 
+**Descripcion :** El usuario podra interactura e intercambiar ideas sobre las recetas
 
 **Prioridad :** Media
 
@@ -140,10 +165,9 @@ Algunos puntos que se definieron fueron los siguientes:
 ## Historias de Usuario 1
 
 ### Titulo: Filtrar por Dificultad
-
+* **Para** saber que tan dificl puede ser la receta
 * **Como** usuario
 * **Quiero** poder filtrar recetas por dificultad
-* **Para** saber que tan dificl puede ser la receta
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
@@ -171,3 +195,112 @@ Algunos puntos que se definieron fueron los siguientes:
 ### Criterios de Aceptación:
 * El usuario debrera tener un nombre de usuario asociado
 * Debe estar conectado a Internet
+
+# USE CASES 
+## Caso de uso 1
+### Actor:
+Usuario
+### Referencia a RF:
+RF1
+### Imagenes:
+Imagen 1 y 2
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion 
+agrega a la lista de favoritos el plato elegido
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
+| 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
+|4. El usuario aprieta la estrella de una receta que no tenga la estrella dorada|5. La estrella se vuelve dorada significando que se agrego correctamente a la lista de favoritos|
+
+## Caso de uso 2
+### Actor:
+Usuario
+### Referencia a RF:
+RF2
+### Imagenes:
+Imagen 1 y 3
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion muestra las recetas que son para ese alimento del dia
+
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
+| 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
+
+## Caso de uso 3
+### Actor:
+Usuario
+### Referencia a RF:
+RF3
+### Imagenes:
+Imagen 1
+### Pre condicion:
+No hay
+### Pos condicion:
+La aplicacion muestra sugeridos
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con platos sugeridos |
+
+## Caso de uso 4
+### Actor:
+Usuario
+### Referencia a RF:
+RF4 y RF5
+### Imagenes:
+Imagen 3, 4 y 5
+### Pre condicion:
+El usuario esta en una seccion con una lista de platos
+### Pos condicion:
+La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacion
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario aprieta el icono de filtros| 2. El sistema muestra una ventana con opciones para filtrar |
+|3. El usuario elige la dificultad y rango de tiempo que quiere y aprieta en aplicar filtros|4. La lista seleccionada anteriormente se filtra entre los platos que cumplen los requerimientos pedidos|
+
+## Caso de uso 5
+### Actor:
+Usuario
+### Referencia a RF:
+RF6
+### Imagenes:
+Imagen 6 y 8
+### Pre condicion:
+El usuario esta en una seccion de mas info sobre un plato
+### Pos condicion:
+La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobre cada receta
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario aprieta en el boton de foro| 2. El sistema una lista de comentarios sobre la receta.|
+
+
+# BOCETOS DE LA INTERFAZ GRAFICA
+## Imagen 1
+### Seccion Menu
+![Boceto Menu](img\BocetoUI-Menu.png)
+## Imagen 2
+### Seccion favoritos
+![Boceto Favoritos](img\BocetoUI-Favoritos.png)
+## Imagen 3
+### Seccion desayunos
+![Boceto Desayuno](img\BocetoUI-Desayuno.png)
+## Imagen 4
+### Seccion filtro
+![Boceto Filtro](img\BocetoUI-Filtro.png)
+## Imagen 5
+### Seccion desayunos filtrados
+![Boceto Desayuno Filtrado](img\BocetoUI-DesayunoFiltrado.png)
+## Imagen 6
+### Seccion mas info sobre galletas
+![Boceto Galletas info](img\BocetoUI-GalletasInfo.png)
+## imagen 7
+### Seccion receta de las galletas
+![Boceto Galletas Receta](img\BocetoUI-GalletasReceta.png)
+## Imagen 8
+### Seccion foro de las galletas
+![Boceto Desayuno](img\BocetoUI-GalletasForo.png)
