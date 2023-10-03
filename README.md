@@ -55,13 +55,18 @@
 # Elicitación
 
 ### Investigación:
+
+La primera técnica de elicitación que decidimos usar fue la investigación ya que ninguno de los integrantes del grupo tenía muy presente el tema del celiaquismo. Por lo cual nos pareció una buena herramientar para lograr un primer acercamiento y extraer las primeras necesidades que podría tener un usario de la aplicación.   
+
 ### Entrevista:
 
+La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amploa de la situación y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
 
+Para realizar la entrevista nos decidimos por 4 preguntas abiertas para que así el entrevistado se pudiera explayar y no sesgar o frozar las respuestas.
 
 ### LLuvia de ideas: 
 
-Basándonos en la información recolectada a través de la téncnica de investigación y la entrevista hicimos una lluvia de ideas para determinar features de la aplicación y el alcance de la misma.
+Finalemente, basándonos en la información recolectada a través de la téncnica de investigación y la entrevista hicimos una lluvia de ideas para determinar features de la aplicación y el alcance de la misma.
 Algunos puntos que se definieron fueron los siguientes:
 
 
