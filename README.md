@@ -138,3 +138,9 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RNF(4):  Seguridad
 **Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
 
+# BOCETOS DE LA INTERFAZ GRAFICA
+
+![Boceto Menu](img\BocetoUI-Menu.png)
+![Boceto Desayuno](img\BocetoUI-Desayuno.png)
+![Boceto Galletas info](img\BocetoUI-GalletasInfo.png)
+![Boceto Galletas receta](img\BocetoUI-GalletasReceta.png)
