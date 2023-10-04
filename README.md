@@ -224,6 +224,10 @@ agrega a la lista de favoritos el plato elegido
 | 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
 | 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
 |4. El usuario aprieta la estrella de una receta que no tenga la estrella dorada|5. La estrella se vuelve dorada significando que se agrego correctamente a la lista de favoritos|
+### Curso Alternativo
+* **4.1 :** Usuario aprienta una estralla ya dorada
+* **4.2 :** Sistema vuelve la estrella a su color original
+* **4.3 :** Sistema quita la receta de favoritos
 
 ## Caso de uso 2
 ### Actor:
@@ -272,6 +276,9 @@ La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacio
 |-|-|
 | 1. El usuario aprieta el icono de filtros| 2. El sistema muestra una ventana con opciones para filtrar |
 |3. El usuario elige la dificultad y rango de tiempo que quiere y aprieta en aplicar filtros|4. La lista seleccionada anteriormente se filtra entre los platos que cumplen los requerimientos pedidos|
+## Curso Alternativo
+* **3.1 :** Usuario selecciona una dificultad o rango de tiempo para el cual no existen recetas
+* **3.2 :** Sistema muestra lista vacia
 
 ## Caso de uso 5
 ### Actor:
@@ -286,7 +293,14 @@ El usuario esta en una seccion de mas info sobre un plato
 La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobre cada receta
 | **Accion de los actores:**| **Respuesta del sistema:**|
 |-|-|
-| 1. El usuario aprieta en el boton de foro| 2. El sistema una lista de comentarios sobre la receta.|
+| 1. El usuario aprieta en el boton de foro| 2. El sistema muestra una un formulario a llenar|
+|3. El usuario completa los campos | 4. Sistema valida los campos|
+|5. Usuario realiza el comentario | 6. Sistema publica el comentario|
+## Curso Alternativo
+* **3.1 :** Usuario no llena todos los campos
+* **3.2 :** Sistema muestra error
+* **5.1 :** Usuario sin conexion a internet
+* **5.2 :** Sistema no publica el comentario
 
 
 # BOCETOS DE LA INTERFAZ GRAFICA
