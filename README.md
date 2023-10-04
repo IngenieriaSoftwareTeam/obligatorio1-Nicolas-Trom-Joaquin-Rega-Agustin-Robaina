@@ -105,6 +105,7 @@ Algunos puntos que se definieron fueron los siguientes:
 ![User Person Andres](img\UserPersonAndres(1).jpg)
 
 ![User Person Bettina](img\UserPersonBettina(1).jpg)
+
 ![User Person Nidia](img\UserPersonNidia(1).jpg)
 # Historia de Usuarios
 
@@ -346,3 +347,9 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 ## Imagen 8
 ### Seccion foro de las galletas
 ![Boceto Desayuno](img\BocetoUI-GalletasForo.png)
+
+## VALIDACIÓN Y VERIFICACIÓN
+
+### VALIDACIÓN
+En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
+Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
