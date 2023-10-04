@@ -368,7 +368,7 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 
 * Agustín:
 
-* Nicolás:
+* Nicolás: Los avances del proyecto fueron realizados en conjunto, cada uno de los integrantes del grupo aporto ideas y conocimientos para el desarrollo del mismo. En mi caso particular me encargue de la parte del versionado, donde profundizamos en las buenas practicas. Además de realizar los User Pesonas y las Historias de Usuarios. Por último aporte ideas para los requerimientos funcionales y no funcionales, asi como tambien para la verificación y validación de los mismos.
 
 * Joaquín:
 
