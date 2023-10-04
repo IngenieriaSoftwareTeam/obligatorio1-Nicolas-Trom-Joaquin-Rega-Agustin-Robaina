@@ -370,7 +370,11 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 
 * Nicolás:
 
-* Joaquín:
+* Joaquín: 
+
+El trabajo fue hecho de manera grupal con la ayuda de github, esto nos permitio trabajar al mismo tiempo sobre las mismas cosas sin generar muchos problemas. Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubui cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
+
+
 
 ### Técnicas aplicadas y aprendizaje.
 
