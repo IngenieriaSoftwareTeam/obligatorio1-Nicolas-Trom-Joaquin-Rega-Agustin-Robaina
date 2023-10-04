@@ -107,6 +107,10 @@ Algunos puntos que se definieron fueron los siguientes:
 ![User Person Bettina](img\UserPersonBettina(1).jpg)
 
 ![User Person Nidia](img\UserPersonNidia(1).jpg)
+# Modelo Conceptual del Problema
+
+![Modelo conceptual del problema](img\MCP.jpg)
+
 # Historia de Usuarios
 
 ## Historias de Usuario 1
@@ -147,81 +151,63 @@ Algunos puntos que se definieron fueron los siguientes:
 # ESPECIFICACIÓN
 ## Requerimientos Funcionales (RF)
 
-### RF 1: Agregar a Favorito
+### RF(1): Agregar a Favorito
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá agregar una receta a su lista de favoritos
+**Descripcion :** El usuario debera poder agregar una receta a su lista de favoritos
 
 **Prioridad :** Baja
 
-### RF 2: Filtrar por Comida del Día
+### RF(2): Filtrar por Comida del Dia
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas según el momento del dia
+**Descripcion :** El usuario debera poder filtrar las recetas segun el momento del dia
 
 **Prioridad :** Media
 
-### RF 3: Ingreso a la Aplicacion
+### RF(3): Ingreso a la Aplicacion
 **Actor :** Usuario
 
-**Descripcion :** Al ingresar a la aplicación deberá mostrar sugerencias de recetas
+**Descripcion :** Al ingresar a la aplicacion debera mostrar sugerencias de recetas
 
 **Prioridad :** Media
 
 
-### RF 4: Filtrar por Dificultad
+### RF(4): Filtrar por Dificultad
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas segun la dificultad de la misma
+**Descripcion :** El usuario debera filtrar las recetas segun la dificultad de la misma
 
 **Prioridad :** Alta
 
-### RF 5: Filtrar por Tiempo Estimado
+### RF(5): Filtrar por Tiempo Estimado
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas según el tiempo estimado de la misma
+**Descripcion :** El usuario debera filtrar las recetas segun el tiempo estimado de la misma
 
 **Prioridad :** Alta
 
-### RF 6: Foro 
+### RF(6): Foro 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá interactuar e intercambiar ideas sobre las recetas
+**Descripcion :** El usuario podra interactura e intercambiar ideas sobre las recetas
 
 **Prioridad :** Media
 
 
 ## Requerimientos No Funcionales (RNF)
 
-### RNF 1:  Idiomas
-**Descripcion :** El sistema debera soportar el idioma español e inglés.
+### RNF(1):  Idiomas
+**Descripcion :** El sistema debera soportar multiples lenguajes
 
-**Prioridad :** Baja
+### RNF(2):  Reseñas
+**Descripcion :** El usuario podra dar una reseña de las recetas
 
-### RNF 2: Multiplataforma
-**Descripcion :** El sistema deberá correr en Windows 7 en adelante, Android 5 en adelante, IOS 10 en adelante.
+### RNF(3):  Diseño y Usabilidad
+**Descripcion :** El sistema debera ser atractivo y facil de usar
 
-**Prioridad :** Media
-
-### RNF 3:  Diseño y Usabilidad
-**Descripcion :** El sistema debera ser atractivo, preciso y eficáz.
-
-**Prioridad :** Alta
-
-### RNF 4:  Seguridad
-**Descripcion :** El sistema deberá ser seguro y proteger los datos de los usuarios.
-
-**Prioridad :** Alta
-
-### RNF 5: Lenguajes
-**Descripción :** El sistema deberá ser desarrollado en ECMAScript6, HTML5 y CSS3.
-
-**Priodad :** Media
-
-### RNF 6: Responsive
-**Descrpción :** El sistema deberá ser accesible desde tanto dispositivos móviles como desde navegadores.
-
-**Prioridad :** Media
+### RNF(4):  Seguridad
+**Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
 
 
 
