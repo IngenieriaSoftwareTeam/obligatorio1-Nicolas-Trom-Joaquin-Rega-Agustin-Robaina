@@ -366,11 +366,16 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 
 ### Detalle del trabajo indivudual.
 
-* Agustín:
+
+* Agustín: el trabajo fué realizado de manera conjunta entre los diversos integrantes del grupo. En mi caso me encargué de las técnicas de elicitación de investigación y realizando una de las entrevistas realizadas. Luego participé en la lluvia de ideas que realizamos a través de una discusión de github para poner sobre la mesas posibles features que tendría la aplicación. También participé con la especificación de los requerimientos funcionales y no funcionales.
 
 * Nicolás: Los avances del proyecto fueron realizados en conjunto, cada uno de los integrantes del grupo aporto ideas y conocimientos para el desarrollo del mismo. En mi caso particular me encargue de la parte del versionado, donde profundizamos en las buenas practicas. Además de realizar los User Pesonas y las Historias de Usuarios. Por último aporte ideas para los requerimientos funcionales y no funcionales, asi como tambien para la verificación y validación de los mismos.
 
-* Joaquín:
+* Joaquín: 
+
+El trabajo fue hecho de manera grupal con la ayuda de github, esto nos permitio trabajar al mismo tiempo sobre las mismas cosas sin generar muchos problemas. Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubui cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
+
+
 
 ### Técnicas aplicadas y aprendizaje.
 
