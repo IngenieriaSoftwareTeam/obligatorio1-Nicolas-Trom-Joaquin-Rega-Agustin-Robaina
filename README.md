@@ -353,3 +353,20 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 ### VALIDACIÓN
 En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
 Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
+
+## REFLEXIÓN
+
+### Detalle del trabajo indivudual.
+
+* Agustín:
+
+* Nicolás:
+
+* Joaquín:
+
+### Técnicas aplicadas y aprendizaje.
+
+En esta instancia de obligatorio tuvimos la oportunidad de aplicar lo aprendido hasta este punto del semestre. Pusimos en práctica las técnicas de elicitación vistas en clase, en nuestro caso fueron la investigación, entrevista y la lluvia de ideas.
+También alpicamos lo aprendido de git y github para realizar el versionado del proyecto, lo cual nos resultó muy útil ya que nos permitió trabajar en paralelo y sin la necesidad de realizar llamdas constante para poder avanzar en el obligatorio.
+
+Como conclusión creemos que fue una instancía en donde pudimos aplicar lo aprendido en clase y fortalecer los conceptos vistos. Además de poder trabajar en una parte del desarrollo muy interesante y no vista antes en la carrera hasta el momento.
