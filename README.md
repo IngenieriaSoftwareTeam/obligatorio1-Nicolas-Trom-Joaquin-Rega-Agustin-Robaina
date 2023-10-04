@@ -353,3 +353,26 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 ### VALIDACIÓN
 En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
 Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
+
+### VERIFICACIÓN REQUERIMIENTOS
+| **Requerimientos**                                 | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 |
+|----------------------------------------------------|-----|-----|-----|-----|-----|-----|
+| **Correctitud**                                    |     |     |     |     |     |     |
+| ¿Es viable?                                        | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Están  correctamente priorizados?                 | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Están los usuarios identificados?                 | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿No hay conflictos con otros  requerimientos?      | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿No incluye aspectos de diseño o  implementación?  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Esta dentro del alcance del problema a  resolver? | SI  | SI  | SI  | SI  | SI  | SI  |
+| **Verificabilidad y  no ambigüedad**               |     |     |     |     |     |     |
+| ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Es verificable?                                   | SI  | SI  | SI  | SI  | SI  | SI  |
+
+### VERIFICACIÓN DE CASOS DE USO
+| **Casos de Uso**                                       | Caso 1 | Caso 2 | Caso 3 | Caso 4 | Caso 5 |
+|--------------------------------------------------------|--------|--------|--------|--------|--------|
+| ¿Cumple un único objetivo?                             | SI     | SI     | SI     | SI     | SI     |
+| ¿Queda claro quiénes  son los actores?                 | SI     | SI     | SI     | SI     | SI     |
+| ¿Existe una secuencia  lógica de los pasos?            | SI     | SI     | SI     | SI     | SI     |
+| ¿Está libre de detalles  de diseño e implementaciones? | SI     | SI     | SI     | SI     | SI     |
+| ¿Se documentaron todos  los cursos alternativos?       | SI     | NO     | NO     | SI     | SI     |
