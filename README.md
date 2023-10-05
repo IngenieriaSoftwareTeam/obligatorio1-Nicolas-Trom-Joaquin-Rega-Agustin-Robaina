@@ -108,7 +108,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 * Recomendación de locales que vendan productos aptos para celíacos
 
-# Categorización de Usuarios: User Personas
+# Categorizaciòn de Usuarios: User Personas
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
@@ -159,63 +159,71 @@ Algunos puntos que se definieron fueron los siguientes:
 # ESPECIFICACIÓN
 ## Requerimientos Funcionales (RF)
 
-### RF(1): Agregar a Favorito
+### RF 1: Agregar a Favorito
 **Actor :** Usuario
 
-**Descripcion :** El usuario debera poder agregar una receta a su lista de favoritos
+**Descripcion :** El usuario podrá agregar una receta a su lista de favoritos
 
 **Prioridad :** Baja
 
-### RF(2): Filtrar por Comida del Dia
+### RF 2: Filtrar por comida del día
 **Actor :** Usuario
 
-**Descripcion :** El usuario debera poder filtrar las recetas segun el momento del dia
+**Descripcion :** El usuario podrá filtrar las recetas según el momento del día
 
 **Prioridad :** Media
 
-### RF(3): Ingreso a la Aplicacion
+### RF 3: Ingreso a la Aplicacion
 **Actor :** Usuario
 
-**Descripcion :** Al ingresar a la aplicacion debera mostrar sugerencias de recetas
+**Descripcion :** Al ingresar a la aplicacion deberá mostrar sugerencias de recetas
 
 **Prioridad :** Media
 
 
-### RF(4): Filtrar por Dificultad
+### RF 4: Filtrar por Dificultad
 **Actor :** Usuario
 
-**Descripcion :** El usuario debera filtrar las recetas segun la dificultad de la misma
+**Descripcion :** El usuario podrá filtrar las recetas segun la dificultad de la misma
 
 **Prioridad :** Alta
 
-### RF(5): Filtrar por Tiempo Estimado
+### RF 5: Filtrar por Tiempo Estimado
 **Actor :** Usuario
 
-**Descripcion :** El usuario debera filtrar las recetas segun el tiempo estimado de la misma
+**Descripcion :** El usuario podrá filtrar las recetas según el tiempo estimado de la misma
 
 **Prioridad :** Alta
 
-### RF(6): Foro 
+### RF 6: Foro 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podra interactura e intercambiar ideas sobre las recetas
+**Descripcion :** El usuario podrá interactuar e intercambiar ideas sobre las recetas
 
 **Prioridad :** Media
 
 
 ## Requerimientos No Funcionales (RNF)
 
-### RNF(1):  Idiomas
-**Descripcion :** El sistema debera soportar multiples lenguajes
+### RNF 1:  Idiomas
+**Descripcion :** El sistema debera soportar los idiomas español e inglés.
 
-### RNF(2):  Reseñas
-**Descripcion :** El usuario podra dar una reseña de las recetas
+**Prioridad :** Baja
 
-### RNF(3):  Diseño y Usabilidad
-**Descripcion :** El sistema debera ser atractivo y facil de usar
+### RNF 2:  Multiplataforma
+**Descripcion :** El sistema deberá correr en Windows 7 en adelante, Android 5 en adelante, IOS 10 en adelante.
 
-### RNF(4):  Seguridad
-**Descripcion :** El sistema debera ser seguro y proteger los datos de los usuarios
+**Prioridad :** Media
+
+### RNF 3:  Lenguajes
+**Descripcion :** El sistema deberá ser desarrollado en ECMAScript6, HTML5 y CSS3.
+
+**Prioridad :** Media
+
+### RNF 4 : Responsive
+**Descripción :** El sistema deberá ser accesible desde dispositivos móviles y computadoras.
+
+**Prioridad :** Media
 
 
 
