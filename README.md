@@ -102,14 +102,14 @@ Algunos puntos que se definieron fueron los siguientes:
 
 # Categorizaciòn de Usuarios: User Personas
 
-![User Person Andres](img\UserPersonAndres(1).jpg)
+![User Person Andres](img/UserPersonAndres(1).jpg)
 
-![User Person Bettina](img\UserPersonBettina(1).jpg)
+![User Person Bettina](img/UserPersonBettina(1).jpg)
 
-![User Person Nidia](img\UserPersonNidia(1).jpg)
+![User Person Nidia](img/UserPersonNidia(1).jpg)
 # Modelo Conceptual del Problema
 
-![Modelo conceptual del problema](img\MCP.jpg)
+![Modelo conceptual del problema](img/MCP.jpg)
 
 # Historia de Usuarios
 
@@ -311,25 +311,25 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 # BOCETOS DE LA INTERFAZ GRAFICA
 ## Imagen 1
 ### Seccion Menu
-![Boceto Menu](img\BocetoUI-Menu.png)
+![Boceto Menu](img/BocetoUI-Menu.png)
 ## Imagen 2
 ### Seccion favoritos
-![Boceto Favoritos](img\BocetoUI-Favoritos.png)
+![Boceto Favoritos](img/BocetoUI-Favoritos.png)
 ## Imagen 3
 ### Seccion desayunos
-![Boceto Desayuno](img\BocetoUI-Desayuno.png)
+![Boceto Desayuno](img/BocetoUI-Desayuno.png)
 ## Imagen 4
 ### Seccion filtro
-![Boceto Filtro](img\BocetoUI-Filtro.png)
+![Boceto Filtro](img/BocetoUI-Filtro.png)
 ## Imagen 5
 ### Seccion desayunos filtrados
-![Boceto Desayuno Filtrado](img\BocetoUI-DesayunoFiltrado.png)
+![Boceto Desayuno Filtrado](img/BocetoUI-DesayunoFiltrado.png)
 ## Imagen 6
 ### Seccion mas info sobre galletas
-![Boceto Galletas info](img\BocetoUI-GalletasInfo.png)
+![Boceto Galletas info](img/BocetoUI-GalletasInfo.png)
 ## imagen 7
 ### Seccion receta de las galletas
-![Boceto Galletas Receta](img\BocetoUI-GalletasReceta.png)
+![Boceto Galletas Receta](img/BocetoUI-GalletasReceta.png)
 ## Imagen 8
 ### Seccion foro de las galletas
 ![Boceto Desayuno](img/BocetoUI-GalletasForo.png)
