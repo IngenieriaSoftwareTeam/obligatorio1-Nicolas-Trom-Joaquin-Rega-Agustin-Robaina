@@ -22,8 +22,20 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 
 ***Requerimiento NO Funcional :*** característica del sistema que no se desarrollará ya que se asume o está disponible. Por ejemplo, si una app necesita el uso de WiFi no tendremos que desarollar WiFi también al crear la app, sino que se asume resuelto.
 
+***Use Cases:*** descripción generalizada de un conjunto de interacciones entre el sistema y uno o más actores, donde un actor puede ser tanto un usuario como otro sistema
+
+***Use Stories:*** describe una funcionalidad simple y átomica que será de valor para el usuario o comprador del sistema o software.
+
+***Software :*** instrucciones (programas de computadora) que cuando se ejecutan proporcionan la función y rendimiento deseados. 
+
+***Bocetos IU :*** versión preliminar de un posible diseño que tendrá la interfáz de usuario de la aplicación.
+
+***IU:*** espacio donde ocurre la interacción entre el humano y la computadora.
+
   # Repositorio GIT
   
+Para llevar a cabo el versionado del proyecto utilizamos la herramienta GIT, que es un sistema de control de versiones distribuido, la cual permite el desarrollo no lineal y offline. Facilitando el trabajo y organización a la hora de trabajar en equipos. 
+
   ## Creacion y uso de respositorios locales y remotos
    * Para la creacion del repositorio utilizamos el template propocionado por el docente. Una vez creado el repositorio cada uno de los integrantes del equipo trabajara en un su repositorio local utilizando check-in y check-out al respositorio remoto compartido.
   
@@ -74,6 +86,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 * En nuestro caso como buena práctica  decidimos utilizar la convención "Conventional Commits" para faciliar la legibilidad y    entendimiento de los distintos commits realizados. 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
+[Commits Realizados](https://github.com/IngenieriaSoftwareTeam/obligatorio1-Nicolas-Trom-Joaquin-Rega-Agustin-Robaina/commits/documentacion)
+
 # Elicitación
 
 ### Investigación:
@@ -123,12 +137,15 @@ Algunos puntos que se definieron fueron los siguientes:
 * Recomendación de locales que vendan productos aptos para celíacos
 
 # Categorización de Usuarios: User Personas
+ 
+Utilizamos los User Personas para poder identificar a los usuarios potenciales de nuestra aplicación y así poder definir las necesidades de los mismos. Para ello, realizamos 3 User Personas con perfiles distintos para así poder tener una perspectiva más amplia de los usuarios potenciales.
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
 ![User Person Bettina](img/UserPersonBettina(1).jpg)
 
 ![User Person Nidia](img/UserPersonNidia(1).jpg)
+
 # Modelo Conceptual del Problema
 
 ![Modelo conceptual del problema](img/MCP.jpg)
@@ -138,9 +155,10 @@ Algunos puntos que se definieron fueron los siguientes:
 ## Historias de Usuario 1
 
 ### Titulo: Filtrar por Dificultad
-* **Para** saber que tan dificl puede ser la receta
+
 * **Como** usuario
 * **Quiero** poder filtrar recetas por dificultad
+* **Para** saber que tan dificl puede ser la receta
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
@@ -218,7 +236,7 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RF 7: Recetas 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá ver la receta de un plato con un paso a paso de como hacerla.
+**Descripcion :** El usuario podrá ver la receta de un plato con instrucciones de como prepararla.
 
 **Prioridad :** Alta
 
