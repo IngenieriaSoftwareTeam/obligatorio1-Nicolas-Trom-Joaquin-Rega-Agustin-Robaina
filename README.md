@@ -448,9 +448,13 @@ También aprendí sobre la importancia de la planificación cuidadosa y la selec
 
 Los avances del proyecto fueron realizados en conjunto, cada uno de los integrantes del grupo aporto ideas y conocimientos para el desarrollo del mismo. En mi caso particular me encargue de la parte del versionado, donde profundizamos en las buenas practicas. Además de realizar los User Pesonas y las Historias de Usuarios. Por último aporte ideas para los requerimientos funcionales y no funcionales, asi como tambien para la verificación y validación de los mismos.
 
-* **Joaquín**: 
+* **Joaquín**:
 
-El trabajo fue hecho de manera grupal con la ayuda de github, esto nos permitio trabajar al mismo tiempo sobre las mismas cosas sin generar muchos problemas. Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubui cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
+Esta entrega fue una oportunidad perfecta para poder poner en prueba todo lo que se dio en la clase. Se tuvo que trabajar como equipo en este proyecto y eso ayudo a desarollar habilidades que luego van a ser muy utiles en la vida laboral. 
+
+La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usandon la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
+
+El trabajo fue hecho de manera grupal, y todos los integrantes aportaron en todo, obviamente cada uno se enfoco en ciertos aspectos del proyectos.Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubuí cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
 
 
 
