@@ -22,8 +22,20 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 
 ***Requerimiento NO Funcional :*** característica del sistema que no se desarrollará ya que se asume o está disponible. Por ejemplo, si una app necesita el uso de WiFi no tendremos que desarollar WiFi también al crear la app, sino que se asume resuelto.
 
+***Use Cases:*** descripción generalizada de un conjunto de interacciones entre el sistema y uno o más actores, donde un actor puede ser tanto un usuario como otro sistema
+
+***Use Stories:*** describe una funcionalidad simple y átomica que será de valor para el usuario o comprador del sistema o software.
+
+***Software :*** instrucciones (programas de computadora) que cuando se ejecutan proporcionan la función y rendimiento deseados. 
+
+***Bocetos IU :*** versión preliminar de un posible diseño que tendrá la interfáz de usuario de la aplicación.
+
+***IU:*** espacio donde ocurre la interacción entre el humano y la computadora.
+
   # Repositorio GIT
   
+Para llevar a cabo el versionado del proyecto utilizamos la herramienta GIT, que es un sistema de control de versiones distribuido, la cual permite el desarrollo no lineal y offline. Facilitando el trabajo y organización a la hora de trabajar en equipos. 
+
   ## Creacion y uso de respositorios locales y remotos
    * Para la creacion del repositorio utilizamos el template propocionado por el docente. Una vez creado el repositorio cada uno de los integrantes del equipo trabajara en un su repositorio local utilizando check-in y check-out al respositorio remoto compartido.
   
@@ -73,6 +85,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 * Escribir mensajes de commits claros que describan lo realizado en el código.
 * En nuestro caso como buena práctica  decidimos utilizar la convención "Conventional Commits" para faciliar la legibilidad y    entendimiento de los distintos commits realizados. 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+[Commits Realizados](https://github.com/IngenieriaSoftwareTeam/obligatorio1-Nicolas-Trom-Joaquin-Rega-Agustin-Robaina/commits/documentacion)
 
 # Elicitación
 
@@ -218,7 +232,7 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RF 7: Recetas 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá ver la receta de un plato con un paso a paso de como hacerla.
+**Descripcion :** El usuario podrá ver la receta de un plato con instrucciones de como prepararla.
 
 **Prioridad :** Alta
 
