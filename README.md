@@ -389,7 +389,12 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 
 * **Agustín**: 
 
+
+En lo personal creo que el obligatorio fue una excelente instancia para aplicar todo lo aprendido en clase y profunidzar en los conceptos vistos. Además de poder ver una parte del desarrollo de software que en lo personal no había tratado anteriormente y me pareció realmente interesante. Ya que generealmente nos centramos en la parte de tecnología y codificación sin prestarle mucha atención a esta etapa ,infravalorada tal vez, de especificación, pero como se nos ha reitrerado en clase los dispositivos y tecnologías que empleamos actualmente en unos años serán obsoletas, pero en cambio este trabajo de especificación es perdurable y aplicable a las tecnologías que se rijan en el momento oportuno.
+
 El trabajo fué realizado de manera conjunta entre los diversos integrantes del grupo. En mi caso me encargué de las técnicas de elicitación de investigación y realizando una de las entrevistas realizadas. Luego participé en la lluvia de ideas que realizamos a través de una discusión de github para poner sobre la mesas posibles features que tendría la aplicación. También participé con la especificación de los requerimientos funcionales y no funcionales.
+
+
 
 * **Nicolás**: 
 
