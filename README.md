@@ -18,6 +18,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 
 ***Celiquía :***  enfermedad digestiva que daña el intestino delgado y altera la absorción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. Los pacientes con enfermedad celíaca no toleran una proteína llamada gluten
 
+***Elicitación :*** proceso de identifiación de necesidades y restricciones de distintos interesados para un sistema de software.
+
 ***Requerimiento Funcional :*** descripción de cómo se debe comportar el sistema o de una propiedad o atributo del sistema.
 
 ***Requerimiento NO Funcional :*** característica del sistema que no se desarrollará ya que se asume o está disponible. Por ejemplo, si una app necesita el uso de WiFi no tendremos que desarollar WiFi también al crear la app, sino que se asume resuelto.
@@ -25,6 +27,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 ***Use Cases:*** descripción generalizada de un conjunto de interacciones entre el sistema y uno o más actores, donde un actor puede ser tanto un usuario como otro sistema
 
 ***Use Stories:*** describe una funcionalidad simple y átomica que será de valor para el usuario o comprador del sistema o software.
+
+***User Person:***  son representaciones ficticias de grupos de usuarios que comparten características y necesidades similares. Estas representaciones ayudan a los equipos de diseño y desarrollo a comprender mejor a su audiencia objetivo y a tomar decisiones informadas durante el proceso de creación de productos.
 
 ***Software :*** instrucciones (programas de computadora) que cuando se ejecutan proporcionan la función y rendimiento deseados. 
 
@@ -104,6 +108,8 @@ La primera técnica de elicitación que decidimos usar fue la investigación ya 
 
 * El precio de los productos sin glúten puede llegar a ser hasta 87 % mas cáros.
 
+[Fuentes utilizadas para la investigación](elicitación/investigación.md)
+
 ### Entrevista:
 
 La siguiente técnica de elicitación que utilizamos fue la entrevista. En nuestro caso realizamos dos entrevistas a personas celíacas, cada una con perfiles y edades distintas para así obtener una perspectiva mas amplia de la condición y poder identificar la mayor cantidad de necesidades por parte de los potenciales usuarios.
@@ -122,6 +128,8 @@ A través de la entrevistas de las entrevistas realizadas obtuvimos las siguient
 
 * En el caso de comer fuera de casa hay poca oferta de restaurantes que tengan un menú apto para celíacos o de locales de venta de comida sin glúten.
 
+[Link preguntas de las preguntas prototipadas](elicitación/entrevista.md)
+
 ### LLuvia de ideas: 
 
 Finalemente, basándonos en la información recolectada a través de la téncnica de investigación y la entrevista hicimos una lluvia de ideas para determinar features de la aplicación y el alcance de la misma.
@@ -137,15 +145,12 @@ Algunos puntos que se definieron fueron los siguientes:
 * Recomendación de locales que vendan productos aptos para celíacos
 
 # Categorización de Usuarios: User Personas
- 
-Utilizamos los User Personas para poder identificar a los usuarios potenciales de nuestra aplicación y así poder definir las necesidades de los mismos. Para ello, realizamos 3 User Personas con perfiles distintos para así poder tener una perspectiva más amplia de los usuarios potenciales.
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
 ![User Person Bettina](img/UserPersonBettina(1).jpg)
 
 ![User Person Nidia](img/UserPersonNidia(1).jpg)
-
 # Modelo Conceptual del Problema
 
 ![Modelo conceptual del problema](img/MCP.jpg)
@@ -155,10 +160,9 @@ Utilizamos los User Personas para poder identificar a los usuarios potenciales d
 ## Historias de Usuario 1
 
 ### Titulo: Filtrar por Dificultad
-
+* **Para** saber que tan dificl puede ser la receta
 * **Como** usuario
 * **Quiero** poder filtrar recetas por dificultad
-* **Para** saber que tan dificl puede ser la receta
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
@@ -470,7 +474,7 @@ Los avances del proyecto fueron realizados en conjunto, cada uno de los integran
 
 Esta entrega fue una oportunidad perfecta para poder poner en prueba todo lo que se dio en la clase. Se tuvo que trabajar como equipo en este proyecto y eso ayudo a desarollar habilidades que luego van a ser muy utiles en la vida laboral. 
 
-La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usando la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
+La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usandon la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
 
 El trabajo fue hecho de manera grupal, y todos los integrantes aportaron en todo, obviamente cada uno se enfoco en ciertos aspectos del proyectos.Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubuí cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
 
