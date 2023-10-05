@@ -22,8 +22,20 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 
 ***Requerimiento NO Funcional :*** característica del sistema que no se desarrollará ya que se asume o está disponible. Por ejemplo, si una app necesita el uso de WiFi no tendremos que desarollar WiFi también al crear la app, sino que se asume resuelto.
 
+***Use Cases:*** descripción generalizada de un conjunto de interacciones entre el sistema y uno o más actores, donde un actor puede ser tanto un usuario como otro sistema
+
+***Use Stories:*** describe una funcionalidad simple y átomica que será de valor para el usuario o comprador del sistema o software.
+
+***Software :*** instrucciones (programas de computadora) que cuando se ejecutan proporcionan la función y rendimiento deseados. 
+
+***Bocetos IU :*** versión preliminar de un posible diseño que tendrá la interfáz de usuario de la aplicación.
+
+***IU:*** espacio donde ocurre la interacción entre el humano y la computadora.
+
   # Repositorio GIT
   
+Para llevar a cabo el versionado del proyecto utilizamos la herramienta GIT, que es un sistema de control de versiones distribuido, la cual permite el desarrollo no lineal y offline. Facilitando el trabajo y organización a la hora de trabajar en equipos. 
+
   ## Creacion y uso de respositorios locales y remotos
    * Para la creacion del repositorio utilizamos el template propocionado por el docente. Una vez creado el repositorio cada uno de los integrantes del equipo trabajara en un su repositorio local utilizando check-in y check-out al respositorio remoto compartido.
   
@@ -73,6 +85,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 * Escribir mensajes de commits claros que describan lo realizado en el código.
 * En nuestro caso como buena práctica  decidimos utilizar la convención "Conventional Commits" para faciliar la legibilidad y    entendimiento de los distintos commits realizados. 
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+[Commits Realizados](https://github.com/IngenieriaSoftwareTeam/obligatorio1-Nicolas-Trom-Joaquin-Rega-Agustin-Robaina/commits/documentacion)
 
 # Elicitación
 
@@ -222,7 +236,7 @@ Utilizamos los User Personas para poder identificar a los usuarios potenciales d
 ### RF 7: Recetas 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá ver la receta de un plato con un paso a paso de como hacerla.
+**Descripcion :** El usuario podrá ver la receta de un plato con instrucciones de como prepararla.
 
 **Prioridad :** Alta
 
@@ -452,9 +466,13 @@ También aprendí sobre la importancia de la planificación cuidadosa y la selec
 
 Los avances del proyecto fueron realizados en conjunto, cada uno de los integrantes del grupo aporto ideas y conocimientos para el desarrollo del mismo. En mi caso particular me encargue de la parte del versionado, donde profundizamos en las buenas practicas. Además de realizar los User Pesonas y las Historias de Usuarios. Por último aporte ideas para los requerimientos funcionales y no funcionales, asi como tambien para la verificación y validación de los mismos.
 
-* **Joaquín**: 
+* **Joaquín**:
 
-El trabajo fue hecho de manera grupal con la ayuda de github, esto nos permitio trabajar al mismo tiempo sobre las mismas cosas sin generar muchos problemas. Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubui cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
+Esta entrega fue una oportunidad perfecta para poder poner en prueba todo lo que se dio en la clase. Se tuvo que trabajar como equipo en este proyecto y eso ayudo a desarollar habilidades que luego van a ser muy utiles en la vida laboral. 
+
+La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usandon la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
+
+El trabajo fue hecho de manera grupal, y todos los integrantes aportaron en todo, obviamente cada uno se enfoco en ciertos aspectos del proyectos.Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubuí cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
 
 
 
