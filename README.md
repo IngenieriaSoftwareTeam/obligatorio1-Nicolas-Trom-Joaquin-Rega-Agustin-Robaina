@@ -9,8 +9,6 @@
 
   # Objetivo
  
- Tienes razón, el término "comida" se repite varias veces en el texto. Aquí tienes una versión revisada que reduce la repetición:
-
 A través de este proyecto buscamos de alguna manera simplificar la vida de las personas que sufren de celiaquía. Aproximadamente 30,000 personas padecen esta enfermedad en Uruguay, y esta estadística no toma en cuenta a los familiares que también se ven afectados porque tienen que cambiar su dieta. En Uruguay, las personas celiacas gastan un 300% más en su alimentación. Otro problema que se presenta es la poca variedad de platos que terminan consumiendo, no porque no exista diversidad, sino porque los alimentos más conocidos suelen contener gluten y se dejan de lado.
 
 La aplicación no va a resolver directamente estos problemas económicos, pero apuntamos a simplificar el proceso de descubrir nuevos y variados menús para cada comida del día. También buscamos crear una especie de comunidad de celiacos donde cada uno pueda dar su opinión sobre cada plato o sugerir alternativas.
@@ -110,7 +108,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 * Recomendación de locales que vendan productos aptos para celíacos
 
-# Categorizaciòn de Usuarios: User Personas
+# Categorización de Usuarios: User Personas
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
