@@ -170,7 +170,7 @@ Algunos puntos que se definieron fueron los siguientes:
 * Debe estar conectado a Internet
 
 
-# ESPECIFICACIÓN
+# Especificaión
 ## Requerimientos Funcionales (RF)
 
 ### RF 1: Agregar a Favorito
@@ -359,7 +359,7 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 * **3.1 :** Usuario no llena todos los campos
 * **3.2 :** Sistema muestra error avisandole al usuario que tiene que rellenar todos los datos
 
-# BOCETOS DE LA INTERFAZ GRAFICA
+# Bocetos de la interfaz grafica
 ## Imagen 1
 ### Seccion Menu
 ![Boceto Menu](img/BocetoUI-Menu.png)
@@ -385,13 +385,13 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 ### Seccion foro de las galletas
 ![Boceto Desayuno](img/BocetoUI-GalletasForo.png)
 
-## VALIDACIÓN Y VERIFICACIÓN
+## Validación y Verificación
 
-### VALIDACIÓN
+### Validación
 En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
 Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
 
-### VERIFICACIÓN REQUERIMIENTOS
+### Verificacióon de requerimientos
 | **Requerimientos**                                 | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 |
 |----------------------------------------------------|-----|-----|-----|-----|-----|-----|
 | **Correctitud**                                    |     |     |     |     |     |     |
@@ -405,7 +405,7 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 | ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | NO  |
 | ¿Es verificable?                                   | SI  | SI  | SI  | SI  | SI  | SI  |
 
-### VERIFICACIÓN DE CASOS DE USO
+### Verificación de casos de uso
 | **Casos de Uso**                                       | Caso 1 | Caso 2 | Caso 3 | Caso 4 | Caso 5 |
 |--------------------------------------------------------|--------|--------|--------|--------|--------|
 | ¿Cumple un único objetivo?                             | SI     | SI     | SI     | SI     | SI     |
@@ -413,7 +413,7 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 | ¿Existe una secuencia  lógica de los pasos?            | SI     | SI     | SI     | SI     | SI     |
 | ¿Está libre de detalles  de diseño e implementaciones? | SI     | SI     | SI     | SI     | SI     |
 | ¿Se documentaron todos  los cursos alternativos?       | SI     | NO     | NO     | SI     | SI     |
-## REFLEXIÓN
+## Reflexión
 
 ### Detalle del trabajo indivudual.
 
