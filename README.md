@@ -137,12 +137,15 @@ Algunos puntos que se definieron fueron los siguientes:
 * Recomendación de locales que vendan productos aptos para celíacos
 
 # Categorización de Usuarios: User Personas
+ 
+Utilizamos los User Personas para poder identificar a los usuarios potenciales de nuestra aplicación y así poder definir las necesidades de los mismos. Para ello, realizamos 3 User Personas con perfiles distintos para así poder tener una perspectiva más amplia de los usuarios potenciales.
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
 ![User Person Bettina](img/UserPersonBettina(1).jpg)
 
 ![User Person Nidia](img/UserPersonNidia(1).jpg)
+
 # Modelo Conceptual del Problema
 
 ![Modelo conceptual del problema](img/MCP.jpg)
@@ -152,9 +155,10 @@ Algunos puntos que se definieron fueron los siguientes:
 ## Historias de Usuario 1
 
 ### Titulo: Filtrar por Dificultad
-* **Para** saber que tan dificl puede ser la receta
+
 * **Como** usuario
 * **Quiero** poder filtrar recetas por dificultad
+* **Para** saber que tan dificl puede ser la receta
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
@@ -466,7 +470,7 @@ Los avances del proyecto fueron realizados en conjunto, cada uno de los integran
 
 Esta entrega fue una oportunidad perfecta para poder poner en prueba todo lo que se dio en la clase. Se tuvo que trabajar como equipo en este proyecto y eso ayudo a desarollar habilidades que luego van a ser muy utiles en la vida laboral. 
 
-La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usandon la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
+La comuncación era clave a la hora de organizarnos porque si estabamos mal organizados iba a generar problemas por todas partes, usando la herramienta git y github pudimos minimizar esos problemas organizativos, la herramienta nos permitio a cada uno editar el archivo a la misma vez resolviendo los conflictos que esto generaria.
 
 El trabajo fue hecho de manera grupal, y todos los integrantes aportaron en todo, obviamente cada uno se enfoco en ciertos aspectos del proyectos.Yo en particular me enfoque en el armado de los bocetos de la interfaz, los use cases y el modelo conceptual del problema, pero ademas contrubuí cosas especificas a las otras partes del trabajo como los requerimientos funcionales y no funcionales como tambien con la elicitacion.
 
