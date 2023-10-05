@@ -7,7 +7,7 @@
 | M4B - Docente Alejandro Adorjan    |
 | Joaquin Rega, Agustin Robaina, Nicolas Tormbotti    |
 
-  # Objetivo
+# Objetivo
  
 A través de este proyecto buscamos de alguna manera simplificar la vida de las personas que sufren de celiaquía. Aproximadamente 30,000 personas padecen esta enfermedad en Uruguay, y esta estadística no toma en cuenta a los familiares que también se ven afectados porque tienen que cambiar su dieta. En Uruguay, las personas celiacas gastan un 300% más en su alimentación. Otro problema que se presenta es la poca variedad de platos que terminan consumiendo, no porque no exista diversidad, sino porque los alimentos más conocidos suelen contener gluten y se dejan de lado.
 
@@ -215,6 +215,13 @@ Algunos puntos que se definieron fueron los siguientes:
 
 **Prioridad :** Media
 
+### RF 7: Recetas 
+**Actor :** Usuario
+
+**Descripcion :** El usuario podrá ver la receta de un plato con un paso a paso de como hacerla.
+
+**Prioridad :** Alta
+
 
 ## Requerimientos No Funcionales (RNF)
 
@@ -330,7 +337,7 @@ La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacio
 |4||
 |![Boceto Filtro Desayuno](img/BocetoUI-DesayunoFiltrado.png)||
 
-## Curso Alternativo
+### Curso Alternativo
 * **3.1 :** Usuario selecciona una dificultad o rango de tiempo para el cual no existen recetas
 * **3.2 :** Sistema muestra lista vacia
 
@@ -355,67 +362,73 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 |-|-|
 |![Boceto Galletas Info](img/BocetoUI-GalletasInfo.png) |![Boceto Foro Galletas](img/BocetoUI-GalletasForo.png) |
 
-## Curso Alternativo
+### Curso Alternativo
 * **3.1 :** Usuario no llena todos los campos
 * **3.2 :** Sistema muestra error avisandole al usuario que tiene que rellenar todos los datos
 
-# Bocetos de la interfaz grafica
-## Imagen 1
-### Seccion Menu
-![Boceto Menu](img/BocetoUI-Menu.png)
-## Imagen 2
-### Seccion favoritos
-![Boceto Favoritos](img/BocetoUI-Favoritos.png)
-## Imagen 3
-### Seccion desayunos
-![Boceto Desayuno](img/BocetoUI-Desayuno.png)
-## Imagen 4
-### Seccion filtro
-![Boceto Filtro](img/BocetoUI-Filtro.png)
-## Imagen 5
-### Seccion desayunos filtrados
-![Boceto Desayuno Filtrado](img/BocetoUI-DesayunoFiltrado.png)
-## Imagen 6
-### Seccion mas info sobre galletas
-![Boceto Galletas info](img/BocetoUI-GalletasInfo.png)
-## imagen 7
-### Seccion receta de las galletas
-![Boceto Galletas Receta](img/BocetoUI-GalletasReceta.png)
-## Imagen 8
-### Seccion foro de las galletas
-![Boceto Desayuno](img/BocetoUI-GalletasForo.png)
+## Caso de uso 6
+### Actor:
+Usuario
+### Referencia a RF:
+RF7
+### Imagenes:
+Imagen 6 y 7
+### Pre condicion:
+El usuario esta en una seccion de mas info sobre un plato
+### Pos condicion:
+La aplicacion le muestra al usuario una receta detallada sobre el plato elegido
+| **Accion de los actores:**| **Respuesta del sistema:**|
+|-|-|
+| 1. El usuario aprieta en el boton de receta| 2. El sistema muestra la seccion de la receta|
 
-## Validación y Verificación
+|1 |2|
+|-|-|
+|![Boceto Galletas Info](img/BocetoUI-GalletasInfo.png) |![Boceto Foro Galletas](img/BocetoUI-GalletasReceta.png) |
 
-### Validación
+
+# Bocetos de la intefraz grafica
+|||
+|-|-|
+|**Menu - 1**|**Favoritos - 2**|
+|![Boceto Menu](img/BocetoUI-Menu.png)|![Boceto Favoritos](img/BocetoUI-Favoritos.png)|
+|**Desayunos - 3**|**Filtro - 4**|
+|![Boceto Desayuno](img/BocetoUI-Desayuno.png)|![Boceto Filtro](img/BocetoUI-Filtro.png)|
+|**Desayunos filtrados - 5**|**Mas info sobre galletas - 6**|
+|![Boceto Desayuno Filtrado](img/BocetoUI-DesayunoFiltrado.png)|![Boceto Galletas info](img/BocetoUI-GalletasInfo.png)|
+|**Receta de las galletas - 7**|**Foro de las galletas - 8**|
+|![Boceto Galletas Receta](img/BocetoUI-GalletasReceta.png)|![Boceto Galletas Foro](img/BocetoUI-GalletasForo.png)|
+
+# Validación y Verificación
+
+## Validación
 En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
 Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
 
-### Verificacióon de requerimientos
-| **Requerimientos**                                 | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 |
-|----------------------------------------------------|-----|-----|-----|-----|-----|-----|
-| **Correctitud**                                    |     |     |     |     |     |     |
-| ¿Es viable?                                        | SI  | SI  | SI  | SI  | SI  | SI  |
-| ¿Están  correctamente priorizados?                 | SI  | SI  | SI  | SI  | SI  | SI  |
-| ¿Están los usuarios identificados?                 | SI  | SI  | SI  | SI  | SI  | SI  |
-| ¿No hay conflictos con otros  requerimientos?      | SI  | SI  | SI  | SI  | SI  | SI  |
-| ¿No incluye aspectos de diseño o  implementación?  | SI  | SI  | SI  | SI  | SI  | SI  |
-| ¿Esta dentro del alcance del problema a  resolver? | SI  | SI  | SI  | SI  | SI  | SI  |
-| **Verificabilidad y  no ambigüedad**               |     |     |     |     |     |     |
-| ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | NO  |
-| ¿Es verificable?                                   | SI  | SI  | SI  | SI  | SI  | SI  |
+## Verificacióon de requerimientos
+| **Requerimientos**                                 | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 |
+|----------------------------------------------------|-----|-----|-----|-----|-----|-----|-----|
+| **Correctitud**                                    |     |     |     |     |     |     |     |
+| ¿Es viable?                                        | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Están  correctamente priorizados?                 | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Están los usuarios identificados?                 | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿No hay conflictos con otros  requerimientos?      | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿No incluye aspectos de diseño o  implementación?  | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Esta dentro del alcance del problema a  resolver? | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
+| **Verificabilidad y  no ambigüedad**               |     |     |     |     |     |     |     |
+| ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | NO  | SI  |
+| ¿Es verificable?                                   | SI  | SI  | SI  | SI  | SI  | SI  | SI  |
 
-### Verificación de casos de uso
-| **Casos de Uso**                                       | Caso 1 | Caso 2 | Caso 3 | Caso 4 | Caso 5 |
-|--------------------------------------------------------|--------|--------|--------|--------|--------|
-| ¿Cumple un único objetivo?                             | SI     | SI     | SI     | SI     | SI     |
-| ¿Queda claro quiénes  son los actores?                 | SI     | SI     | SI     | SI     | SI     |
-| ¿Existe una secuencia  lógica de los pasos?            | SI     | SI     | SI     | SI     | SI     |
-| ¿Está libre de detalles  de diseño e implementaciones? | SI     | SI     | SI     | SI     | SI     |
-| ¿Se documentaron todos  los cursos alternativos?       | SI     | NO     | NO     | SI     | SI     |
-## Reflexión
+## Verificación de casos de uso
+| **Casos de Uso**                                       | Caso 1 | Caso 2 | Caso 3 | Caso 4 | Caso 5 | Caso 6 |
+|--------------------------------------------------------|--------|--------|--------|--------|--------|--------|
+| ¿Cumple un único objetivo?                             | SI     | SI     | SI     | SI     | SI     | SI     |
+| ¿Queda claro quiénes  son los actores?                 | SI     | SI     | SI     | SI     | SI     | SI     |
+| ¿Existe una secuencia  lógica de los pasos?            | SI     | SI     | SI     | SI     | SI     | SI     |
+| ¿Está libre de detalles  de diseño e implementaciones? | SI     | SI     | SI     | SI     | SI     | SI     |
+| ¿Se documentaron todos  los cursos alternativos?       | SI     | NO     | NO     | SI     | SI     | NO     |
+# Reflexión
 
-### Detalle del trabajo indivudual.
+## Detalle del trabajo indivudual.
 
 
 * **Agustín**: 
