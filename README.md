@@ -108,7 +108,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 * Recomendación de locales que vendan productos aptos para celíacos
 
-# Categorización de Usuarios: User Personas
+# Categorizaciòn de Usuarios: User Personas
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
@@ -223,7 +223,7 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RNF 4 : Responsive
 **Descripción :** El sistema deberá ser accesible desde dispositivos móviles y computadoras.
 
-**Prioridad :** MEdia
+**Prioridad :** Media
 
 
 
