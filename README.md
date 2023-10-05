@@ -37,6 +37,11 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
     * Se utiliza para enviar los cambios confirmados en el repositorio local de Git al repositorio remoto.
 * git branch "nombre de la rama"
     * Crea una rama nueva con el nombre que le pongamos.
+
+    En nuestro caso para realizar la parte de documentación del proyecto realizamos una rama llamada documentación.
+
+    `` git branch documentacion ``
+
 * git branch
     * Muestra una lista de todas las ramas en el repositorio local y resalta la rama actual.
 * git checkout
@@ -169,36 +174,35 @@ Algunos puntos que se definieron fueron los siguientes:
 ### RF 2: Filtrar por comida del día
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas según el momento del día
+**Descripcion :** El usuario podrá filtrar las recetas según la comida del día.
 
 **Prioridad :** Media
 
 ### RF 3: Ingreso a la Aplicacion
 **Actor :** Usuario
 
-**Descripcion :** Al ingresar a la aplicacion deberá mostrar sugerencias de recetas
+**Descripcion :** Al ingresar a la aplicacion  mostrará sugerencias de recetas.
 
 **Prioridad :** Media
-
 
 ### RF 4: Filtrar por Dificultad
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas segun la dificultad de la misma
+**Descripcion :** El usuario podrá filtrar las recetas según la dificultad de la misma.
 
 **Prioridad :** Alta
 
 ### RF 5: Filtrar por Tiempo Estimado
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá filtrar las recetas según el tiempo estimado de la misma
+**Descripcion :** El usuario podrá filtrar las recetas según el tiempo estimado de la misma.
 
 **Prioridad :** Alta
 
 ### RF 6: Foro 
 **Actor :** Usuario
 
-**Descripcion :** El usuario podrá interactuar e intercambiar ideas sobre las recetas
+**Descripcion :** El usuario podrá interactuar e intercambiar ideas con otros usarios.
 
 **Prioridad :** Media
 
@@ -367,7 +371,7 @@ Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos
 | ¿No incluye aspectos de diseño o  implementación?  | SI  | SI  | SI  | SI  | SI  | SI  |
 | ¿Esta dentro del alcance del problema a  resolver? | SI  | SI  | SI  | SI  | SI  | SI  |
 | **Verificabilidad y  no ambigüedad**               |     |     |     |     |     |     |
-| ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | SI  |
+| ¿Es preciso y no  ambigüo?                         | SI  | SI  | SI  | SI  | SI  | NO  |
 | ¿Es verificable?                                   | SI  | SI  | SI  | SI  | SI  | SI  |
 
 ### VERIFICACIÓN DE CASOS DE USO
