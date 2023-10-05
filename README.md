@@ -226,7 +226,7 @@ Usuario
 ### Referencia a RF:
 RF1
 ### Imagenes:
-Imagen 1 y 2
+Imagen 1 y 3
 ### Pre condicion:
 No hay
 ### Pos condicion:
@@ -237,6 +237,11 @@ agrega a la lista de favoritos el plato elegido
 | 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
 | 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
 |4. El usuario aprieta la estrella de una receta que no tenga la estrella dorada|5. La estrella se vuelve dorada significando que se agrego correctamente a la lista de favoritos|
+
+|2 |4 y 5|
+|-|-|
+| ![Boceto Menu](img/BocetoUI-Menu.png)| ![Boceto Desayuno](img/BocetoUI-Desayuno.png) |
+
 ### Curso Alternativo
 * **4.1 :** Usuario aprienta una estralla ya dorada
 * **4.2 :** Sistema vuelve la estrella a su color original
@@ -259,6 +264,10 @@ La aplicacion muestra las recetas que son para ese alimento del dia
 | 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con botones para todos los alimentos del dia |
 | 3. El usuario aprieta el boton que dice desayuno | 4. El sistema muestra todas las recetas que estan asociadas con el desayuno|
 
+|2 |4|
+|-|-|
+| ![Boceto Menu](img/BocetoUI-Menu.png)| ![Boceto Desayuno](img/BocetoUI-Desayuno.png) |
+
 ## Caso de uso 3
 ### Actor:
 Usuario
@@ -273,6 +282,10 @@ La aplicacion muestra sugeridos
 | **Accion de los actores:**| **Respuesta del sistema:**|
 |-|-|
 | 1. El usuario abre la aplicacion| 2. El sistema muestra el menu de inicio con platos sugeridos |
+
+|2|
+|-|
+| ![Boceto Menu](img/BocetoUI-Menu.png)|
 
 ## Caso de uso 4
 ### Actor:
@@ -289,6 +302,13 @@ La aplicacion permite filtrar por dificultad y por tiempo estimado de preparacio
 |-|-|
 | 1. El usuario aprieta el icono de filtros| 2. El sistema muestra una ventana con opciones para filtrar |
 |3. El usuario elige la dificultad y rango de tiempo que quiere y aprieta en aplicar filtros|4. La lista seleccionada anteriormente se filtra entre los platos que cumplen los requerimientos pedidos|
+
+|1 |2|
+|-|-|
+|![Boceto Desayuno](img/BocetoUI-Desayuno.png) |![Boceto Filtro](img/BocetoUI-Filtro.png) |
+|4||
+|![Boceto Filtro Desayuno](img/BocetoUI-DesayunoFiltrado.png)||
+
 ## Curso Alternativo
 * **3.1 :** Usuario selecciona una dificultad o rango de tiempo para el cual no existen recetas
 * **3.2 :** Sistema muestra lista vacia
@@ -309,12 +329,14 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 | 1. El usuario aprieta en el boton de foro| 2. El sistema muestra una un formulario a llenar|
 |3. El usuario completa los campos | 4. Sistema valida los campos|
 |5. Usuario realiza el comentario | 6. Sistema publica el comentario|
+
+|1 |2|
+|-|-|
+|![Boceto Galletas Info](img/BocetoUI-GalletasInfo.png) |![Boceto Foro Galletas](img/BocetoUI-GalletasForo.png) |
+
 ## Curso Alternativo
 * **3.1 :** Usuario no llena todos los campos
-* **3.2 :** Sistema muestra error
-* **5.1 :** Usuario sin conexion a internet
-* **5.2 :** Sistema no publica el comentario
-
+* **3.2 :** Sistema muestra error avisandole al usuario que tiene que rellenar todos los datos
 
 # BOCETOS DE LA INTERFAZ GRAFICA
 ## Imagen 1
