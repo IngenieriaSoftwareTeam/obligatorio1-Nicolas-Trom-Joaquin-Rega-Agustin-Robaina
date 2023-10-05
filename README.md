@@ -332,7 +332,7 @@ La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobr
 ![Boceto Galletas Receta](img\BocetoUI-GalletasReceta.png)
 ## Imagen 8
 ### Seccion foro de las galletas
-![Boceto Desayuno](img\BocetoUI-GalletasForo.png)
+![Boceto Desayuno](img/BocetoUI-GalletasForo.png)
 
 ## VALIDACIÓN Y VERIFICACIÓN
 
