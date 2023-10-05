@@ -14,6 +14,13 @@ A través de este proyecto buscamos de alguna manera simplificar la vida de las 
 La aplicación no va a resolver directamente estos problemas económicos, pero apuntamos a simplificar el proceso de descubrir nuevos y variados menús para cada comida del día. También buscamos crear una especie de comunidad de celiacos donde cada uno pueda dar su opinión sobre cada plato o sugerir alternativas.
 
 
+# Glosario
+
+***Celiquía :***  enfermedad digestiva que daña el intestino delgado y altera la absorción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. Los pacientes con enfermedad celíaca no toleran una proteína llamada gluten
+
+***Requerimiento Funcional :*** descripción de cómo se debe comportar el sistema o de una propiedad o atributo del sistema.
+
+***Requerimiento NO Funcional :*** característica del sistema que no se desarrollará ya que se asume o está disponible. Por ejemplo, si una app necesita el uso de WiFi no tendremos que desarollar WiFi también al crear la app, sino que se asume resuelto.
 
   # Repositorio GIT
   
@@ -64,6 +71,8 @@ La aplicación no va a resolver directamente estos problemas económicos, pero a
 
 * Realizar pruebas antes de realizar el commit para asegurarse de que el código funcione correctamente.
 * Escribir mensajes de commits claros que describan lo realizado en el código.
+* En nuestro caso como buena práctica  decidimos utilizar la convención "Conventional Commits" para faciliar la legibilidad y    entendimiento de los distintos commits realizados. 
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 # Elicitación
 
