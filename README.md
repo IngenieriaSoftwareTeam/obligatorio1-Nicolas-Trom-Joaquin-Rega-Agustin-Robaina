@@ -123,12 +123,15 @@ Algunos puntos que se definieron fueron los siguientes:
 * Recomendación de locales que vendan productos aptos para celíacos
 
 # Categorización de Usuarios: User Personas
+ 
+Utilizamos los User Personas para poder identificar a los usuarios potenciales de nuestra aplicación y así poder definir las necesidades de los mismos. Para ello, realizamos 3 User Personas con perfiles distintos para así poder tener una perspectiva más amplia de los usuarios potenciales.
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
 ![User Person Bettina](img/UserPersonBettina(1).jpg)
 
 ![User Person Nidia](img/UserPersonNidia(1).jpg)
+
 # Modelo Conceptual del Problema
 
 ![Modelo conceptual del problema](img/MCP.jpg)
@@ -138,9 +141,10 @@ Algunos puntos que se definieron fueron los siguientes:
 ## Historias de Usuario 1
 
 ### Titulo: Filtrar por Dificultad
-* **Para** saber que tan dificl puede ser la receta
+
 * **Como** usuario
 * **Quiero** poder filtrar recetas por dificultad
+* **Para** saber que tan dificl puede ser la receta
 
 ### Criterios de Aceptación:
 * El usuario debera estar en una de las pestañas de las comidas del dia 
