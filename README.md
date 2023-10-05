@@ -122,7 +122,7 @@ Algunos puntos que se definieron fueron los siguientes:
 
 * Recomendación de locales que vendan productos aptos para celíacos
 
-# Categorizaciòn de Usuarios: User Personas
+# Categorización de Usuarios: User Personas
 
 ![User Person Andres](img/UserPersonAndres(1).jpg)
 
@@ -354,7 +354,7 @@ El usuario esta en una seccion de mas info sobre un plato
 La aplicacion permite mostrar el foro en donde los usuarios pueden comentar sobre cada receta
 | **Accion de los actores:**| **Respuesta del sistema:**|
 |-|-|
-| 1. El usuario aprieta en el boton de foro| 2. El sistema muestra una un formulario a llenar|
+| 1. El usuario cliquea en el boton de foro| 2. El sistema muestra una un formulario a llenar|
 |3. El usuario completa los campos | 4. Sistema valida los campos|
 |5. Usuario realiza el comentario | 6. Sistema publica el comentario|
 
@@ -400,9 +400,9 @@ La aplicacion le muestra al usuario una receta detallada sobre el plato elegido
 
 # Validación y Verificación
 
-## Validación
-En lo que respecta a la validación de este proyecto, el mismo fue presentado a distintos grupos de terceros para su validación. Realizamos varias preguntas para obtener una devolución sobre su funcionamiento. 
-Los usuarios que probaron el prototipo quedaron conformes con el mismo, pero nos dieron algunas sugerencias para mejorar la experiencia de usuario. Todas estas sugerencias seran aplicadas en un futuro cercano. 
+## Validación del Prototipo
+El prototipo fue presentado a Cecilia Rega, una persona celiaca, para que lo probara y nos diera su opinión. Cecilia quedó muy conforme con el prototipo, le gusto mucho la idea de poder tener una aplicación que le permita encontrar recetas nuevas y variadas. Hizo hincapie en que le gusto que la aplicacion sea "sencilla". Nos recomendo cambiar la paleta de colores y que las recetas tengan distintas colores segun la dificultad de la misma. Tambien nos recomendo que la aplicacion tenga un buscador para poder buscar recetas especificas.
+Todas estas sugerencias las tendremos en cuenta a la hora de realizar el producto final. 
 
 ## Verificacióon de requerimientos
 | **Requerimientos**                                 | RF1 | RF2 | RF3 | RF4 | RF5 | RF6 | RF7 |
@@ -441,6 +441,10 @@ El trabajo fué realizado de manera conjunta entre los diversos integrantes del 
 
 
 * **Nicolás**: 
+
+Durante este trabajo, aprendí que la comunicación y la colaboración son clave para el éxito de un proyecto de ingeniería de software. Trabajar en equipo me permitió ver diferentes perspectivas y enfoques, lo que enriqueció nuestro trabajo y nos ayudó a tomar decisiones.
+
+También aprendí sobre la importancia de la planificación cuidadosa y la selección de herramientas adecuadas para maximizar la eficiencia del equipo.
 
 Los avances del proyecto fueron realizados en conjunto, cada uno de los integrantes del grupo aporto ideas y conocimientos para el desarrollo del mismo. En mi caso particular me encargue de la parte del versionado, donde profundizamos en las buenas practicas. Además de realizar los User Pesonas y las Historias de Usuarios. Por último aporte ideas para los requerimientos funcionales y no funcionales, asi como tambien para la verificación y validación de los mismos.
 
