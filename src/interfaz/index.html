@@ -57,17 +57,56 @@
 </div>
 <div id="divDesayuno">
     <div class="text-center">
-      <h1 class = "display-2">Desayuno</h1>
+      <h1 class = "display-1">Desayuno</h1>
+      <form>
+        <fieldset>
+          <div class="d-flex flex-column">
+            <div class="d-flex justify-content-around"  >
+              <div class="form-group row">
+                <label for="OrdenarListaDes" class="col-sm-2 col-form-label col-form-label-lg">Ordenar:</label>
+                <div class="col-sm-10" style="width: 300px;">
+                  <select id="OrdenarListaDes" class="form-control form-control-lg" style="margin-left: 20px;">
+                    <option value="MayAMenDif" selected="true">Mayor a menor dificultad</option>
+                    <option value="MenAMayDif">Menor a mayor dificultad</option>
+                    <option value="MayAMenTie">Mayor a menor tiempo</option>
+                    <option value="MenAMayTie">Menor a mayor tiempo</option>
+                  </select>
+                </div>
+            </div>
+            <div>
+              <h3 class="display-3">Filtrar</h3>
+            </div>
+            <div> 
+              <h4 class="display-4">Dificultad: </h4>
+            </div>
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DifPoca" value="Poca" selected>
+                <label class="form-check-label" for="DifPoca">Poca</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DifMedia" value="option2" selected>
+                <label class="form-check-label" for="DifMedia">Media</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="DifAlta" value="option3" selected>
+                <label class="form-check-label" for="DifAlta">Alta</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline-success" style="margin-top:10px; ">Actualizar</button>
+          </div>
+        </fieldset>
+      </form>
       <ul class="list-group">
         <li class="list-group">
           <div>
             <ul class="list-group list-group-horizontal">
-              <li class="list-group-item border-0" style="width:10%;">
-                <img src = "img/granola.jpg" class="rounded mx-auto d-block" style="max-height: 175px;" align="left"></img>
+              <li class="list-group-item border-0" style="width:15%;">
+                <img src = "img/granola.jpg" class="rounded mx-auto d-block" style="max-height: 160px;"></img>
               </li>
-              <li class="list-group-item border-0" style="width: 90%;">
+              <li class="list-group-item border-0" style="width: 85%;">
                 <div>
-                  <div style="background-color: #8AE4B2;" class="rounded" style="height: 175px;">
+                  <div style="background-color: #8AE4B2;" class="rounded" style="height: 160px;">
                     <h2>Mix de Granola</h2>
                     <p>Dificultad: Poca</p>
                     <p>Tiempo: 5 min</p>
@@ -79,15 +118,6 @@
           </div>
         </li>
         </ul>
-      <fieldset>
-        <legend>Filtar<legend>
-        <label>
-          <input type = "radio" name="filtrar" value ="opcion1"> Filtrar por dificultad
-        <label>
-        <label>
-            <input type = "radio" name="filtrar" value ="opcion2"> Filtar por tiempo estimado
-        <label>
-      </fieldset>
   </div>
 </div>
 <div id="divAlmuerzo">
