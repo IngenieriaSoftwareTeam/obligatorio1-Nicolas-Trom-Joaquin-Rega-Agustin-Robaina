@@ -74,5 +74,10 @@ export class plato{
     setCaloriaTotal(caloriaTotal){
         this.#caloriaTotal = caloriaTotal
     }
+
+    toString(){
+        //return 'Plato : ${this.#nombre}' - Descripcion: ${this.} '
+        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Precio: ${this.#tiempoEstimado}`
+    }
     
 }
