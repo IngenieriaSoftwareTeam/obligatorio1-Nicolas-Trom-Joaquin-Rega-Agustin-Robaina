@@ -8,8 +8,9 @@ export class plato{
     #tipo
     #precioTotal
     #caloriaTotal
+    #imgen
 
-    constructor(nombre, dificultad, tiempoEstimado, ingredientes, favorito, instrucciones, tipo, precioTotal, caloriaTotal){
+    constructor(nombre, dificultad, tiempoEstimado, ingredientes, favorito, instrucciones, tipo, precioTotal, caloriaTotal,imgen){
         this.#nombre = nombre
         this.#dificultad = dificultad
         this.#tiempoEstimado = tiempoEstimado
@@ -19,6 +20,7 @@ export class plato{
         this.#tipo = tipo
         this.#precioTotal = precioTotal
         this.#caloriaTotal = caloriaTotal
+        this.#imgen = imgen
     }
     getNombre(){
         return this.#nombre
@@ -74,6 +76,12 @@ export class plato{
     setCaloriaTotal(caloriaTotal){
         this.#caloriaTotal = caloriaTotal
     }
+    getImagen(){
+        return this.#imgen
+    }
+    setImagen(imgen){
+        this.#imgen = imgen
+    }
 
    toString(){
         return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Precio: ${this.#tiempoEstimado}`
@@ -81,5 +89,6 @@ export class plato{
     nombrePlato(){
         return `Nombre: ${this.#nombre} `
     }
+
     
 }
