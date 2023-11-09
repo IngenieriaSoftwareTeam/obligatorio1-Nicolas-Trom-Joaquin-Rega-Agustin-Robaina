@@ -35,7 +35,7 @@ function displayDesayuno(){
     document.getElementById("divMerienda").style.display="none"
     document.getElementById("divCena").style.display="none"
     document.getElementById("divPostre").style.display="none"
-    listaPlatosXdia();
+    
     
 }
 function displayAlmuerzo(){
@@ -46,6 +46,7 @@ function displayAlmuerzo(){
     document.getElementById("divMerienda").style.display="none"
     document.getElementById("divCena").style.display="none"
     document.getElementById("divPostre").style.display="none"
+    
 }
 function displayMerienda(){
     document.getElementById("divMenu").style.display="none"
@@ -55,6 +56,7 @@ function displayMerienda(){
     document.getElementById("divMerienda").style.display="block"
     document.getElementById("divCena").style.display="none"
     document.getElementById("divPostre").style.display="none"
+    
 }
 function displayCena(){
     document.getElementById("divMenu").style.display="none"
@@ -64,6 +66,7 @@ function displayCena(){
     document.getElementById("divMerienda").style.display="none"
     document.getElementById("divCena").style.display="block"
     document.getElementById("divPostre").style.display="none"
+    
 }
 function displayPostre(){
     document.getElementById("divMenu").style.display="none"
@@ -73,25 +76,43 @@ function displayPostre(){
     document.getElementById("divMerienda").style.display="none"
     document.getElementById("divCena").style.display="none"
     document.getElementById("divPostre").style.display="block"
+    
 }
 
 let plato1 = new plato("Galletas Chocolate", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050);
  
 let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050);
+
+let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Cena", 100, 1050);
+ 
+let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Postre", 100, 1050);
  
  
 function listaPlatosXdia(){
-    console.log(plato1.toString());
-    let platos = [plato1, plato2];
-    let listaPlatosElement = document.getElementById("listaPlatos");
- 
-    // Clear the list
-    listaPlatosElement.innerHTML = '';
- 
-    // Add each plato to the list
+    
+    let platos = [plato1, plato2,plato3,plato4];
+    let tipoALista = {
+        'Desayuno': 'listaPlatos',
+        'Cena': 'listaPlatosCena',
+        'Merienda': 'listaPlatosMerienda',
+        'Almuerzo': 'listaPlatosAlmuerzo',
+        'Postre': 'listaPlatosPostre',
+        
+    };
+    
+
     platos.forEach(plato => {
-        let li = document.createElement("li");
-        li.textContent = plato.toString(); // Add more properties if needed
-        listaPlatosElement.appendChild(li);
+        let tipo = plato.getTipo();
+        console.log(tipo);
+        if (tipo in tipoALista) {
+            let listaPlatosElement = document.getElementById(tipoALista[tipo]);
+            let li = document.createElement("li");
+            li.textContent = plato.nombrePlato(); 
+            listaPlatosElement.appendChild(li);
+        }
     });
+   
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+    listaPlatosXdia();
+});
