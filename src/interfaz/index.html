@@ -57,46 +57,68 @@
 </div>
 <div id="divDesayuno">
     <div class="text-center">
-      <h1 class = "display-1">Desayuno</h1>
-      <form>
-        <fieldset>
-          <div class="d-flex flex-column">
-            <div class="d-flex justify-content-around"  >
-              <div class="form-group row">
-                <label for="OrdenarListaDes" class="col-sm-2 col-form-label col-form-label-lg">Ordenar:</label>
-                <div class="col-sm-10" style="width: 300px;">
-                  <select id="OrdenarListaDes" class="form-control form-control-lg" style="margin-left: 20px;">
-                    <option value="MayAMenDif" selected="true">Mayor a menor dificultad</option>
-                    <option value="MenAMayDif">Menor a mayor dificultad</option>
-                    <option value="MayAMenTie">Mayor a menor tiempo</option>
-                    <option value="MenAMayTie">Menor a mayor tiempo</option>
-                  </select>
+      <h1 class = "display-2" style="margin-bottom: 50px">Desayuno</h1>
+      <div class="d-flex justify-content-center">
+        <form style="background-color: #14C864; width : 600px;" class="rounded">
+          <h1 class="display-6">Filtros</h1>
+          <fieldset>
+            <div class="d-flex flex-column">
+              <div class="d-flex justify-content-around"  >
+                <div class="form-group row">
+                  <label for="OrdenarListaDes" class="col-sm-2 col-form-label col-form-label-lg">Ordenar:</label>
+                  <div class="col-sm-10">
+                    <select id="OrdenarListaDes" class="form-control form-control-lg" style="margin-left: 20px;">
+                      <option value="MayAMenDif" selected="true">Mayor a menor dificultad</option>
+                      <option value="MenAMayDif">Menor a mayor dificultad</option>
+                      <option value="MayAMenTie">Mayor a menor tiempo</option>
+                      <option value="MenAMayTie">Menor a mayor tiempo</option>
+                    </select>
+                  </div>
+              </div>
+          </fieldset>
+          <fieldset>
+            <div class="d-flex justify-content-center"> 
+              <label style="font-size: larger; margin-top: 15px; margin-right: 20px;" >Dificultad:</label>
+              <div style="margin-top: 20px;">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifPoca" value="Poca" checked>
+                  <label class="form-check-label" for="DifPoca">Poca</label>
                 </div>
-            </div>
-            <div>
-              <h3 class="display-3">Filtrar</h3>
-            </div>
-            <div> 
-              <h4 class="display-4">Dificultad: </h4>
-            </div>
-            <div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="DifPoca" value="Poca" selected>
-                <label class="form-check-label" for="DifPoca">Poca</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="DifMedia" value="option2" selected>
-                <label class="form-check-label" for="DifMedia">Media</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="DifAlta" value="option3" selected>
-                <label class="form-check-label" for="DifAlta">Alta</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifMedia" value="option2" checked>
+                  <label class="form-check-label" for="DifMedia">Media</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifAlta" value="option3" checked>
+                  <label class="form-check-label" for="DifAlta">Alta</label>
+                </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-outline-success" style="margin-top:10px; ">Actualizar</button>
+            <fieldset>
+              <div class="d-flex justify-content-center"> 
+                <label style="font-size: larger; margin-top: 15px; margin-right: 20px;" >Tiempo:</label>
+                <div style="margin-top: 20px;">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="FiltroTiempoMen" value="Menor" checked>
+                    <label class="form-check-label" for="FiltroTiempoMen">Menor</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="FiltroTiempoMay" value="Mayor" checked>
+                    <label class="form-check-label" for="FiltroTiempoMay">Mayor</label>
+                  </div>
+                </div>
+                <div style="margin-top: 24px;">
+                  <input type="range" value="60" min="0" max="120" oninput="this.nextElementSibling.value = this.value">
+                  <output>60</output>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success" style="margin-top:10px; margin-bottom: 10px; ">Actualizar</button>
+            </div>
+            </fieldset>
           </div>
-        </fieldset>
-      </form>
+          </fieldset>
+        </form>
+      </div>
       <ul class="list-group" id = "listaPlatos">
         <li class="list-group">
           
