@@ -93,7 +93,7 @@ function listaPlatosXdia(){
     
     let platos = [plato1, plato2,plato3,plato4];
     let tipoALista = {
-        'Desayuno': 'listaPlatos',
+        'Desayuno': 'divDesayuno',
         'Cena': 'listaPlatosCena',
         'Merienda': 'listaPlatosMerienda',
         'Almuerzo': 'listaPlatosAlmuerzo',
@@ -106,6 +106,7 @@ function listaPlatosXdia(){
         let tipo = plato.getTipo();
         if (tipo in tipoALista) {
             let listaPlatosElement = document.getElementById(tipoALista[tipo]);
+            
             let li = document.createElement("li");
             let ul = document.createElement("ul");
             ul.className = "list-group list-group-horizontal";
