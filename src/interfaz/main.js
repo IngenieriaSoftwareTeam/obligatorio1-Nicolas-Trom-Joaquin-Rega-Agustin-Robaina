@@ -1,5 +1,50 @@
 import {plato} from "../dominio/plato.js"
 import { listaPlatos } from "../dominio/listaPlatos.js";
+import { ingredientes } from "../dominio/ingredientes.js";
+
+
+let platos = new listaPlatos();
+
+//Lista ingredientes
+let ingrediente1 = new ingredientes("Chocolate", 100, 1000);
+let ingrediente2 = new ingredientes("Manteca", 100, 1000);
+let ingrediente3 = new ingredientes("Azúcar ", 100, 1000);
+let ingrediente4 = new ingredientes("Huevos", 100, 1000);
+let ingrediente5 = new ingredientes("Harina sin glúten", 100, 1000);
+let ingrediente6 = new ingredientes("Levadura en polvo", 100, 1000);
+let ingrediente7 = new ingredientes("Vainilla", 100, 1000);
+let ingrediente8 = new ingredientes("Sal", 100, 1000);
+let ingrediente9 = new ingredientes("Pan sin gluten", 100, 1000);
+let ingrediente10 = new ingredientes("Palta", 100, 1000);
+let ingrediente11 = new ingredientes("Aceite", 100, 1000);
+let ingrediente12 = new ingredientes("Yogurt", 100, 1000);
+
+/*
+const arroz = new Ingrediente('Arroz', 120, 50);
+const maizSinGluten = new Ingrediente('Maíz sin gluten', 90, 45);
+const trigo = new Ingrediente('Trigo', 150, 60);
+const quinoaSinGluten = new Ingrediente('Quinoa sin gluten', 110, 55);
+const patata = new Ingrediente('Patata', 80, 40);
+const pollo = new Ingrediente('Pollo', 150, 120);
+const queso = new Ingrediente('Queso', 80, 50);
+const palta = new Ingrediente('Palta', 50, 30);
+const manzana = new Ingrediente('Manzana', 60, 10);
+const huevo = new Ingrediente('Huevo', 70, 15);*/
+
+//Lista platos
+let plato1 = new plato("granola", "Alta", 1 , [ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg"); 
+let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 ,[ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
+let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , [ ], false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
+let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , [ ], false, "", "Postre", 100, 1050,"../interfaz/img/granola.jpg");
+
+plato1.addIngrediente(ingrediente1);
+plato1.addIngrediente(ingrediente2);
+plato2.addIngrediente(ingrediente3);
+
+platos.addComida(plato1);
+platos.addComida(plato2);
+platos.addComida(plato3);
+platos.addComida(plato4);
 
 document.getElementById("btnMen").addEventListener("click", displayMenu);
 document.getElementById("btnFav").addEventListener("click", displayFavoritos);
@@ -11,7 +56,7 @@ document.getElementById("btnPos").addEventListener("click", displayPostre);
 
 function displayListaPlatos(){
     document.getElementById("listaPlatos").innerHTML="";
-    platos.forEach(plato => {
+    platos.getComidas().forEach(plato => {
         if(plato.getTipo()==document.getElementById("h1titulo").innerHTML){
             
             let li = document.createElement("li");
@@ -108,17 +153,6 @@ function displayPostre(){
     displayListaPlatos();
     
 }
-
-let plato1 = new plato("granola", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
- 
-let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
-
-let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
- 
-let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Merienda", 100, 1050,"../interfaz/img/granola.jpg");
- 
-let platos = [plato1, plato2,plato3,plato4];
-
 
 document.addEventListener('DOMContentLoaded', (event) => {
     displayMenu();

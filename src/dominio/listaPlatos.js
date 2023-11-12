@@ -5,9 +5,9 @@ export class listaPlatos{
         this.#platos = [];
     }
 
-    addComida(comida){
+    addComida(plato){
         let comidList = this.#platos.some(c => c.getNombre() == plato.getNombre())
-        if(!comidList && plato.isValid()){
+        if(!comidList ){
             this.#platos.push(plato);
         }else{
             throw new Error('La comida ya existe');

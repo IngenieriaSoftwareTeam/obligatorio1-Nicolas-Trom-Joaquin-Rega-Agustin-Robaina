@@ -37,8 +37,8 @@ export class plato{
     getTiempoEstimado(){
         return this.#tiempoEstimado
     }
-    setTiempoEstimado(tiempoEstimado){
-        this.#tiempoEstimado = tiempoEstimado
+    addIngrediente(ingrediente){
+        this.#ingredientes.push(ingrediente)
     }
     getIngredientes(){
         return this.#ingredientes
@@ -84,11 +84,16 @@ export class plato{
     }
 
    toString(){
-        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Precio: ${this.#tiempoEstimado}`
+        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Precio: ${this.#tiempoEstimado} - Ingrediente: ${this.#ingredientes}`
     }
     nombrePlato(){
         return `Nombre: ${this.#nombre} `
     }
-
-    
+    nombresIngredientes(){
+        let nombres = []
+        this.#ingredientes.forEach(ingrediente => {
+            nombres.push(ingrediente.getNombre())
+        })
+        return nombres
+    }
 }
