@@ -120,5 +120,5 @@ let platos = [plato1, plato2,plato3,plato4];
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    displaymain();
+    displayMenu();
 });
