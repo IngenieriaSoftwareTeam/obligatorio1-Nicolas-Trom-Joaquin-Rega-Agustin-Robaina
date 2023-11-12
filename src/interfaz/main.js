@@ -29,10 +29,10 @@ function displayListaPlatos(){
         platos.sort(function(a, b){return difANum(a.getDificultad()) - difANum(b.getDificultad())});
     }
     if(document.getElementById("OrdenarLista").value=="MayAMenTie"){
-        platos.sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
+        platos.sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
     }
     if(document.getElementById("OrdenarLista").value=="MenAMayTie"){
-        platos.sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
+        platos.sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
     }
     platos.forEach(plato => {
         if(plato.getTipo()==document.getElementById("h1titulo").innerHTML){
