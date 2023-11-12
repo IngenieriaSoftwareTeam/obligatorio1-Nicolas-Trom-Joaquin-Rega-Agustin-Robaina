@@ -40,16 +40,16 @@ function displayListaPlatos(){
             if((plato.getDificultad()=="Poca" && document.getElementById("DifPoca").checked)||(plato.getDificultad()=="Media" && document.getElementById("DifMedia").checked)||(plato.getDificultad()=="Alta" && document.getElementById("DifAlta").checked)){
                 if((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado()>=document.getElementById("rangeTiempo").value)||(document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado()<=document.getElementById("rangeTiempo").value)){
                     let li = document.createElement("li");
+                    li.className = "text-center"
                     let ul = document.createElement("ul");
                     ul.className = "list-group list-group-horizontal";
                     let img = document.createElement("img");
                     img.src = plato.getImagen();
-                    img.width = 200;  
-                    img.height = 200; 
+                    img.style="max-height: 175px;"
+                    img.className="rounded mx-auto d-block";
                 
                     let span = document.createElement("span");  
                     span.textContent = plato.toString(); 
-                    span.style = "margin-top: 20px";
                     let h3 = document.createElement("h3");
                     h3.textContent = plato.nombrePlato();
                     let button = document.createElement("button");
@@ -58,13 +58,17 @@ function displayListaPlatos(){
                     li.appendChild(ul);
                     let li2 = document.createElement("li");
                     li2.appendChild(img);
+                    li2.style="width:10%;";
                     ul.appendChild(li2);
+                    li2.className="list-group-item border-0";
                     let li3 = document.createElement("li");
                     let div = document.createElement("div");
                     let ul2 = document.createElement("ul");
                     ul2.style = "list-style-type: none";
                     ul.appendChild(li3);  
                     li3.appendChild(div);
+                    li3.className= "list-group-item border-0"
+                    li3.style="width: 90%;"
                     div.appendChild(ul2);
                     let liH3 = document.createElement("li");
                     ul2.appendChild(liH3);
@@ -73,7 +77,7 @@ function displayListaPlatos(){
                     let liButton = document.createElement("li");
                     ul2.appendChild(liButton);
                     div.className = "rounded";
-                    div.style = "background-color: #8AE4B2; height: 200px; width: 1000px";
+                    div.style = "background-color: #8AE4B2; height: 175px;";
                     liH3.appendChild(h3);
                     liSpan.appendChild(span);
                     liButton.appendChild(button);
