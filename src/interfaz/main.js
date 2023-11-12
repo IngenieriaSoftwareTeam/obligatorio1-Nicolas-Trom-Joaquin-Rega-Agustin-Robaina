@@ -79,15 +79,6 @@ function displayPostre(){
     document.getElementById("divPostre").style.display="block"
     
 }
-function obtenerInstrucciones() {
-    fetch('../interfaz/pasosRecetas.txt')
-        .then(response => response.text())
-        .then(data => {
-            const words = data.split(';');
-            words.forEach(word => console.log(word));
-        })
-        .catch(error => console.error('Error:', error));
-}
 
 let plato1 = new plato("granola", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
  
@@ -95,7 +86,7 @@ let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 , "50 gr. de chocolate,
 
 let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
  
-let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Postre", 100, 1050,"../interfaz/img/granola.jpg");
+let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Merienda", 100, 1050,"../interfaz/img/granola.jpg");
  
  
 function listaPlatosXdia(){
@@ -112,9 +103,7 @@ function listaPlatosXdia(){
     
 
     platos.forEach(plato => {
-        let tipo = plato.getTipo();
-        if (tipo in tipoALista) {
-            let listaPlatosElement = document.getElementById(tipoALista[tipo]);
+        if(plato.getTipo()==document.getElementById("h1titulo").innerHTML){
             
             let li = document.createElement("li");
             let ul = document.createElement("ul");
@@ -155,13 +144,73 @@ function listaPlatosXdia(){
             liSpan.appendChild(span);
             liButton.appendChild(button);
 
-            listaPlatosElement.appendChild(li);
+            document.getElementById("listaPlatos").appendChild(li);
         }
     });
-   
 }
+
+function displayMenu(){
+    document.getElementById("divMenu").style.display="block"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="none"
+}
+function displayFavoritos(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="block"
+    document.getElementById("divPlatos").style.display="none"
+    
+}
+function displayDesayuno(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Desayuno";
+    displayListaPlatos();
+    
+}
+function displayAlmuerzo(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Almuerzo";
+    displayListaPlatos();
+    
+}
+function displayMerienda(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Merienda";
+    displayListaPlatos();
+}
+function displayCena(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Cena";
+    displayListaPlatos();
+    
+}
+function displayPostre(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divFavoritos").style.display="none"
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Postre";
+    displayListaPlatos();
+    
+}
+
+let plato1 = new plato("granola", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
+ 
+let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
+
+let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
+ 
+let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Merienda", 100, 1050,"../interfaz/img/granola.jpg");
+ 
+let platos = [plato1, plato2,plato3,plato4];
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
     listaPlatosXdia();
-    obtenerInstrucciones();
 });
