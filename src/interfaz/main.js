@@ -1,4 +1,5 @@
 import {plato} from "../dominio/plato.js"
+import { listaPlatos } from "../dominio/listaPlatos.js";
 
 document.getElementById("btnMen").addEventListener("click", displayMenu);
 document.getElementById("btnFav").addEventListener("click", displayFavoritos);
