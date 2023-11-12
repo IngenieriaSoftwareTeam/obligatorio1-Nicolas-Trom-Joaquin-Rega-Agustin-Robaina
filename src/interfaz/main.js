@@ -69,18 +69,18 @@ function difANum(dif){
 function displayListaPlatos(){
     document.getElementById("listaPlatos").innerHTML="";
     if(document.getElementById("OrdenarLista").value=="MayAMenDif"){
-        platos.sort(function(a, b){return difANum(b.getDificultad()) - difANum(a.getDificultad())});
+        platos.getComidas().sort(function(a, b){return difANum(b.getDificultad()) - difANum(a.getDificultad())});
     }
     if(document.getElementById("OrdenarLista").value=="MenAMayDif"){
-        platos.sort(function(a, b){return difANum(a.getDificultad()) - difANum(b.getDificultad())});
+        platos.getComidas().sort(function(a, b){return difANum(a.getDificultad()) - difANum(b.getDificultad())});
     }
     if(document.getElementById("OrdenarLista").value=="MayAMenTie"){
-        platos.sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
+        platos.getComidas().sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
     }
     if(document.getElementById("OrdenarLista").value=="MenAMayTie"){
-        platos.sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
+        platos.getComidas().sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
     }
-    platos.forEach(plato => {
+    platos.getComidas().forEach(plato => {
         if(plato.getTipo()==document.getElementById("h1titulo").innerHTML){
             if((plato.getDificultad()=="Poca" && document.getElementById("DifPoca").checked)||(plato.getDificultad()=="Media" && document.getElementById("DifMedia").checked)||(plato.getDificultad()=="Alta" && document.getElementById("DifAlta").checked)){
                 if((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado()>=document.getElementById("rangeTiempo").value)||(document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado()<=document.getElementById("rangeTiempo").value)){
