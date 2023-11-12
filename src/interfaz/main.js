@@ -79,6 +79,15 @@ function displayPostre(){
     document.getElementById("divPostre").style.display="block"
     
 }
+function obtenerInstrucciones() {
+    fetch('../interfaz/pasosRecetas.txt')
+        .then(response => response.text())
+        .then(data => {
+            const words = data.split(';');
+            words.forEach(word => console.log(word));
+        })
+        .catch(error => console.error('Error:', error));
+}
 
 let plato1 = new plato("granola", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
  
@@ -86,7 +95,7 @@ let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 , "50 gr. de chocolate,
 
 let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
  
-let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Merienda", 100, 1050,"../interfaz/img/granola.jpg");
+let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , "50 gr. de chocolate,50 gr. Manteca,100 gr. de Azúcar glass,2 huevos,200 gr. de harina de trigo ,1 cc levadura en polvo ,1 cda. de Vainilla ,Sal", false, "", "Postre", 100, 1050,"../interfaz/img/granola.jpg");
  
  
 function listaPlatosXdia(){
@@ -154,4 +163,5 @@ function listaPlatosXdia(){
 
 document.addEventListener('DOMContentLoaded', (event) => {
     listaPlatosXdia();
+    obtenerInstrucciones();
 });
