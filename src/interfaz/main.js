@@ -132,18 +132,16 @@ function displayListaPlatos(){
 
 function displayMenu(){
     document.getElementById("divMenu").style.display="block"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="none"
 }
 function displayFavoritos(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="block"
-    document.getElementById("divPlatos").style.display="none"
-    
+    document.getElementById("divPlatos").style.display="block"
+    document.getElementById("h1titulo").innerHTML="Favoritos";
+    displayListaPlatos();
 }
 function displayDesayuno(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Desayuno";
     displayListaPlatos();
@@ -151,7 +149,6 @@ function displayDesayuno(){
 }
 function displayAlmuerzo(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Almuerzo";
     displayListaPlatos();
@@ -159,14 +156,12 @@ function displayAlmuerzo(){
 }
 function displayMerienda(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Merienda";
     displayListaPlatos();
 }
 function displayCena(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Cena";
     displayListaPlatos();
@@ -174,7 +169,6 @@ function displayCena(){
 }
 function displayPostre(){
     document.getElementById("divMenu").style.display="none"
-    document.getElementById("divFavoritos").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Postre";
     displayListaPlatos();
