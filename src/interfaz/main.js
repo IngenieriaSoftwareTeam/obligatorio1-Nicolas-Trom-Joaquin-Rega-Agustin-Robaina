@@ -6,45 +6,86 @@ import { ingredientes } from "../dominio/ingredientes.js";
 let platos = new listaPlatos();
 
 //Lista ingredientes
-let ingrediente1 = new ingredientes("Chocolate", 100, 1000);
-let ingrediente2 = new ingredientes("Manteca", 100, 1000);
-let ingrediente3 = new ingredientes("Azúcar ", 100, 1000);
-let ingrediente4 = new ingredientes("Huevos", 100, 1000);
-let ingrediente5 = new ingredientes("Harina sin glúten", 100, 1000);
-let ingrediente6 = new ingredientes("Levadura en polvo", 100, 1000);
-let ingrediente7 = new ingredientes("Vainilla", 100, 1000);
-let ingrediente8 = new ingredientes("Sal", 100, 1000);
-let ingrediente9 = new ingredientes("Pan sin gluten", 100, 1000);
-let ingrediente10 = new ingredientes("Palta", 100, 1000);
-let ingrediente11 = new ingredientes("Aceite", 100, 1000);
-let ingrediente12 = new ingredientes("Yogurt", 100, 1000);
 
-/*
-const arroz = new Ingrediente('Arroz', 120, 50);
-const maizSinGluten = new Ingrediente('Maíz sin gluten', 90, 45);
-const trigo = new Ingrediente('Trigo', 150, 60);
-const quinoaSinGluten = new Ingrediente('Quinoa sin gluten', 110, 55);
-const patata = new Ingrediente('Patata', 80, 40);
-const pollo = new Ingrediente('Pollo', 150, 120);
-const queso = new Ingrediente('Queso', 80, 50);
-const palta = new Ingrediente('Palta', 50, 30);
-const manzana = new Ingrediente('Manzana', 60, 10);
-const huevo = new Ingrediente('Huevo', 70, 15);*/
+
+
 
 //Lista platos
-let plato1 = new plato("granola", "Alta", 1 , [ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg"); 
-let plato2 = new plato("Galletas Chocolate 2", "Alta", 2 ,[ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/granola.jpg");
-let plato3 = new plato("Galletas Chocolate 3", "Alta", 1 , [ ], false, "", "Cena", 100, 1050,"../interfaz/img/granola.jpg");
-let plato4 = new plato("Galletas Chocolate 4", "Alta", 2 , [ ], false, "", "Postre", 100, 1050,"../interfaz/img/granola.jpg");
+let plato1 = new plato("Waffles De Arroz", "Media", 20 , [ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/wafflesDeArroz.jpg"); 
+let plato2 = new plato("Yogurt con Granola", "Media", 10 ,[ ], false, "", "Desayuno", 100, 1050,"../interfaz/img/yogurtConGranola.jpg");
+let plato3 = new plato("Berenjenas Rellenas de Atun", "Alta", 80 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/berenjenasRellenasAtun.jpg");
+let plato4 = new plato("Milanesa", "Media", 30 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/milanesa.png");
+let plato5 = new plato("Galletas de Avena",60, "Alta", [ ], false, "", "Merienda", 100, 1050,"../interfaz/img/galletasDeAvena.jpg");
+// Receta 1
+let azucar = new ingredientes("Azúcar",60,60);
+let huevo = new ingredientes("Huevo", 5, 150);
+let arroz = new ingredientes("Arroz", 71,130 );
+let leche = new ingredientes("Leche", 42, 150);
+plato1.addIngrediente(huevo);
+plato1.addIngrediente(leche);
+plato1.addIngrediente(arroz);
+plato1.addIngrediente(azucar);
 
-plato1.addIngrediente(ingrediente1);
-plato1.addIngrediente(ingrediente2);
-plato2.addIngrediente(ingrediente3);
+// Receta 2
+let yogurt = new ingredientes("Yogurt", 77, 59);
+let granola = new ingredientes("Granola", 213, 417);
+let frutosRojos = new ingredientes("Frutos rojos", 215, 69);
+plato2.addIngrediente(yogurt);
+plato2.addIngrediente(granola);
+plato2.addIngrediente(frutosRojos);
 
+// Receta 3
+let berenjenas = new ingredientes("Berenjenas", 119, 25);
+let atun = new ingredientes("Atún", 259, 130);
+let cebolla = new ingredientes("Cebolla", 89, 40);
+let salsaTomate = new ingredientes("Salsa de tomate", 78, 29);
+let quesoRallado = new ingredientes("Queso rallado", 130, 110);
+let sal = new ingredientes("Sal", 66, 0);
+let pimienta = new ingredientes("Pimienta", 69, 0);
+let aceite = new ingredientes("Aceite", 97, 888);
+plato3.addIngrediente(berenjenas);
+plato3.addIngrediente(atun);
+plato3.addIngrediente(cebolla);
+plato3.addIngrediente(salsaTomate);
+plato3.addIngrediente(quesoRallado);
+plato3.addIngrediente(sal);
+plato3.addIngrediente(pimienta);
+plato3.addIngrediente(aceite);
+
+// Receta  4
+let carneNalga = new ingredientes("Carne Nalga", 399, 129);
+let perejil = new ingredientes("Perejil", 36, 36);
+let ajo = new ingredientes("Ajo", 73, 149);
+let maicena = new ingredientes("Maicena", 70, 381);
+let rebozadoSinTACC = new ingredientes("Rebzado sin TACC(de Arroz)", 100, 256);
+plato4.addIngrediente(carneNalga);
+plato4.addIngrediente(perejil);
+plato4.addIngrediente(ajo);
+plato4.addIngrediente(maicena);
+plato4.addIngrediente(rebozadoSinTACC);
+plato4.addIngrediente(huevo);
+plato4.addIngrediente(sal);
+plato4.addIngrediente(pimienta);
+
+// Receta 5
+let avena = new ingredientes("Avena", 63, 68);
+let esenciaVainilla = new ingredientes("Esencia de Vainilla", 142, 288);
+let canela = new ingredientes("Canela", 96, 247);
+let harina = new ingredientes("Harina Sin Gluten", 135, 381);
+plato5.addIngrediente(avena);
+plato5.addIngrediente(huevo);
+plato5.addIngrediente(azucar);
+plato5.addIngrediente(esenciaVainilla);
+plato5.addIngrediente(canela);
+plato5.addIngrediente(harina);
+plato5.addIngrediente(aceite);
+
+// Agrego platos a la lista
 platos.addComida(plato1);
 platos.addComida(plato2);
 platos.addComida(plato3);
 platos.addComida(plato4);
+platos.addComida(plato5);
 
 document.getElementById("btnMen").addEventListener("click", displayMenu);
 document.getElementById("btnFav").addEventListener("click", displayFavoritos);

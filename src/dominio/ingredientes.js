@@ -1,12 +1,13 @@
 export class ingredientes{
     #nombre
-    #caloria
     #precio
+    #caloria
 
-    constructor(nombre, caloria, precio){
+
+    constructor(nombre, precio ,caloria){
         this.#nombre = nombre
-        this.#caloria = caloria
         this.#precio = precio
+        this.#caloria = caloria
     }   
     getNombre(){
         return this.#nombre

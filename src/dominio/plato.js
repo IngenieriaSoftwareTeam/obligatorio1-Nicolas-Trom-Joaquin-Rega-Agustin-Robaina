@@ -84,9 +84,8 @@ export class plato{
     }
 
    toString(){
-        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Precio: ${this.#tiempoEstimado} - Ingrediente: ${this.#ingredientes}`
-        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado} Minuto(s) - Precio: ${this.#precioTotal} Peso(s)`
-    }
+        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado} - Ingrediente: ${this.#ingredientes}`
+   }
     nombrePlato(){
         return `Nombre: ${this.#nombre} `
     }
