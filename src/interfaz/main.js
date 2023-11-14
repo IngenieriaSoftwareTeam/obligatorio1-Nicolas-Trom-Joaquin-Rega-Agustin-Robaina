@@ -1,6 +1,9 @@
-import {plato} from "../dominio/plato.js"
+import { plato } from "../dominio/plato.js"
 import { listaPlatos } from "../dominio/listaPlatos.js";
 import { ingredientes } from "../dominio/ingredientes.js";
+
+
+
 
 
 let platos = new listaPlatos();
@@ -49,15 +52,15 @@ function agregarComida() {
 
 
 //Lista platos
-let plato1 = new plato("Waffles De Arroz", "Media", 20 , [ ], true, "", "Desayuno", 100, 1050,"../interfaz/img/wafflesDeArroz.jpg"); 
-let plato2 = new plato("Yogurt con Granola", "Media", 10 ,[ ], true, "", "Desayuno", 100, 1050,"../interfaz/img/yogurtConGranola.jpg");
-let plato3 = new plato("Berenjenas Rellenas de Atun", "Alta", 80 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/berenjenasRellenasAtun.jpg");
-let plato4 = new plato("Milanesa", "Media", 30 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/milanesa.png");
-let plato5 = new plato("Galletas de Avena","Alta", 60, [ ], false, "", "Merienda", 100, 1050,"../interfaz/img/galletasDeAvena.jpg");
+let plato1 = new plato("Waffles De Arroz", "Media", 20, [], true, "", "Desayuno", 100, 1050, "../interfaz/img/wafflesDeArroz.jpg");
+let plato2 = new plato("Yogurt con Granola", "Media", 10, [], true, "", "Desayuno", 100, 1050, "../interfaz/img/yogurtConGranola.jpg");
+let plato3 = new plato("Berenjenas Rellenas de Atun", "Alta", 80, [], false, "", "Almuerzo", 100, 1050, "../interfaz/img/berenjenasRellenasAtun.jpg");
+let plato4 = new plato("Milanesa", "Media", 30, [], false, "", "Almuerzo", 100, 1050, "../interfaz/img/milanesa.png");
+let plato5 = new plato("Galletas de Avena", "Alta", 60, [], false, "", "Merienda", 100, 1050, "../interfaz/img/galletasDeAvena.jpg");
 // Receta 1
-let azucar = new ingredientes("Azúcar",60,60);
+let azucar = new ingredientes("Azúcar", 60, 60);
 let huevo = new ingredientes("Huevo", 5, 150);
-let arroz = new ingredientes("Arroz", 71,130 );
+let arroz = new ingredientes("Arroz", 71, 130);
 let leche = new ingredientes("Leche", 42, 150);
 plato1.addIngrediente(huevo);
 plato1.addIngrediente(leche);
@@ -138,238 +141,143 @@ document.getElementById("btnAgregar10").addEventListener("click", agregarComida)
 
 
 
-function masInfo(plato){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="none"
-    document.getElementById("divMasInfo").style.display="block"
-    document.getElementById("MasInfoTitulo").innerHTML=plato.nombrePlato()
-    document.getElementById("MasInfoImg").src=plato.getImagen();
+function masInfo(plato) {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "none"
+    document.getElementById("divMasInfo").style.display = "block"
+    document.getElementById("MasInfoTitulo").innerHTML = plato.nombrePlato()
+    document.getElementById("MasInfoImg").src = plato.getImagen();
     let ingredientes = plato.getIngredientes();
-    document.getElementById("ListaIngredientes").innerHTML=""
-    document.getElementById("ListaReceta").innerHTML=""
+    document.getElementById("ListaIngredientes").innerHTML = ""
+    document.getElementById("ListaReceta").innerHTML = ""
 
-    for(let i = 0; i < ingredientes.length; i++) {
+    for (let i = 0; i < ingredientes.length; i++) {
         let li = document.createElement('li');
-        li.className="list-group-item border-0"
-        li.style="background-color: #14C864;"
+        li.className = "list-group-item border-0"
+        li.style = "background-color: #14C864;"
         li.textContent = ingredientes[i].toString();
         document.getElementById("ListaIngredientes").appendChild(li);
     }
     let receta = plato.getInstrucciones();
-    for(let i = 0; i < receta.length; i++) {
+    for (let i = 0; i < receta.length; i++) {
         let li = document.createElement('li');
-        li.className="list-group-item border-0"
-        li.style="background-color: #14C864;"
+        li.className = "list-group-item border-0"
+        li.style = "background-color: #14C864;"
         li.textContent = receta[i].toString();
         document.getElementById("ListaReceta").appendChild(li);
     }
-    let divbtn = document.createElement("div");
-    let btnEstrella = document.createElement("button");
-    let imgEstrella = document.createElement("img");
-                    if(plato.getFavorito()){
-                        imgEstrella.src="img/EstrellaAmarilla.png"
-                        btnEstrella.onclick = function(){
-                            plato.setFavorito(false);
-                            masInfo(plato);
-                            divbtn.remove();
-                        };
-                    }else{
-                        imgEstrella.src="img/EstrellaBlanca.png"
-                        btnEstrella.onclick = function(){
-                            plato.setFavorito(true);
-                            masInfo(plato);
-                            divbtn.remove();
-                        };
-                    }
-    btnEstrella.appendChild(imgEstrella);
-    divbtn.appendChild(btnEstrella);
-    divbtn.style="background-color: #14C864; margin: auto; width: 60px; margin-top:20px"
-    divbtn.className="rounded"
-    document.getElementById("divInformacion").appendChild(divbtn)
-    btnEstrella.className="btn btn-default"
-    imgEstrella.style="width:30px; height:30px;"
+    let btnEstrella = document.getElementById("btnFavMasInfo");
+    let imgEstrella = document.getElementById("imgFavMasInfo");
+    if (plato.getFavorito()) {
+        imgEstrella.src = "img/EstrellaAmarilla.png"
+        btnEstrella.onclick = function () {
+            plato.setFavorito(false);
+            masInfo(plato);
+        };
+    } else {
+        imgEstrella.src = "img/EstrellaBlanca.png"
+        btnEstrella.onclick = function () {
+            plato.setFavorito(true);
+            masInfo(plato);
+        };
+    }
 
 }
 
-function ActListas(){
-    if("Favoritos"==document.getElementById("h1titulo").innerHTML){
+function ActListas() {
+    if ("Favoritos" == document.getElementById("h1titulo").innerHTML) {
         displaylistafavs();
-    }else{
+    } else {
         displayListaPlatos();
     }
 }
-function difANum(dif){
+function difANum(dif) {
     let ret = 1
-    if(dif=="Alta"){
+    if (dif == "Alta") {
         ret = 3
     }
-    if(dif=="Media"){
+    if (dif == "Media") {
         ret = 2
     }
     return ret
 }
-function displaylistafavs(){
-    document.getElementById("listaPlatos").innerHTML="";
-    if(document.getElementById("OrdenarLista").value=="MayAMenDif"){
-        platos.getComidas().sort(function(a, b){return difANum(b.getDificultad()) - difANum(a.getDificultad())});
+function displaylistafavs() {
+    document.getElementById("listaPlatos").innerHTML = "";
+    if (document.getElementById("OrdenarLista").value == "MayAMenDif") {
+        platos.getComidas().sort(function (a, b) { return difANum(b.getDificultad()) - difANum(a.getDificultad()) });
     }
-    if(document.getElementById("OrdenarLista").value=="MenAMayDif"){
-        platos.getComidas().sort(function(a, b){return difANum(a.getDificultad()) - difANum(b.getDificultad())});
+    if (document.getElementById("OrdenarLista").value == "MenAMayDif") {
+        platos.getComidas().sort(function (a, b) { return difANum(a.getDificultad()) - difANum(b.getDificultad()) });
     }
-    if(document.getElementById("OrdenarLista").value=="MayAMenTie"){
-        platos.getComidas().sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
+    if (document.getElementById("OrdenarLista").value == "MayAMenTie") {
+        platos.getComidas().sort(function (a, b) { return b.getTiempoEstimado() - a.getTiempoEstimado() });
     }
-    if(document.getElementById("OrdenarLista").value=="MenAMayTie"){
-        platos.getComidas().sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
+    if (document.getElementById("OrdenarLista").value == "MenAMayTie") {
+        platos.getComidas().sort(function (a, b) { return a.getTiempoEstimado() - b.getTiempoEstimado() });
     }
     platos.getComidas().forEach(plato => {
-        if("Favoritos"==document.getElementById("h1titulo").innerHTML && plato.getFavorito()){
-            if((plato.getDificultad()=="Poca" && document.getElementById("DifPoca").checked)||(plato.getDificultad()=="Media" && document.getElementById("DifMedia").checked)||(plato.getDificultad()=="Alta" && document.getElementById("DifAlta").checked)){
-                if((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado()>=document.getElementById("rangeTiempo").value)||(document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado()<=document.getElementById("rangeTiempo").value)){
+        if ("Favoritos" == document.getElementById("h1titulo").innerHTML && plato.getFavorito()) {
+            if ((plato.getDificultad() == "Poca" && document.getElementById("DifPoca").checked) || (plato.getDificultad() == "Media" && document.getElementById("DifMedia").checked) || (plato.getDificultad() == "Alta" && document.getElementById("DifAlta").checked)) {
+                if ((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado() >= document.getElementById("rangeTiempo").value) || (document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado() <= document.getElementById("rangeTiempo").value)) {
                     let platoElem = document.createElement("li");
                     platoElem.className = "text-center"
                     let listaUsada = document.createElement("ul");
                     listaUsada.className = "list-group list-group-horizontal";
                     let imgPlato = document.createElement("img");
                     imgPlato.src = plato.getImagen();
-                    imgPlato.style="max-height: 175px;"
-                    imgPlato.className="rounded mx-auto d-block";
-                
-                    let toStringPlato = document.createElement("p");  
-                    toStringPlato.textContent = plato.toString(); 
-                    toStringPlato.className="mt-4"
-                    let nombrePlato = document.createElement("h3");
-                    nombrePlato.textContent = plato.nombrePlato();
-                    nombrePlato.style="padding-top:10px;"
-                    let btnMasInfo = document.createElement("button");
-                    let btnEstrella = document.createElement("button");
-                    btnMasInfo.type="button";
-                    let imgEstrella = document.createElement("img");
-                    if(plato.getFavorito()){
-                        imgEstrella.src="img/EstrellaAmarilla.png"
-                        btnEstrella.onclick = function(){
-                            plato.setFavorito(false);
-                            ActListas();
-                        };
-                    }else{
-                        imgEstrella.src="img/EstrellaBlanca.png"
-                        btnEstrella.onclick = function(){
-                            plato.setFavorito(true);
-                            ActListas();
-                        };
-                    }
-                    btnEstrella.appendChild(imgEstrella);
-                    btnEstrella.className="btn btn-default"
-                    imgEstrella.style="width:30px; height:30px;"
-                    btnMasInfo.className = "btn btn-default";
-                    btnMasInfo.textContent = "Mas Info";
-                    platoElem.appendChild(listaUsada);
-                    let Seccionimg = document.createElement("li");
-                    Seccionimg.appendChild(imgPlato);
-                    Seccionimg.style="width:10%;";
-                    listaUsada.appendChild(Seccionimg);
-                    Seccionimg.className="list-group-item border-0";
-                    let SeccionInfo = document.createElement("li");
-                    let divInfoSup = document.createElement("div");
-                    let divInfo = document.createElement("div");
-                    listaUsada.appendChild(SeccionInfo);  
-                    divInfo.className=""
-                    SeccionInfo.appendChild(divInfoSup);
-                    divInfoSup.appendChild(divInfo);
-                    SeccionInfo.className= "list-group-item border-0"
-                    SeccionInfo.style="width: 90%;"
-                    divInfo.appendChild(nombrePlato);
-                    divInfo.appendChild(toStringPlato);
-                    divInfo.appendChild(btnMasInfo);
-                    divInfo.appendChild(btnEstrella);
-                    divInfoSup.className = "rounded";
-                    divInfoSup.style = "background-color: #8AE4B2; height: 175px;";
-                    btnMasInfo.onclick = function(){masInfo(plato)};
-                    
-                    document.getElementById("listaPlatos").appendChild(platoElem);
-                }
-            }
-        }
-    });
-}
+                    imgPlato.style = "max-height: 175px;"
+                    imgPlato.className = "rounded mx-auto d-block";
 
-function displayListaPlatos(){
-    document.getElementById("listaPlatos").innerHTML="";
-    if(document.getElementById("OrdenarLista").value=="MayAMenDif"){
-        platos.getComidas().sort(function(a, b){return difANum(b.getDificultad()) - difANum(a.getDificultad())});
-    }
-    if(document.getElementById("OrdenarLista").value=="MenAMayDif"){
-        platos.getComidas().sort(function(a, b){return difANum(a.getDificultad()) - difANum(b.getDificultad())});
-    }
-    if(document.getElementById("OrdenarLista").value=="MayAMenTie"){
-        platos.getComidas().sort(function(a, b){return b.getTiempoEstimado() - a.getTiempoEstimado()});
-    }
-    if(document.getElementById("OrdenarLista").value=="MenAMayTie"){
-        platos.getComidas().sort(function(a, b){return a.getTiempoEstimado() - b.getTiempoEstimado()});
-    }
-    platos.getComidas().forEach(plato => {
-        if(plato.getTipo()==document.getElementById("h1titulo").innerHTML){
-            if((plato.getDificultad()=="Poca" && document.getElementById("DifPoca").checked)||(plato.getDificultad()=="Media" && document.getElementById("DifMedia").checked)||(plato.getDificultad()=="Alta" && document.getElementById("DifAlta").checked)){
-                if((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado()>=document.getElementById("rangeTiempo").value)||(document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado()<=document.getElementById("rangeTiempo").value)){
-                    let platoElem = document.createElement("li");
-                    platoElem.className = "text-center"
-                    let listaUsada = document.createElement("ul");
-                    listaUsada.className = "list-group list-group-horizontal";
-                    let imgPlato = document.createElement("img");
-                    imgPlato.src = plato.getImagen();
-                    imgPlato.style="max-height: 175px;"
-                    imgPlato.className="rounded mx-auto d-block";
-                
-                    let toStringPlato = document.createElement("p");  
-                    toStringPlato.textContent = plato.toString(); 
-                    toStringPlato.className="mt-4"
+                    let toStringPlato = document.createElement("p");
+                    toStringPlato.textContent = plato.toString();
+                    toStringPlato.className = "mt-4"
                     let nombrePlato = document.createElement("h3");
                     nombrePlato.textContent = plato.nombrePlato();
-                    nombrePlato.style="padding-top:10px;"
+                    nombrePlato.style = "padding-top:10px;"
                     let btnMasInfo = document.createElement("button");
                     let btnEstrella = document.createElement("button");
+                    btnMasInfo.type = "button";
                     let imgEstrella = document.createElement("img");
-                    if(plato.getFavorito()){
-                        imgEstrella.src="img/EstrellaAmarilla.png"
-                        btnEstrella.onclick = function(){
+                    if (plato.getFavorito()) {
+                        imgEstrella.src = "img/EstrellaAmarilla.png"
+                        btnEstrella.onclick = function () {
                             plato.setFavorito(false);
                             ActListas();
                         };
-                    }else{
-                        imgEstrella.src="img/EstrellaBlanca.png"
-                        btnEstrella.onclick = function(){
+                    } else {
+                        imgEstrella.src = "img/EstrellaBlanca.png"
+                        btnEstrella.onclick = function () {
                             plato.setFavorito(true);
                             ActListas();
                         };
                     }
-                    
-                    btnMasInfo.onclick = function(){masInfo(plato)};
                     btnEstrella.appendChild(imgEstrella);
-                    btnEstrella.className="btn btn-default"
-                    imgEstrella.style="width:30px; height:30px;"
+                    btnEstrella.className = "btn btn-default"
+                    imgEstrella.style = "width:30px; height:30px;"
                     btnMasInfo.className = "btn btn-default";
                     btnMasInfo.textContent = "Mas Info";
                     platoElem.appendChild(listaUsada);
                     let Seccionimg = document.createElement("li");
                     Seccionimg.appendChild(imgPlato);
-                    Seccionimg.style="width:10%;";
+                    Seccionimg.style = "width:10%;";
                     listaUsada.appendChild(Seccionimg);
-                    Seccionimg.className="list-group-item border-0";
+                    Seccionimg.className = "list-group-item border-0";
                     let SeccionInfo = document.createElement("li");
                     let divInfoSup = document.createElement("div");
                     let divInfo = document.createElement("div");
-                    listaUsada.appendChild(SeccionInfo);  
-                    divInfo.className=""
+                    listaUsada.appendChild(SeccionInfo);
+                    divInfo.className = ""
                     SeccionInfo.appendChild(divInfoSup);
                     divInfoSup.appendChild(divInfo);
-                    SeccionInfo.className= "list-group-item border-0"
-                    SeccionInfo.style="width: 90%;"
+                    SeccionInfo.className = "list-group-item border-0"
+                    SeccionInfo.style = "width: 90%;"
                     divInfo.appendChild(nombrePlato);
                     divInfo.appendChild(toStringPlato);
                     divInfo.appendChild(btnMasInfo);
                     divInfo.appendChild(btnEstrella);
                     divInfoSup.className = "rounded";
                     divInfoSup.style = "background-color: #8AE4B2; height: 175px;";
+                    btnMasInfo.onclick = function () { masInfo(plato) };
 
                     document.getElementById("listaPlatos").appendChild(platoElem);
                 }
@@ -378,56 +286,142 @@ function displayListaPlatos(){
     });
 }
 
-function displayMenu(){
-    document.getElementById("divMenu").style.display="block"
-    document.getElementById("divPlatos").style.display="none"
-    document.getElementById("divMasInfo").style.display="none"
+function displayListaPlatos() {
+    document.getElementById("listaPlatos").innerHTML = "";
+    if (document.getElementById("OrdenarLista").value == "MayAMenDif") {
+        platos.getComidas().sort(function (a, b) { return difANum(b.getDificultad()) - difANum(a.getDificultad()) });
+    }
+    if (document.getElementById("OrdenarLista").value == "MenAMayDif") {
+        platos.getComidas().sort(function (a, b) { return difANum(a.getDificultad()) - difANum(b.getDificultad()) });
+    }
+    if (document.getElementById("OrdenarLista").value == "MayAMenTie") {
+        platos.getComidas().sort(function (a, b) { return b.getTiempoEstimado() - a.getTiempoEstimado() });
+    }
+    if (document.getElementById("OrdenarLista").value == "MenAMayTie") {
+        platos.getComidas().sort(function (a, b) { return a.getTiempoEstimado() - b.getTiempoEstimado() });
+    }
+    platos.getComidas().forEach(plato => {
+        if (plato.getTipo() == document.getElementById("h1titulo").innerHTML) {
+            if ((plato.getDificultad() == "Poca" && document.getElementById("DifPoca").checked) || (plato.getDificultad() == "Media" && document.getElementById("DifMedia").checked) || (plato.getDificultad() == "Alta" && document.getElementById("DifAlta").checked)) {
+                if ((document.getElementById("FiltroTiempoMay").checked && plato.getTiempoEstimado() >= document.getElementById("rangeTiempo").value) || (document.getElementById("FiltroTiempoMen").checked && plato.getTiempoEstimado() <= document.getElementById("rangeTiempo").value)) {
+                    let platoElem = document.createElement("li");
+                    platoElem.className = "text-center"
+                    let listaUsada = document.createElement("ul");
+                    listaUsada.className = "list-group list-group-horizontal";
+                    let imgPlato = document.createElement("img");
+                    imgPlato.src = plato.getImagen();
+                    imgPlato.style = "max-height: 175px;"
+                    imgPlato.className = "rounded mx-auto d-block";
+
+                    let toStringPlato = document.createElement("p");
+                    toStringPlato.textContent = plato.toString();
+                    toStringPlato.className = "mt-4"
+                    let nombrePlato = document.createElement("h3");
+                    nombrePlato.textContent = plato.nombrePlato();
+                    nombrePlato.style = "padding-top:10px;"
+                    let btnMasInfo = document.createElement("button");
+                    let btnEstrella = document.createElement("button");
+                    let imgEstrella = document.createElement("img");
+                    if (plato.getFavorito()) {
+                        imgEstrella.src = "img/EstrellaAmarilla.png"
+                        btnEstrella.onclick = function () {
+                            plato.setFavorito(false);
+                            ActListas();
+                        };
+                    } else {
+                        imgEstrella.src = "img/EstrellaBlanca.png"
+                        btnEstrella.onclick = function () {
+                            plato.setFavorito(true);
+                            ActListas();
+                        };
+                    }
+
+                    btnMasInfo.onclick = function () { masInfo(plato) };
+                    btnEstrella.appendChild(imgEstrella);
+                    btnEstrella.className = "btn btn-default"
+                    imgEstrella.style = "width:30px; height:30px;"
+                    btnMasInfo.className = "btn btn-default";
+                    btnMasInfo.textContent = "Mas Info";
+                    platoElem.appendChild(listaUsada);
+                    let Seccionimg = document.createElement("li");
+                    Seccionimg.appendChild(imgPlato);
+                    Seccionimg.style = "width:10%;";
+                    listaUsada.appendChild(Seccionimg);
+                    Seccionimg.className = "list-group-item border-0";
+                    let SeccionInfo = document.createElement("li");
+                    let divInfoSup = document.createElement("div");
+                    let divInfo = document.createElement("div");
+                    listaUsada.appendChild(SeccionInfo);
+                    divInfo.className = ""
+                    SeccionInfo.appendChild(divInfoSup);
+                    divInfoSup.appendChild(divInfo);
+                    SeccionInfo.className = "list-group-item border-0"
+                    SeccionInfo.style = "width: 90%;"
+                    divInfo.appendChild(nombrePlato);
+                    divInfo.appendChild(toStringPlato);
+                    divInfo.appendChild(btnMasInfo);
+                    divInfo.appendChild(btnEstrella);
+                    divInfoSup.className = "rounded";
+                    divInfoSup.style = "background-color: #8AE4B2; height: 175px;";
+
+                    document.getElementById("listaPlatos").appendChild(platoElem);
+                }
+            }
+        }
+    });
 }
-function displayFavoritos(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Favoritos";
-    document.getElementById("divMasInfo").style.display="none"
+
+function displayMenu() {
+    document.getElementById("divMenu").style.display = "block"
+    document.getElementById("divPlatos").style.display = "none"
+    document.getElementById("divMasInfo").style.display = "none"
+    mostrarSug();
+}
+function displayFavoritos() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Favoritos";
+    document.getElementById("divMasInfo").style.display = "none"
     displaylistafavs();
 }
-function displayDesayuno(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Desayuno";
-    document.getElementById("divMasInfo").style.display="none"
+function displayDesayuno() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Desayuno";
+    document.getElementById("divMasInfo").style.display = "none"
     displayListaPlatos();
-    
+
 }
-function displayAlmuerzo(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Almuerzo";
-    document.getElementById("divMasInfo").style.display="none"
+function displayAlmuerzo() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Almuerzo";
+    document.getElementById("divMasInfo").style.display = "none"
     displayListaPlatos();
-    
+
 }
-function displayMerienda(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Merienda";
-    document.getElementById("divMasInfo").style.display="none"
+function displayMerienda() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Merienda";
+    document.getElementById("divMasInfo").style.display = "none"
     displayListaPlatos();
 }
-function displayCena(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Cena";
-    document.getElementById("divMasInfo").style.display="none"
+function displayCena() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Cena";
+    document.getElementById("divMasInfo").style.display = "none"
     displayListaPlatos();
-    
+
 }
-function displayPostre(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML="Postre";
-    document.getElementById("divMasInfo").style.display="none"
+function displayPostre() {
+    document.getElementById("divMenu").style.display = "none"
+    document.getElementById("divPlatos").style.display = "block"
+    document.getElementById("h1titulo").innerHTML = "Postre";
+    document.getElementById("divMasInfo").style.display = "none"
     displayListaPlatos();
-    
+
 }
 function displayAgrgarPlato(){
     document.getElementById("divMenu").style.display="none"
@@ -437,6 +431,14 @@ function displayAgrgarPlato(){
     
 }
 
+function mostrarSug() {
+    var platoSug = platos.getComidas()[Math.floor(Math.random() * platos.getComidas().length)];
+    document.getElementById("imgSug").src = platoSug.getImagen();
+    document.getElementById("sugNom").innerHTML = platoSug.nombrePlato();
+    document.getElementById("sugDif").innerHTML = platoSug.getDificultad();
+    document.getElementById("sugTie").innerHTML = (platoSug.getTiempoEstimado() + " minutos");
+    document.getElementById("btnSug").onclick = function () { masInfo(platoSug) };
+}
 
 
 
