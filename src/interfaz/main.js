@@ -16,7 +16,6 @@ let plato2 = new plato("Yogurt con Granola", "Media", 10 ,[ ], true, "", "Desayu
 let plato3 = new plato("Berenjenas Rellenas de Atun", "Alta", 80 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/berenjenasRellenasAtun.jpg");
 let plato4 = new plato("Milanesa", "Media", 30 , [ ], false, "", "Almuerzo", 100, 1050,"../interfaz/img/milanesa.png");
 let plato5 = new plato("Galletas de Avena","Alta", 60, [ ], false, "", "Merienda", 100, 1050,"../interfaz/img/galletasDeAvena.jpg");
-
 // Receta 1
 let azucar = new ingredientes("Azúcar",60,60);
 let huevo = new ingredientes("Huevo", 5, 150);
@@ -95,8 +94,60 @@ document.getElementById("btnAlm").addEventListener("click", displayAlmuerzo);
 document.getElementById("btnMer").addEventListener("click", displayMerienda);
 document.getElementById("btnCen").addEventListener("click", displayCena);
 document.getElementById("btnPos").addEventListener("click", displayPostre);
-//document.getElementById("btnMasInfo").addEventListener("click", displayMasInfo);
 document.getElementById("btnfiltro").addEventListener("click", ActListas);
+
+function masInfo(plato){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divPlatos").style.display="none"
+    document.getElementById("divMasInfo").style.display="block"
+    document.getElementById("MasInfoTitulo").innerHTML=plato.nombrePlato()
+    document.getElementById("MasInfoImg").src=plato.getImagen();
+    let ingredientes = plato.getIngredientes();
+    document.getElementById("ListaIngredientes").innerHTML=""
+    document.getElementById("ListaReceta").innerHTML=""
+
+    for(let i = 0; i < ingredientes.length; i++) {
+        let li = document.createElement('li');
+        li.className="list-group-item border-0"
+        li.style="background-color: #14C864;"
+        li.textContent = ingredientes[i].toString();
+        document.getElementById("ListaIngredientes").appendChild(li);
+    }
+    let receta = plato.getInstrucciones();
+    for(let i = 0; i < receta.length; i++) {
+        let li = document.createElement('li');
+        li.className="list-group-item border-0"
+        li.style="background-color: #14C864;"
+        li.textContent = receta[i].toString();
+        document.getElementById("ListaReceta").appendChild(li);
+    }
+    let divbtn = document.createElement("div");
+    let btnEstrella = document.createElement("button");
+    let imgEstrella = document.createElement("img");
+                    if(plato.getFavorito()){
+                        imgEstrella.src="img/EstrellaAmarilla.png"
+                        btnEstrella.onclick = function(){
+                            plato.setFavorito(false);
+                            masInfo(plato);
+                            divbtn.remove();
+                        };
+                    }else{
+                        imgEstrella.src="img/EstrellaBlanca.png"
+                        btnEstrella.onclick = function(){
+                            plato.setFavorito(true);
+                            masInfo(plato);
+                            divbtn.remove();
+                        };
+                    }
+    btnEstrella.appendChild(imgEstrella);
+    divbtn.appendChild(btnEstrella);
+    divbtn.style="background-color: #14C864; margin: auto; width: 60px; margin-top:20px"
+    divbtn.className="rounded"
+    document.getElementById("divInformacion").appendChild(divbtn)
+    btnEstrella.className="btn btn-default"
+    imgEstrella.style="width:30px; height:30px;"
+
+}
 
 function ActListas(){
     if("Favoritos"==document.getElementById("h1titulo").innerHTML){
@@ -150,6 +201,7 @@ function displaylistafavs(){
                     nombrePlato.style="padding-top:10px;"
                     let btnMasInfo = document.createElement("button");
                     let btnEstrella = document.createElement("button");
+                    btnMasInfo.type="button";
                     let imgEstrella = document.createElement("img");
                     if(plato.getFavorito()){
                         imgEstrella.src="img/EstrellaAmarilla.png"
@@ -190,7 +242,8 @@ function displaylistafavs(){
                     divInfo.appendChild(btnEstrella);
                     divInfoSup.className = "rounded";
                     divInfoSup.style = "background-color: #8AE4B2; height: 175px;";
-
+                    btnMasInfo.onclick = function(){masInfo(plato)};
+                    
                     document.getElementById("listaPlatos").appendChild(platoElem);
                 }
             }
@@ -247,20 +300,8 @@ function displayListaPlatos(){
                             ActListas();
                         };
                     }
-                    btnMasInfo.onclick = function(){
-                       
-                        let ingredientes = plato.getIngredientes();
-                        let ul = document.createElement('ul');
-                        for(let i = 0; i < ingredientes.length; i++) {
-                        let li = document.createElement('li');
-                        li.textContent = ingredientes[i];
-                        ul.appendChild(li);
-                        }
-   
-                        document.body.appendChild(ul);
-                        displayMasInfo();
-                        
-                        }
+                    
+                    btnMasInfo.onclick = function(){masInfo(plato)};
                     btnEstrella.appendChild(imgEstrella);
                     btnEstrella.className="btn btn-default"
                     imgEstrella.style="width:30px; height:30px;"
@@ -298,17 +339,20 @@ function displayListaPlatos(){
 function displayMenu(){
     document.getElementById("divMenu").style.display="block"
     document.getElementById("divPlatos").style.display="none"
+    document.getElementById("divMasInfo").style.display="none"
 }
 function displayFavoritos(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Favoritos";
+    document.getElementById("divMasInfo").style.display="none"
     displaylistafavs();
 }
 function displayDesayuno(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Desayuno";
+    document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
     
 }
@@ -316,6 +360,7 @@ function displayAlmuerzo(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Almuerzo";
+    document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
     
 }
@@ -323,12 +368,14 @@ function displayMerienda(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Merienda";
+    document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
 }
 function displayCena(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Cena";
+    document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
     
 }
@@ -336,15 +383,11 @@ function displayPostre(){
     document.getElementById("divMenu").style.display="none"
     document.getElementById("divPlatos").style.display="block"
     document.getElementById("h1titulo").innerHTML="Postre";
+    document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
     
 }
-function displayMasInfo(){
-    document.getElementById("divMenu").style.display="none"
-    document.getElementById("divPlatos").style.display="block"
-    document.getElementById("h1titulo").innerHTML = "Mas Info";
-    displayListaPlatos();
-}
+
 
 
 

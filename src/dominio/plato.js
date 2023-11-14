@@ -84,10 +84,10 @@ export class plato{
     }
 
    toString(){
-        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado} - Ingrediente: ${this.#ingredientes}`
+        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado}`
    }
     nombrePlato(){
-        return `Nombre: ${this.#nombre} `
+        return `${this.#nombre} `
     }
     nombresIngredientes(){
         let nombres = []
