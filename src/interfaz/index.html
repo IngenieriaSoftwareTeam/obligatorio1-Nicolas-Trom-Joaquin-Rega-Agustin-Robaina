@@ -16,8 +16,10 @@
     <div>
       <button class="btn btn-default" id="btnMen">CELIAPP</button>
       <img src="img/CeliappLogo.png" alt="Celiapp logo" style="width:40px;height:40px;">
-      <button class="btn btn-default" id="btnFav"><img src="img/EstrellaAmarilla.png" alt="Favoritos Estrella" style="width:40px;height:40px;"></img></button>
+      <button class="btn btn-default" id="btnFav"><img src="img/EstrellaAmarilla.png" alt="Favoritos Estrella" style="width:40px;height:40px;"></img></button>   
     </div>
+
+      <button class="btn btn-default" id="btnAgregar" style="margin-right: 10px;">Agregar</button>
   </nav>
   <nav class="navbar navbar" style="background-color: #C4F1D8;">
     <div class="mx-auto">
@@ -141,6 +143,43 @@
       </div>
     </div>
   </div>
+  <div id="divAgregarPlato">
+    <label for="Name">Ingrese el Nombre de la Receta</label>
+    <input type="text" id="Name" name="Name" />
+    <br>
+    <label for="dificultad">Ingrese Dificultad</label>
+    <select class="form-select" id="dificultad" required>
+      <option>Baja</option>
+      <option>Media</option>
+      <option>Alta</option>
+    </select>
+    <br>
+    <label for="tiempoEstimado">Ingrese el Tiempo Estimado</label>
+    <input type="text" id="tiempoEstimado" name="tiempoEstimado" />
+    <br>
+    <label for="Ingredientes">Ingrese los Ingredientes</label>
+    <textarea type="text" id="ingredientes" name="Ingredientes"> </textarea>
+    <br>
+    <label for="Instrucciones">Ingrese las Instrucciones</label>
+    <textarea type="text" id="instrucciones" name="Instrucciones"> </textarea>
+    <br>
+    <label for="imagen">Ingrese la URL de la Imagen</label>
+    <input type="text" id="imagen" name="imagen" />
+    <br>
+    <label for ="tipoComida"> Ingrese a que Comida Corresponde</label>
+    <select class="form-select" id="tipoComida" required>
+      <option selected disabled value="">Desayuno</option>
+      <option>Almuerzo</option>
+      <option>Merienda</option>
+      <option>Cena</option>
+      <option>Postre</option>
+    </select>
+    <br>
+    <button type="button" class="btn btn-success" style="margin-top:10px; margin-bottom: 10px;" id="btnAgregar10">Agregar</button>
+
+
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>

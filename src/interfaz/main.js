@@ -7,6 +7,44 @@ let platos = new listaPlatos();
 
 //Lista ingredientes
 
+function agregarComida() {
+   let nombre = document.getElementById("Name").value;
+   let dificultad = document.getElementById("dificultad").value;
+   let tiempoEstimado = document.getElementById("tiempoEstimado").value;
+   let aryIngredientes = document.getElementById("ingredientes").value.split('\n');
+   let aryInstrucciones = document.getElementById("instrucciones").value.split('\n');
+   
+   
+   let tipo = document.getElementById("tipoComida").value;
+   let imgen = document.getElementById("imagen").value;
+    
+
+    let nuevoPlato = new plato(nombre, dificultad, tiempoEstimado, [], false, "", tipo, 0, 0, imgen);
+    for (let i = 0; i < aryIngredientes.length; i++) {
+        let pairs = aryIngredientes[i].split(',');
+
+   
+    let ingredientCaloriePairs = pairs.map(pair => pair.trim());
+
+    for (let j = 0; j < ingredientCaloriePairs.length; j += 3) {
+        let ingredient = ingredientCaloriePairs[j];
+        let precio = parseFloat(ingredientCaloriePairs[j + 1]);
+        let calories = parseFloat(ingredientCaloriePairs[j + 2]);
+       let ingrediente10 = new ingredientes(ingredient, calories, precio);
+       nuevoPlato.addIngrediente(ingrediente10);
+        
+    }
+}
+    for(let i=0; i<aryInstrucciones.length; i++){
+        nuevoPlato.setInstrucciones(aryInstrucciones);
+    
+    }
+    console.log(nuevoPlato);
+   
+    platos.addComida(nuevoPlato);
+    alert("Plato agregado con exito");
+}
+
 
 
 
@@ -95,6 +133,10 @@ document.getElementById("btnMer").addEventListener("click", displayMerienda);
 document.getElementById("btnCen").addEventListener("click", displayCena);
 document.getElementById("btnPos").addEventListener("click", displayPostre);
 document.getElementById("btnfiltro").addEventListener("click", ActListas);
+document.getElementById("btnAgregar").addEventListener("click", displayAgrgarPlato);
+document.getElementById("btnAgregar10").addEventListener("click", agregarComida);
+
+
 
 function masInfo(plato){
     document.getElementById("divMenu").style.display="none"
@@ -385,6 +427,13 @@ function displayPostre(){
     document.getElementById("h1titulo").innerHTML="Postre";
     document.getElementById("divMasInfo").style.display="none"
     displayListaPlatos();
+    
+}
+function displayAgrgarPlato(){
+    document.getElementById("divMenu").style.display="none"
+    document.getElementById("divPlatos").style.display="none"
+    document.getElementById("divAgregarPlato").style.display="block"
+    document.getElementById("divMasInfo").style.display="none"
     
 }
 
