@@ -1,7 +1,7 @@
 export class ingredientes{
-    #nombre
-    #precio
-    #caloria
+  #nombre
+  #precio
+  #caloria
 
 
     constructor(nombre, caloria ,precio){

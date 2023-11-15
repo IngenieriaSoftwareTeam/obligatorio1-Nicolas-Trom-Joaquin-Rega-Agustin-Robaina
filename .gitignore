@@ -1,0 +1,2 @@
+#No quremos que se comitee la capreta node_modules
+/src/node_modules
