@@ -1,99 +1,104 @@
-export class plato{
-    #nombre
-    #dificultad
-    #tiempoEstimado
-    #ingredientes
-    #favorito
-    #instrucciones
-    #tipo
-    #precioTotal
-    #caloriaTotal
-    #imgen
+export class plato {
+  #nombre;
+  #dificultad;
+  #tiempoEstimado;
+  #ingredientes;
+  #favorito;
+  #instrucciones;
+  #tipo;
+  #precioTotal;
+  #caloriaTotal;
+  #imgen;
 
-    constructor(nombre, dificultad, tiempoEstimado, ingredientes, favorito, instrucciones, tipo, precioTotal, caloriaTotal,imgen){
-        this.#nombre = nombre
-        this.#dificultad = dificultad
-        this.#tiempoEstimado = tiempoEstimado
-        this.#ingredientes = ingredientes
-        this.#favorito = favorito
-        this.#instrucciones = instrucciones
-        this.#tipo = tipo
-        this.#precioTotal = precioTotal
-        this.#caloriaTotal = caloriaTotal
-        this.#imgen = imgen
-    }
-    getNombre(){
-        return this.#nombre
-    }
-    setNombre(nombre){
-        this.#nombre = nombre
-    }
-    getDificultad(){
-        return this.#dificultad
-    }
-    setDificultad(dificultad){
-        this.#dificultad = dificultad
-    }
-    getTiempoEstimado(){
-        return this.#tiempoEstimado
-    }
-    addIngrediente(ingrediente){
-        this.#ingredientes.push(ingrediente)
-    }
-    getIngredientes(){
-        return this.#ingredientes
-    }
-    setIngredientes(ingredientes){
-        this.#ingredientes = ingredientes
-    }
-    getFavorito(){
-        return this.#favorito
-    }
-    setFavorito(favorito){
-        this.#favorito = favorito
-    }
-    getInstrucciones(){
-        return this.#instrucciones
-    }
-    setInstrucciones(instrucciones){
-        this.#instrucciones = instrucciones
-    }
-    getTipo(){
-        return this.#tipo
-    }
-    setTipo(tipo){
-        this.#tipo = tipo
-    }
-    getPrecioTotal(){
-        return this.#precioTotal
-    }
-    setPrecioTotal(precioTotal){
-        this.#precioTotal = precioTotal
-    }
-    getCaloriaTotal(){
-        return this.#caloriaTotal
-    }
-    setCaloriaTotal(caloriaTotal){
-        this.#caloriaTotal = caloriaTotal
-    }
-    getImagen(){
-        return this.#imgen
-    }
-    setImagen(imgen){
-        this.#imgen = imgen
-    }
+  constructor(nombre, dificultad, tiempoEstimado,
+      ingredientes, favorito, instrucciones, tipo,
+      precioTotal, caloriaTotal, imgen) {
+    this.#nombre = nombre;
+    this.#dificultad = dificultad;
+    this.#tiempoEstimado = tiempoEstimado;
+    this.#ingredientes = ingredientes;
+    this.#favorito = favorito;
+    this.#instrucciones = instrucciones;
+    this.#tipo = tipo;
+    this.#precioTotal = precioTotal;
+    this.#caloriaTotal = caloriaTotal;
+    this.#imgen = imgen;
+  }
+  getNombre() {
+    return this.#nombre;
+  }
+  setNombre(nombre) {
+    this.#nombre = nombre;
+  }
+  getDificultad() {
+    return this.#dificultad;
+  }
+  setDificultad(dificultad) {
+    this.#dificultad = dificultad;
+  }
+  getTiempoEstimado() {
+    return this.#tiempoEstimado;
+  }
+  addIngrediente(ingrediente) {
+    this.#ingredientes.push(ingrediente);
+  }
+  getIngredientes() {
+    return this.#ingredientes;
+  }
+  setIngredientes(ingredientes) {
+    this.#ingredientes = ingredientes;
+  }
+  getFavorito() {
+    return this.#favorito;
+  }
+  setFavorito(favorito) {
+    this.#favorito = favorito;
+  }
+  getInstrucciones() {
+    return this.#instrucciones;
+  }
+  setInstrucciones(instrucciones) {
+    this.#instrucciones = instrucciones;
+  }
+  getTipo() {
+    return this.#tipo;
+  }
+  setTipo(tipo) {
+    this.#tipo = tipo;
+  }
+  getPrecioTotal() {
+    return this.#precioTotal;
+  }
+  setPrecioTotal(precioTotal) {
+    this.#precioTotal = precioTotal;
+  }
+  getCaloriaTotal() {
+    return this.#caloriaTotal;
+  }
+  setCaloriaTotal(caloriaTotal) {
+    this.#caloriaTotal = caloriaTotal;
+  }
+  getImagen() {
+    return this.#imgen;
+  }
+  setImagen(imgen) {
+    this.#imgen = imgen;
+  }
 
-   toString(){
-        return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado}`
-   }
-    nombrePlato(){
-        return `${this.#nombre} `
-    }
-    nombresIngredientes(){
-        let nombres = []
-        this.#ingredientes.forEach(ingrediente => {
-            nombres.push(ingrediente.getNombre())
-        })
-        return nombres
-    }
+  toString() {
+    return `Nombre: ${this.#nombre} 
+    - Dificultad: ${this.#dificultad} 
+    - Tiempo: ${this.#tiempoEstimado}`;
+  }
+  nombrePlato() {
+    return `${this.#nombre} `;
+  }
+
+  nombresIngredientes() {
+    const nombres = [];
+    this.#ingredientes.forEach((ingrediente) => {
+      nombres.push(ingrediente.getNombre());
+    });
+    return nombres;
+  }
 }
