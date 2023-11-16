@@ -1,4 +1,4 @@
-export class listaPlatos {
+export class ListaPlatos {
   #platos;
   constructor() {
     this.#platos = [];

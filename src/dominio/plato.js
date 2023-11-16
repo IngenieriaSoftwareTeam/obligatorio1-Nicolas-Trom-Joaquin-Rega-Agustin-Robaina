@@ -1,4 +1,4 @@
-export class plato {
+export class Plato {
   #nombre;
   #dificultad;
   #tiempoEstimado;

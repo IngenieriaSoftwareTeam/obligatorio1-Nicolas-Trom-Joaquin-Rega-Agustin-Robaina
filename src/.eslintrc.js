@@ -23,5 +23,6 @@ module.exports = {
   },
   'rules': {
     'require-jsdoc': 'off',
+    'max-len': ['error', {'code': 160}],
   },
 };

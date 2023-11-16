@@ -1,4 +1,4 @@
-export class ingredientes {
+export class Ingredientes {
   #nombre;
   #precio;
   #caloria;
