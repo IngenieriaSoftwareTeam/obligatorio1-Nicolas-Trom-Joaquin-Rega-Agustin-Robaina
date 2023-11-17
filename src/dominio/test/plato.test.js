@@ -15,4 +15,11 @@ describe('Plato class test', () =>{
     const nombreEsperado = 'Media';
     expect(nombreDelPlato).toBe(nombreEsperado);
   });
+
+  test('Tiempo Estimado', () =>{
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    const tiempoEstimado = plato.getTiempoEstimado();
+    const tiempoEstimadoEsperado = 20;
+    expect(tiempoEstimado).toBe(tiempoEstimadoEsperado);
+  });
 });
