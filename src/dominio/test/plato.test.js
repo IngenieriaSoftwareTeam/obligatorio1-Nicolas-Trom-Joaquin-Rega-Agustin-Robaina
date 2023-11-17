@@ -22,4 +22,19 @@ describe('Plato class test', () =>{
     const tiempoEstimadoEsperado = 20;
     expect(tiempoEstimado).toBe(tiempoEstimadoEsperado);
   });
+
+  test('Tiempo Cero', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 0, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getTiempoEstimado()).toBe(0);
+  });
+
+  test('Precio Negativo', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', -100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getPrecioTotal()).toBe(-100);
+  });
+
+  test('Lista Ingredientes Vacia', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getIngredientes()).toEqual([]);
+  });
 });
