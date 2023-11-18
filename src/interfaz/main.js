@@ -388,6 +388,7 @@ function displayMenu() {
   document.getElementById('divMenu').style.display = 'block';
   document.getElementById('divPlatos').style.display = 'none';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   mostrarSug();
 }
 function displayFavoritos() {
@@ -395,6 +396,7 @@ function displayFavoritos() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Favoritos';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displaylistafavs();
 }
 function displayDesayuno() {
@@ -402,6 +404,7 @@ function displayDesayuno() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Desayuno';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displayListaPlatos();
 }
 function displayAlmuerzo() {
@@ -409,6 +412,7 @@ function displayAlmuerzo() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Almuerzo';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displayListaPlatos();
 }
 function displayMerienda() {
@@ -416,6 +420,7 @@ function displayMerienda() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Merienda';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displayListaPlatos();
 }
 function displayCena() {
@@ -423,6 +428,7 @@ function displayCena() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Cena';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displayListaPlatos();
 }
 function displayPostre() {
@@ -430,6 +436,7 @@ function displayPostre() {
   document.getElementById('divPlatos').style.display = 'block';
   document.getElementById('h1titulo').innerHTML = 'Postre';
   document.getElementById('divMasInfo').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'none';
   displayListaPlatos();
 }
 function displayAgrgarPlato() {

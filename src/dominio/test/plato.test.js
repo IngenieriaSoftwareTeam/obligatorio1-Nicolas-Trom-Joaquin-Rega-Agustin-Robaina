@@ -37,4 +37,42 @@ describe('Plato class test', () =>{
     const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
     expect(plato.getIngredientes()).toEqual([]);
   });
+
+  test('Tipo de Plato', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getTipo()).toBe('Desayuno');
+  });
+
+  test('Imagen del plato', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getImagen()).toBe('../interfaz/img/wafflesDeArroz.jpg');
+  });
+
+  test('Calorias', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getCaloriaTotal()).toBe(1050);
+  });
+
+  test('Precio', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getPrecioTotal()).toBe(100);
+  });
+
+  test('Instrucciones', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, 'Hervir el arroz (o usar arroz que nos sobró de la comida anterior:)', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getInstrucciones()).toBe('Hervir el arroz (o usar arroz que nos sobró de la comida anterior:)');
+  });  
+
+  test('Calorias Negativo', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 10, -1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getCaloriaTotal()).toBe(-1050);
+  });
+
+  test('Instrucciones Vacias', () => {
+    const plato = new Plato('Waffles De Arroz', 'Media', 20, [], true, ' ', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
+    expect(plato.getInstrucciones()).toBe(' ');
+  });  
+
+
+
 });
