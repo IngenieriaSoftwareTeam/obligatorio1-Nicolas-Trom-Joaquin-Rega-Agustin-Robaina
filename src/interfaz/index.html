@@ -20,7 +20,7 @@
           style="width:40px;height:40px;"></img></button>
     </div>
 
-      <button class="btn btn-default" id="btnAgregar" style="margin-right: 10px;">Agregar</button>
+    <button class="btn btn-default" id="btnAgregar" style="margin-right: 10px;">Agregar</button>
   </nav>
   <nav class="navbar navbar" style="background-color: #C4F1D8;">
     <div class="mx-auto">
@@ -84,6 +84,8 @@
                     </select>
                   </div>
                 </div>
+              </div>
+            </div>
           </fieldset>
           <fieldset>
             <div class="d-flex justify-content-center">
@@ -162,41 +164,77 @@
       </div>
     </div>
   </div>
-  <div id="divAgregarPlato">
-    <label for="Name">Ingrese el Nombre de la Receta</label>
-    <input type="text" id="Name" name="Name" />
-    <br>
-    <label for="dificultad">Ingrese Dificultad</label>
-    <select class="form-select" id="dificultad" required>
-      <option>Baja</option>
-      <option>Media</option>
-      <option>Alta</option>
-    </select>
-    <br>
-    <label for="tiempoEstimado">Ingrese el Tiempo Estimado</label>
-    <input type="text" id="tiempoEstimado" name="tiempoEstimado" />
-    <br>
-    <label for="Ingredientes">Ingrese los Ingredientes</label>
-    <textarea type="text" id="ingredientes" name="Ingredientes"> </textarea>
-    <br>
-    <label for="Instrucciones">Ingrese las Instrucciones</label>
-    <textarea type="text" id="instrucciones" name="Instrucciones"> </textarea>
-    <br>
-    <label for="imagen">Ingrese la URL de la Imagen</label>
-    <input type="text" id="imagen" name="imagen" />
-    <br>
-    <label for ="tipoComida"> Ingrese a que Comida Corresponde</label>
-    <select class="form-select" id="tipoComida" required>
-      <option>Desayuno</option>
-      <option>Almuerzo</option>
-      <option>Merienda</option>
-      <option>Cena</option>
-      <option>Postre</option>
-    </select>
-    <br>
-    <button type="button" class="btn btn-success" style="margin-top:10px; margin-bottom: 10px;" id="btnAgregar10">Agregar</button>
-
-
+  <div id="divAgregarPlato" class="text-center">
+    <h1 class="display-2" style="margin-bottom: 50px" id="h1titulo">Agregar</h1>
+    <div class="d-flex justify-content-center">
+      <div style="background-color: #14C864; width : 1000px; margin-bottom: 30px;" class="rounded">
+        <h1 class="display-6" style="margin-top: 20px;">Ingrese info:</h1>
+        <form>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="Name" class="col-sm-2 col-form-label" style="font-size: larger;">Nombre:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="Name" placeholder="Nombre del plato">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
+            <div class="d-flex justify-content-around">
+              <div class="form-group row">
+                <label for="dificultad" class="col-sm-2 col-form-label col-form-label-lg">Dificultad:</label>
+                <div class="col-sm-10">
+                  <select required id="dificultad" class="form-control form-control-lg" style="margin-left: 50px;">
+                    <option>Poca</option>
+                    <option>Media</option>
+                    <option>Alta</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="tiempoEstimado" class="col-sm-2 col-form-label" style="font-size: larger;">Tiempo:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="tiempoEstimado" placeholder="Tiempo Estimado">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="ingredientes" class="col-sm-2 col-form-label" style="font-size: larger;">Ingredientes:</label>
+            <div class="col-sm-10">
+              <textarea type="text" class="form-control" id="ingredientes" name="Ingredientes" >Ingredientes (Nombre/,Calorias,Precio) y linea abajo para poner otros</textarea>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="instrucciones" class="col-sm-2 col-form-label" style="font-size: larger;">Instrucciones:</label>
+            <div class="col-sm-10">
+              <textarea type="text" class="form-control" id="instrucciones" name="Instrucciones">Poner una instruccion por linea (Maximo 7)</textarea>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="imagen" class="col-sm-2 col-form-label" style="font-size: larger;">Imagen:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="imagen" placeholder="URL Imagen">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
+            <div class="d-flex justify-content-around">
+              <div class="form-group row">
+                <label for="tipoComida" class="col-sm-2 col-form-label col-form-label-lg">Horario:</label>
+                <div class="col-sm-10">
+                  <select required id="tipoComida" class="form-control form-control-lg" style="margin-left: 50px;">
+                    <option>Desayuno</option>
+                    <option>Almuerzo</option>
+                    <option>Merienda</option>
+                    <option>Cena</option>
+                    <option>Postre</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-success" style="margin-top:20px; margin-bottom: 20px;"
+            id="btnAgregar10">Agregar</button>
+      </div>
+      </form>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
