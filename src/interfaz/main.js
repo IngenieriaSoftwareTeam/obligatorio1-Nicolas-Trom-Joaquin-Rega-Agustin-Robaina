@@ -40,11 +40,11 @@ function agregarComida() {
   alert('Plato agregado con exito');
 }
 // Lista platos
-const plato1 = new Plato('Waffles De Arroz', 'Media', 20, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/wafflesDeArroz.jpg');
-const plato2 = new Plato('Yogurt con Granola', 'Media', 10, [], true, '', 'Desayuno', 100, 1050, '../interfaz/img/yogurtConGranola.jpg');
-const plato3 = new Plato('Berenjenas Rellenas de Atun', 'Alta', 80, [], false, '', 'Almuerzo', 100, 1050, '../interfaz/img/berenjenasRellenasAtun.jpg');
-const plato4 = new Plato('Milanesa', 'Media', 30, [], false, '', 'Almuerzo', 100, 1050, '../interfaz/img/milanesa.png');
-const plato5 = new Plato('Galletas de Avena', 'Alta', 60, [], false, '', 'Merienda', 100, 1050, '../interfaz/img/galletasDeAvena.jpg');
+const plato1 = new Plato('Waffles De Arroz', 'Media', 20, [], true, ' ', 'Desayuno', '../interfaz/img/wafflesDeArroz.jpg');
+const plato2 = new Plato('Yogurt con Granola', 'Media', 10, [], true, ' ', 'Desayuno', '../interfaz/img/yogurtConGranola.jpg');
+const plato3 = new Plato('Berenjenas Rellenas de Atun', 'Alta', 80, [], false, ' ', 'Almuerzo', '../interfaz/img/berenjenasRellenasAtun.jpg');
+const plato4 = new Plato('Milanesa', 'Media', 30, [], false, ' ', 'Almuerzo',  '../interfaz/img/milanesa.png');
+const plato5 = new Plato('Galletas de Avena', 'Alta', 60, [], false, ' ', 'Merienda', '../interfaz/img/galletasDeAvena.jpg');
 // Receta 1
 const azucar = new Ingredientes('Azúcar', 60, 60);
 const huevo = new Ingredientes('Huevo', 5, 150);
