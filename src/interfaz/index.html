@@ -172,11 +172,11 @@
     <div class="d-flex justify-content-center">
       <div style="background-color: #14C864; width : 1000px; margin-bottom: 30px;" class="rounded">
         <h1 class="display-6" style="margin-top: 20px;">Ingrese info:</h1>
-        <form>
+        <form onsubmit= "return false">
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
             <label for="Name" class="col-sm-2 col-form-label" style="font-size: larger;">Nombre:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="Name" placeholder="Nombre del plato">
+              <input required type="text" class="form-control" id="Name" placeholder="Nombre del plato">
             </div>
           </div>
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
@@ -196,25 +196,25 @@
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
             <label for="tiempoEstimado" class="col-sm-2 col-form-label" style="font-size: larger;">Tiempo:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="tiempoEstimado" placeholder="Tiempo Estimado">
+              <input required type="text" class="form-control" id="tiempoEstimado" placeholder="Tiempo Estimado">
             </div>
           </div>
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
             <label for="ingredientes" class="col-sm-2 col-form-label" style="font-size: larger;">Ingredientes:</label>
             <div class="col-sm-10">
-              <textarea type="text" class="form-control" id="ingredientes" name="Ingredientes" >Ingredientes (Nombre/,Calorias,Precio) y linea abajo para poner otros</textarea>
+              <textarea required type="text" class="form-control" id="ingredientes" name="Ingredientes" >Ingredientes (Nombre/,Calorias,Precio) y linea abajo para poner otros</textarea>
             </div>
           </div>
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
             <label for="instrucciones" class="col-sm-2 col-form-label" style="font-size: larger;">Instrucciones:</label>
             <div class="col-sm-10">
-              <textarea type="text" class="form-control" id="instrucciones" name="Instrucciones">Poner una instruccion por linea (Maximo 7)</textarea>
+              <textarea required type="text" class="form-control" id="instrucciones" name="Instrucciones">Poner una instruccion por linea (Maximo 7)</textarea>
             </div>
           </div>
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
             <label for="imagen" class="col-sm-2 col-form-label" style="font-size: larger;">Imagen:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="imagen" placeholder="URL Imagen">
+              <input required type="text" class="form-control" id="imagen" placeholder="URL Imagen">
             </div>
           </div>
           <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
@@ -233,7 +233,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="btn btn-success" style="margin-top:20px; margin-bottom: 20px;"
+          <button type="submit" class="btn btn-success" style="margin-top:20px; margin-bottom: 20px;"
             id="btnAgregar10">Agregar</button>
       </div>
       </form>
