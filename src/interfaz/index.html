@@ -34,7 +34,7 @@
   <div id="divMenu">
     <div class="text-center">
       <h2 class="display-2">Sugerencias</h2>
-      <img id="imgSug" src="img/ensalada-de-pollo.jpg" class="rounded mx-auto d-block" style="max-width: 700px;"></img>
+      <img id="imgSug" src="img/ensalada-de-pollo.jpg" class="rounded mx-auto d-block" style="max-width: 700px;" alt = "Imagen comida"></img>
       <div style="background-color: #14C864; max-width: 700px;  margin: auto;" class="rounded">
         <div class="d-flex justify-content-around">
           <ul class="list-group list-group-horizontal">
@@ -71,6 +71,7 @@
         <form style="background-color: #14C864; width : 600px; margin-bottom: 30px;" class="rounded">
           <h1 class="display-6">Filtros</h1>
           <fieldset>
+            <legend >Filtros 1</legend>
             <div class="d-flex flex-column">
               <div class="d-flex justify-content-around">
                 <div class="form-group row">
@@ -88,6 +89,7 @@
             </div>
           </fieldset>
           <fieldset>
+            <legend>Filtros 2</legend>
             <div class="d-flex justify-content-center">
               <label style="font-size: larger; margin-top: 15px; margin-right: 20px;">Dificultad:</label>
               <div style="margin-top: 20px;">
@@ -119,6 +121,7 @@
                   </div>
                 </div>
                 <div style="margin-top: 24px;">
+                  <label for="rangeTiempo"> Tiempo Estimado</label>
                   <input id="rangeTiempo" type="range" value="60" min="0" max="120"
                     oninput="this.nextElementSibling.value = this.value">
                   <output>60</output>

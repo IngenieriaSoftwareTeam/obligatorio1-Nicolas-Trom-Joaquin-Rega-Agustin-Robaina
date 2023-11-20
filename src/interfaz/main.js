@@ -17,7 +17,7 @@ function agregarComida() {
   const tipo = document.getElementById('tipoComida').value;
   const imgen = document.getElementById('imagen').value;
 
-  const nuevoPlato = new Plato(nombre, dificultad, tiempoEstimado, [], false, '', tipo, 0, 0, imgen);
+  const nuevoPlato = new Plato(nombre, dificultad, tiempoEstimado, [], false, '', tipo, imgen);
   for (let i = 0; i < aryIngredientes.length; i++) {
     const pairs = aryIngredientes[i].split(',');
 
@@ -43,7 +43,7 @@ function agregarComida() {
 const plato1 = new Plato('Waffles De Arroz', 'Media', 20, [], true, ' ', 'Desayuno', '../interfaz/img/wafflesDeArroz.jpg');
 const plato2 = new Plato('Yogurt con Granola', 'Media', 10, [], true, ' ', 'Desayuno', '../interfaz/img/yogurtConGranola.jpg');
 const plato3 = new Plato('Berenjenas Rellenas de Atun', 'Alta', 80, [], false, ' ', 'Almuerzo', '../interfaz/img/berenjenasRellenasAtun.jpg');
-const plato4 = new Plato('Milanesa', 'Media', 30, [], false, ' ', 'Almuerzo',  '../interfaz/img/milanesa.png');
+const plato4 = new Plato('Milanesa', 'Media', 30, [], false, ' ', 'Almuerzo', '../interfaz/img/milanesa.png');
 const plato5 = new Plato('Galletas de Avena', 'Alta', 60, [], false, ' ', 'Merienda', '../interfaz/img/galletasDeAvena.jpg');
 // Receta 1
 const azucar = new Ingredientes('Azúcar', 60, 60);
