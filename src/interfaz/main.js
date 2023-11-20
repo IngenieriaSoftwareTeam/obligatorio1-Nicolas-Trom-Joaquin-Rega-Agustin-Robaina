@@ -133,7 +133,9 @@ function masInfo(plato) {
   document.getElementById('divPlatos').style.display = 'none';
   document.getElementById('divMasInfo').style.display = 'block';
   document.getElementById('MasInfoTitulo').innerHTML = plato.nombrePlato();
-  document.getElementById('MasInfoImg').src = plato.getImagen();
+  const imagen = document.getElementById('MasInfoImg');
+  imagen.src = plato.getImagen();
+  imagen.alt = 'Imagen platos';
   const ingredientes = plato.getIngredientes();
   document.getElementById('ListaIngredientes').innerHTML = '';
   document.getElementById('ListaReceta').innerHTML = '';
