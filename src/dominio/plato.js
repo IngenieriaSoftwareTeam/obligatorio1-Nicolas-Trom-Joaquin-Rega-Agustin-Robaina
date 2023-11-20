@@ -12,18 +12,63 @@ export class Plato {
 
   constructor(nombre, dificultad, tiempoEstimado,
       ingredientes, favorito, instrucciones, tipo,
-      precioTotal, caloriaTotal, imgen) {
+      imgen) {
     this.#nombre = nombre;
     this.#dificultad = dificultad;
     this.#tiempoEstimado = tiempoEstimado;
-    this.#ingredientes = ingredientes;
+    this.#ingredientes = ingredientes || [];
     this.#favorito = favorito;
     this.#instrucciones = instrucciones;
     this.#tipo = tipo;
-    this.#precioTotal = precioTotal;
-    this.#caloriaTotal = caloriaTotal;
     this.#imgen = imgen;
   }
+
+  isValid() {
+    if (this.#nombre === null ||
+      this.#nombre === undefined ||
+      this.#nombre === '') {
+      throw new Error('Nombre no puede ser nulo');
+    }
+
+    if (this.#dificultad === null ||
+      this.#dificultad === undefined ||
+      this.#dificultad === '') {
+      throw new Error('Dificultad no puede ser vacio');
+    }
+    if (this.#tiempoEstimado == null ||
+      this.#tiempoEstimado == undefined ||
+      this.#tiempoEstimado == '') {
+      throw new Error('Tiempo estimado no puede ser vacio');
+    }
+    if (this.#tipo === null ||
+      this.#tipo === undefined ||
+      this.#tipo === '') {
+      throw new Error('Tipo no puede ser NULL');
+    }
+    if (this.#imgen === null ||
+      this.#imgen === undefined ||
+      this.#imgen === '') {
+      throw new Error('Imagen no puede ser vacio');
+    }
+    if (this.#ingredientes === null ||
+      this.#ingredientes === undefined ||
+      this.#ingredientes === '' ||
+      this.#ingredientes.length === 0) {
+      throw new Error('Ingredientes no puede ser vacio');
+    }
+    if (this.#favorito === null ||
+      this.#favorito === undefined ||
+      this.#favorito === '') {
+      throw new Error('Favorito no puede ser NULL');
+    }
+    if (this.#instrucciones === null ||
+      this.#instrucciones === undefined ||
+      this.#instrucciones === '') {
+      throw new Error('Instrucciones no puede ser NULL');
+    }
+    return true;
+  }
+
   getNombre() {
     return this.#nombre;
   }
@@ -39,6 +84,11 @@ export class Plato {
   getTiempoEstimado() {
     return this.#tiempoEstimado;
   }
+
+  setTiempoEstimado(tiempo) {
+    this.#tiempoEstimado = tiempo;
+  }
+
   addIngrediente(ingrediente) {
     this.#ingredientes.push(ingrediente);
   }
@@ -66,18 +116,6 @@ export class Plato {
   setTipo(tipo) {
     this.#tipo = tipo;
   }
-  getPrecioTotal() {
-    return this.#precioTotal;
-  }
-  setPrecioTotal(precioTotal) {
-    this.#precioTotal = precioTotal;
-  }
-  getCaloriaTotal() {
-    return this.#caloriaTotal;
-  }
-  setCaloriaTotal(caloriaTotal) {
-    this.#caloriaTotal = caloriaTotal;
-  }
   getImagen() {
     return this.#imgen;
   }
@@ -86,9 +124,7 @@ export class Plato {
   }
 
   toString() {
-    return `Nombre: ${this.#nombre} 
-    - Dificultad: ${this.#dificultad} 
-    - Tiempo: ${this.#tiempoEstimado}`;
+    return `Nombre: ${this.#nombre} - Dificultad: ${this.#dificultad} - Tiempo: ${this.#tiempoEstimado}`;
   }
   nombrePlato() {
     return `${this.#nombre} `;

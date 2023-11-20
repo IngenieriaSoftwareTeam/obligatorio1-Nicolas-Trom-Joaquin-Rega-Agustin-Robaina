@@ -1,3 +1,4 @@
+
 export class ListaPlatos {
   #platos;
   constructor() {
@@ -7,7 +8,7 @@ export class ListaPlatos {
   addComida(plato) {
     const comidList = this.#platos.some((c) =>
       c.getNombre()==plato.getNombre());
-    if (!comidList ) {
+    if (!comidList && plato.isValid() ) {
       this.#platos.push(plato);
     } else {
       throw new Error('La comida ya existe');

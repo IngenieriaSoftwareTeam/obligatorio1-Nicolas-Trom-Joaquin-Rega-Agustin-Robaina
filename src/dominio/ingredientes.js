@@ -28,9 +28,7 @@ export class Ingredientes {
     this.#precio = precio;
   }
   toString() {
-    return `Nombre: ${this.#nombre} 
-           - Caloria: ${this.#caloria} 
-           - Precio: ${this.#precio}`;
+    return `Nombre: ${this.#nombre} - Caloria: ${this.#caloria} - Precio: ${this.#precio}`;
   }
   isValid() {
     if (this.#nombre === undefined ||
