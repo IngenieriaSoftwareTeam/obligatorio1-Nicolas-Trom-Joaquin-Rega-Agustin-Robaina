@@ -39,13 +39,13 @@ function agregarComida() {
 
     platos.addComida(nuevoPlato);
     alert('Plato agregado con exito');
-    document.getElementById('Name').value=''
-    document.getElementById('dificultad').value='Poca'
-    document.getElementById('tiempoEstimado').value=''
-    document.getElementById('ingredientes').value=''
-    document.getElementById('instrucciones').value=''
-    document.getElementById('tipoComida').value='Desayuno'
-    document.getElementById('imagen').value=''
+    document.getElementById('Name').value = ''
+    document.getElementById('dificultad').value = 'Poca'
+    document.getElementById('tiempoEstimado').value = ''
+    document.getElementById('ingredientes').value = ''
+    document.getElementById('instrucciones').value = ''
+    document.getElementById('tipoComida').value = 'Desayuno'
+    document.getElementById('imagen').value = ''
   } catch (error) {
     alert('Hubo algun error al agregar, intente de nuevo')
   }
@@ -170,13 +170,13 @@ function masInfo(plato) {
   const imgEstrella = document.getElementById('imgFavMasInfo');
   if (plato.getFavorito()) {
     imgEstrella.src = 'img/EstrellaAmarilla.png';
-    imgEstrella.alt="Estrella amarilla"
+    imgEstrella.alt = "Estrella amarilla"
     btnEstrella.onclick = function () {
       plato.setFavorito(false);
       masInfo(plato);
     };
   } else {
-    imgEstrella.alt="Estrella blanca"
+    imgEstrella.alt = "Estrella blanca"
     imgEstrella.src = 'img/EstrellaBlanca.png';
     btnEstrella.onclick = function () {
       plato.setFavorito(true);
@@ -253,14 +253,14 @@ function displaylistafavs() {
           const imgEstrella = document.createElement('img');
           if (plato.getFavorito()) {
             imgEstrella.src = 'img/EstrellaAmarilla.png';
-            imgEstrella.alt="Estrella amarilla"
+            imgEstrella.alt = "Estrella amarilla"
             btnEstrella.onclick = function () {
               plato.setFavorito(false);
               actListas();
             };
           } else {
             imgEstrella.src = 'img/EstrellaBlanca.png';
-            imgEstrella.alt="Estrella blanca"
+            imgEstrella.alt = "Estrella blanca"
             btnEstrella.onclick = function () {
               plato.setFavorito(true);
               actListas();
@@ -338,7 +338,7 @@ function displayListaPlatos() {
           listaUsada.className = 'list-group list-group-horizontal';
           const imgPlato = document.createElement('img');
           imgPlato.src = plato.getImagen();
-          imgPlato.alt="Imagen de "+plato.nombrePlato()
+          imgPlato.alt = "Imagen de " + plato.nombrePlato()
           imgPlato.style = 'max-height: 175px;';
           imgPlato.className = 'rounded mx-auto d-block';
 
@@ -353,14 +353,14 @@ function displayListaPlatos() {
           const imgEstrella = document.createElement('img');
           if (plato.getFavorito()) {
             imgEstrella.src = 'img/EstrellaAmarilla.png';
-            imgEstrella.alt="Estrella amarilla"
+            imgEstrella.alt = "Estrella amarilla"
             btnEstrella.onclick = function () {
               plato.setFavorito(false);
               actListas();
             };
           } else {
             imgEstrella.src = 'img/EstrellaBlanca.png';
-            imgEstrella.alt="Estrella blanca"
+            imgEstrella.alt = "Estrella blanca"
             btnEstrella.onclick = function () {
               plato.setFavorito(true);
               actListas();
