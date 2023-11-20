@@ -1,6 +1,6 @@
-import {Plato} from '../dominio/plato.js';
-import {ListaPlatos} from '../dominio/listaPlatos.js';
-import {Ingredientes} from '../dominio/ingredientes.js';
+import { Plato } from '../dominio/plato.js';
+import { ListaPlatos } from '../dominio/listaPlatos.js';
+import { Ingredientes } from '../dominio/ingredientes.js';
 
 
 const platos = new ListaPlatos();
@@ -8,36 +8,47 @@ const platos = new ListaPlatos();
 // Lista ingredientes
 
 function agregarComida() {
-  const nombre = document.getElementById('Name').value;
-  const dificultad = document.getElementById('dificultad').value;
-  const tiempoEstimado = document.getElementById('tiempoEstimado').value;
-  const aryIngredientes=document.getElementById('ingredientes').value.split('\n');
-  const aryInstrucciones = document.getElementById('instrucciones').value.split('\n');
+  try {
+    const nombre = document.getElementById('Name').value;
+    const dificultad = document.getElementById('dificultad').value;
+    const tiempoEstimado = document.getElementById('tiempoEstimado').value;
+    const aryIngredientes = document.getElementById('ingredientes').value.split('\n');
+    const aryInstrucciones = document.getElementById('instrucciones').value.split('\n');
 
-  const tipo = document.getElementById('tipoComida').value;
-  const imgen = document.getElementById('imagen').value;
+    const tipo = document.getElementById('tipoComida').value;
+    const imgen = document.getElementById('imagen').value;
 
-  const nuevoPlato = new Plato(nombre, dificultad, tiempoEstimado, [], false, '', tipo, imgen);
-  for (let i = 0; i < aryIngredientes.length; i++) {
-    const pairs = aryIngredientes[i].split(',');
+    const nuevoPlato = new Plato(nombre, dificultad, tiempoEstimado, [], false, '', tipo, imgen);
+    for (let i = 0; i < aryIngredientes.length; i++) {
+      const pairs = aryIngredientes[i].split(',');
 
-    const ingredientCaloriePairs = pairs.map((pair) => pair.trim());
+      const ingredientCaloriePairs = pairs.map((pair) => pair.trim());
 
-    for (let j = 0; j < ingredientCaloriePairs.length; j += 3) {
-      const ingredient = ingredientCaloriePairs[j];
-      const precio = parseFloat(ingredientCaloriePairs[j + 1]);
-      const calories = parseFloat(ingredientCaloriePairs[j + 2]);
-      const ingrediente10 = new Ingredientes(ingredient, calories, precio);
-      nuevoPlato.addIngrediente(ingrediente10);
+      for (let j = 0; j < ingredientCaloriePairs.length; j += 3) {
+        const ingredient = ingredientCaloriePairs[j];
+        const precio = parseFloat(ingredientCaloriePairs[j + 1]);
+        const calories = parseFloat(ingredientCaloriePairs[j + 2]);
+        const ingrediente10 = new Ingredientes(ingredient, calories, precio);
+        nuevoPlato.addIngrediente(ingrediente10);
+      }
     }
-  }
-  for (let i=0; i<aryInstrucciones.length; i++) {
-    nuevoPlato.setInstrucciones(aryInstrucciones);
-  }
-  console.log(nuevoPlato);
+    for (let i = 0; i < aryInstrucciones.length; i++) {
+      nuevoPlato.setInstrucciones(aryInstrucciones);
+    }
+    console.log(nuevoPlato);
 
-  platos.addComida(nuevoPlato);
-  alert('Plato agregado con exito');
+    platos.addComida(nuevoPlato);
+    alert('Plato agregado con exito');
+    document.getElementById('Name').value=''
+    document.getElementById('dificultad').value='Poca'
+    document.getElementById('tiempoEstimado').value=''
+    document.getElementById('ingredientes').value=''
+    document.getElementById('instrucciones').value=''
+    document.getElementById('tipoComida').value='Desayuno'
+    document.getElementById('imagen').value=''
+  } catch (error) {
+    alert('Hubo algun error al agregar, intente de nuevo')
+  }
 }
 // Lista platos
 const plato1 = new Plato('Waffles De Arroz', 'Media', 20, [], true, ' ', 'Desayuno', '../interfaz/img/wafflesDeArroz.jpg');
@@ -159,13 +170,15 @@ function masInfo(plato) {
   const imgEstrella = document.getElementById('imgFavMasInfo');
   if (plato.getFavorito()) {
     imgEstrella.src = 'img/EstrellaAmarilla.png';
-    btnEstrella.onclick = function() {
+    imgEstrella.alt="Estrella amarilla"
+    btnEstrella.onclick = function () {
       plato.setFavorito(false);
       masInfo(plato);
     };
   } else {
+    imgEstrella.alt="Estrella blanca"
     imgEstrella.src = 'img/EstrellaBlanca.png';
-    btnEstrella.onclick = function() {
+    btnEstrella.onclick = function () {
       plato.setFavorito(true);
       masInfo(plato);
     };
@@ -192,33 +205,33 @@ function difANum(dif) {
 function displaylistafavs() {
   document.getElementById('listaPlatos').innerHTML = '';
   if (document.getElementById('OrdenarLista').value == 'MayAMenDif') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return difANum(b.getDificultad()) - difANum(a.getDificultad());
     });
   }
   if (document.getElementById('OrdenarLista').value == 'MenAMayDif') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return difANum(a.getDificultad()) - difANum(b.getDificultad());
     });
   }
   if (document.getElementById('OrdenarLista').value == 'MayAMenTie') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return b.getTiempoEstimado() - a.getTiempoEstimado();
     },
     );
   }
   if (document.getElementById('OrdenarLista').value == 'MenAMayTie') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return a.getTiempoEstimado() - b.getTiempoEstimado();
     });
   }
   platos.getComidas().forEach((plato) => {
     if ('Favoritos' == document.getElementById('h1titulo').innerHTML && plato.getFavorito()) {
       if ((plato.getDificultad() == 'Poca' && document.getElementById('DifPoca').checked) ||
-         (plato.getDificultad() == 'Media' && document.getElementById('DifMedia').checked) ||
-         (plato.getDificultad() == 'Alta' && document.getElementById('DifAlta').checked)) {
+        (plato.getDificultad() == 'Media' && document.getElementById('DifMedia').checked) ||
+        (plato.getDificultad() == 'Alta' && document.getElementById('DifAlta').checked)) {
         if ((document.getElementById('FiltroTiempoMay').checked && plato.getTiempoEstimado() >= document.getElementById('rangeTiempo').value) ||
-    (document.getElementById('FiltroTiempoMen').checked && plato.getTiempoEstimado() <= document.getElementById('rangeTiempo').value)) {
+          (document.getElementById('FiltroTiempoMen').checked && plato.getTiempoEstimado() <= document.getElementById('rangeTiempo').value)) {
           const platoElem = document.createElement('li');
           platoElem.className = 'text-center';
           const listaUsada = document.createElement('ul');
@@ -240,13 +253,15 @@ function displaylistafavs() {
           const imgEstrella = document.createElement('img');
           if (plato.getFavorito()) {
             imgEstrella.src = 'img/EstrellaAmarilla.png';
-            btnEstrella.onclick = function() {
+            imgEstrella.alt="Estrella amarilla"
+            btnEstrella.onclick = function () {
               plato.setFavorito(false);
               actListas();
             };
           } else {
             imgEstrella.src = 'img/EstrellaBlanca.png';
-            btnEstrella.onclick = function() {
+            imgEstrella.alt="Estrella blanca"
+            btnEstrella.onclick = function () {
               plato.setFavorito(true);
               actListas();
             };
@@ -277,7 +292,7 @@ function displaylistafavs() {
           divInfo.appendChild(btnEstrella);
           divInfoSup.className = 'rounded';
           divInfoSup.style = 'background-color: #8AE4B2; height: 175px;';
-          btnMasInfo.onclick = function() {
+          btnMasInfo.onclick = function () {
             masInfo(plato);
           };
 
@@ -291,22 +306,22 @@ function displaylistafavs() {
 function displayListaPlatos() {
   document.getElementById('listaPlatos').innerHTML = '';
   if (document.getElementById('OrdenarLista').value == 'MayAMenDif') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return difANum(b.getDificultad()) - difANum(a.getDificultad());
     });
   }
   if (document.getElementById('OrdenarLista').value == 'MenAMayDif') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return difANum(a.getDificultad()) - difANum(b.getDificultad());
     });
   }
   if (document.getElementById('OrdenarLista').value == 'MayAMenTie') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return b.getTiempoEstimado() - a.getTiempoEstimado();
     });
   }
   if (document.getElementById('OrdenarLista').value == 'MenAMayTie') {
-    platos.getComidas().sort(function(a, b) {
+    platos.getComidas().sort(function (a, b) {
       return a.getTiempoEstimado() - b.getTiempoEstimado();
     });
   }
@@ -316,13 +331,14 @@ function displayListaPlatos() {
         (plato.getDificultad() == 'Media' && document.getElementById('DifMedia').checked) ||
         (plato.getDificultad() == 'Alta' && document.getElementById('DifAlta').checked)) {
         if ((document.getElementById('FiltroTiempoMay').checked && plato.getTiempoEstimado() >= document.getElementById('rangeTiempo').value) ||
-       (document.getElementById('FiltroTiempoMen').checked && plato.getTiempoEstimado() <= document.getElementById('rangeTiempo').value)) {
+          (document.getElementById('FiltroTiempoMen').checked && plato.getTiempoEstimado() <= document.getElementById('rangeTiempo').value)) {
           const platoElem = document.createElement('li');
           platoElem.className = 'text-center';
           const listaUsada = document.createElement('ul');
           listaUsada.className = 'list-group list-group-horizontal';
           const imgPlato = document.createElement('img');
           imgPlato.src = plato.getImagen();
+          imgPlato.alt="Imagen de "+plato.nombrePlato()
           imgPlato.style = 'max-height: 175px;';
           imgPlato.className = 'rounded mx-auto d-block';
 
@@ -337,19 +353,21 @@ function displayListaPlatos() {
           const imgEstrella = document.createElement('img');
           if (plato.getFavorito()) {
             imgEstrella.src = 'img/EstrellaAmarilla.png';
-            btnEstrella.onclick = function() {
+            imgEstrella.alt="Estrella amarilla"
+            btnEstrella.onclick = function () {
               plato.setFavorito(false);
               actListas();
             };
           } else {
             imgEstrella.src = 'img/EstrellaBlanca.png';
-            btnEstrella.onclick = function() {
+            imgEstrella.alt="Estrella blanca"
+            btnEstrella.onclick = function () {
               plato.setFavorito(true);
               actListas();
             };
           }
 
-          btnMasInfo.onclick = function() {
+          btnMasInfo.onclick = function () {
             masInfo(plato);
           };
           btnEstrella.appendChild(imgEstrella);
@@ -442,10 +460,10 @@ function displayPostre() {
   displayListaPlatos();
 }
 function displayAgrgarPlato() {
-  document.getElementById('divMenu').style.display='none';
-  document.getElementById('divPlatos').style.display='none';
-  document.getElementById('divAgregarPlato').style.display='block';
-  document.getElementById('divMasInfo').style.display='none';
+  document.getElementById('divMenu').style.display = 'none';
+  document.getElementById('divPlatos').style.display = 'none';
+  document.getElementById('divAgregarPlato').style.display = 'block';
+  document.getElementById('divMasInfo').style.display = 'none';
 }
 
 function mostrarSug() {
@@ -454,7 +472,7 @@ function mostrarSug() {
   document.getElementById('sugNom').innerHTML = platoSug.nombrePlato();
   document.getElementById('sugDif').innerHTML = platoSug.getDificultad();
   document.getElementById('sugTie').innerHTML = (platoSug.getTiempoEstimado() + ' minutos');
-  document.getElementById('btnSug').onclick = function() {
+  document.getElementById('btnSug').onclick = function () {
     masInfo(platoSug);
   };
 }
