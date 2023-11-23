@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Celiapp, recetas para celiacos">
+  <title>Celiapp</title>
+  <link rel="icon" href="">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar" style="background-color: #14C864;">
+    <div>
+      <button class="btn btn-default" id="btnMen">CELIAPP</button>
+      <img src="img/CeliappLogo.png" alt="Celiapp logo" style="width:40px;height:40px;">
+      <button class="btn btn-default" id="btnFav"><img src="img/EstrellaAmarilla.png" alt="Favoritos Estrella"
+          style="width:40px;height:40px;"></img></button>
+    </div>
+
+    <button class="btn btn-default" id="btnAgregar" style="margin-right: 10px;">Agregar</button>
+  </nav>
+  <nav class="navbar navbar" style="background-color: #C4F1D8;">
+    <div class="mx-auto">
+      <button class="btn btn-default" id="btnDes">Desayuno</button>
+      <button class="btn btn-default" id="btnAlm">Almuerzo</button>
+      <button class="btn btn-default" id="btnMer">Merienda</button>
+      <button class="btn btn-default" id="btnCen">Cena</button>
+      <button class="btn btn-default" id="btnPos">Postre</button>
+    </div>
+  </nav>
+  <div id="divMenu">
+    <div class="text-center">
+      <h2 class="display-2">Sugerencias</h2>
+      <img id="imgSug" src="img/ensalada-de-pollo.jpg" class="rounded mx-auto d-block" style="max-width: 700px;" alt = "Imagen comida"></img>
+      <div style="background-color: #14C864; max-width: 700px;  margin: auto;" class="rounded">
+        <div class="d-flex justify-content-around">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item" style="background-color: #14C864; border-style: none;">
+              <p id="sugNom">Ensalada de Pollo</p>
+            </li>
+            <li class="list-group-item" style="background-color: #14C864; border-style: none;">
+              <p id="sugDif">Dificultad Media</p>
+            </li>
+            <li class="list-group-item" style="background-color: #14C864; border-style: none;">
+              <p id="sugTie">30 minutos</p>
+            </li>
+            <li class="list-group-item" style="background-color: #14C864; border-style: none;"><button
+                class="btn btn-default btn-sm" id="btnSug">Mas Info</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <h2 class="display-2">Nuestra Misión</h2>
+      <div style="background-color: #8AE4B2;" class="rounded">
+        <p>La mision que queremos cumplir a traves de esta aplicacion es brindarle ayuda a las personas que sifren de
+          celiacismo</p>
+        <p>Solamente en Uruguay hay aproximadamente 36000 celiacos. Se ven afectados no solo economicamente por la
+          enfermedad, ya que su comida tiende a ser mas cara, sino que tambien tienen menos variedad en las ofertas
+          disponibles, nosotros les brindaremos opciones variadas para todo momento del dia.</p>
+      </div>
+    </div>
+  </div>
+  <div id="divPlatos">
+    <div class="text-center">
+      <h1 class="display-2" style="margin-bottom: 50px" id="h1titulo">Desayuno</h1>
+      <div class="d-flex justify-content-center">
+        <form style="background-color: #14C864; width : 600px; margin-bottom: 30px;" class="rounded">
+          <h1 class="display-6">Filtros</h1>
+          <fieldset>
+            <legend >Filtros 1</legend>
+            <div class="d-flex flex-column">
+              <div class="d-flex justify-content-around">
+                <div class="form-group row">
+                  <label for="OrdenarLista" class="col-sm-2 col-form-label col-form-label-lg">Ordenar:</label>
+                  <div class="col-sm-10">
+                    <select id="OrdenarLista" class="form-control form-control-lg" style="margin-left: 20px;">
+                      <option value="MayAMenDif" selected="true">Mayor a menor dificultad</option>
+                      <option value="MenAMayDif">Menor a mayor dificultad</option>
+                      <option value="MayAMenTie">Mayor a menor tiempo</option>
+                      <option value="MenAMayTie">Menor a mayor tiempo</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Filtros 2</legend>
+            <div class="d-flex justify-content-center">
+              <label  style="font-size: larger; margin-top: 15px; margin-right: 20px;">Dificultad:</label>
+              <div style="margin-top: 20px;">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifPoca" value="Poca" checked>
+                  <label class="form-check-label" for="DifPoca">Poca</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifMedia" value="option2" checked>
+                  <label class="form-check-label" for="DifMedia">Media</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="DifAlta" value="option3" checked>
+                  <label class="form-check-label" for="DifAlta">Alta</label>
+                </div>
+              </div>
+            </div>
+            <fieldset>
+              <div class="d-flex justify-content-center">
+                <label style="font-size: larger; margin-top: 15px; margin-right: 20px;">Tiempo:</label>
+                <div style="margin-top: 20px;">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="FiltroTiempoMen" value="Menor" checked>
+                    <label class="form-check-label" for="FiltroTiempoMen">Menor</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="FiltroTiempoMay" value="Mayor" checked>
+                    <label class="form-check-label" for="FiltroTiempoMay">Mayor</label>
+                  </div>
+                </div>
+                <div style="margin-top: 24px;">
+                  <label for="rangeTiempo"> Tiempo Estimado</label>
+                  <input id="rangeTiempo" type="range" value="60" min="0" max="120"
+                    oninput="this.nextElementSibling.value = this.value">
+                  <output>60</output>
+                </div>
+              </div>
+              <button type="button" class="btn btn-success" style="margin-top:10px; margin-bottom: 10px;"
+                id="btnfiltro">Actualizar</button>
+      </div>
+      </fieldset>
+    </div>
+    </fieldset>
+    </form>
+    <div>
+      <ul class="list-group" id="listaPlatos">
+        <li class="list-group">
+
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div id="divMasInfo">
+    <div id="divInformacion" class="text-center">
+      <h1 class="display-2" style="margin-bottom: 50px" id="MasInfoTitulo"> .</h1>
+      <img id="MasInfoImg" src="img/ensalada-de-pollo.jpg" class="rounded mx-auto d-block" alt ="Imagen comida"
+        style="max-width: 700px;"></img>
+      <div style="background-color: #14C864; max-width: 1000px;  margin: auto; margin-top: 50px;" class="rounded">
+        <h1 class="display-6">Ingredientes</h1>
+        <ul style="margin-top:20px" class="list-group" id="ListaIngredientes">
+
+        </ul>
+      </div>
+      <div style="background-color: #14C864; max-width: 1000px;  margin: auto; margin-top: 50px;" class="rounded">
+        <h1 class="display-6">Receta</h1>
+        <ul style="margin-top:20px" class="list-group" id="ListaReceta">
+
+        </ul>
+
+      </div>
+      <div class="rounded" style="background-color: #14C864; margin: auto; width: 70px; margin-top:20px">
+        <button class="btn btn-default" id="btnFavMasInfo"><img id="imgFavMasInfo" src="img/EstrellaAmarilla.png"
+            alt="Favoritos Estrella" style="width:40px;height:40px;"></img></button>
+      </div>
+    </div>
+  </div>
+  <div id="divAgregarPlato" class="text-center">
+    <h1 class="display-2" style="margin-bottom: 50px" id="h1titulo">Agregar</h1>
+    <div class="d-flex justify-content-center">
+      <div style="background-color: #14C864; width : 1000px; margin-bottom: 30px;" class="rounded">
+        <h1 class="display-6" style="margin-top: 20px;">Ingrese info:</h1>
+        <form onsubmit= "return false">
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="Name" class="col-sm-2 col-form-label" style="font-size: larger;">Nombre:</label>
+            <div class="col-sm-10">
+              <input required type="text" class="form-control" id="Name" placeholder="Nombre del plato">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
+            <div class="d-flex justify-content-around">
+              <div class="form-group row">
+                <label for="dificultad" class="col-sm-2 col-form-label col-form-label-lg">Dificultad:</label>
+                <div class="col-sm-10">
+                  <select required id="dificultad" class="form-control form-control-lg" style="margin-left: 50px;">
+                    <option>Poca</option>
+                    <option>Media</option>
+                    <option>Alta</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="tiempoEstimado" class="col-sm-2 col-form-label" style="font-size: larger;">Tiempo:</label>
+            <div class="col-sm-10">
+              <input required type="text" class="form-control" id="tiempoEstimado" placeholder="Tiempo Estimado">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="ingredientes" class="col-sm-2 col-form-label" style="font-size: larger;">Ingredientes:</label>
+            <div class="col-sm-10">
+              <textarea required type="text" class="form-control" id="ingredientes" name="Ingredientes" placeholder="Ingredientes (Nombre/,Calorias,Precio) y linea abajo para poner otros"></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="instrucciones" class="col-sm-2 col-form-label" style="font-size: larger;">Instrucciones:</label>
+            <div class="col-sm-10">
+              <textarea required type="text" class="form-control" id="instrucciones" name="Instrucciones" placeholder="Poner una instruccion por linea (Maximo 7)"></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="form-group row">
+            <label for="imagen" class="col-sm-2 col-form-label" style="font-size: larger;">Imagen:</label>
+            <div class="col-sm-10">
+              <input required type="text" class="form-control" id="imagen" placeholder="URL Imagen">
+            </div>
+          </div>
+          <div style="margin-top: 20px; margin-left: 10px; margin-right: 10px;" class="d-flex flex-column">
+            <div class="d-flex justify-content-around">
+              <div class="form-group row">
+                <label for="tipoComida" class="col-sm-2 col-form-label col-form-label-lg">Horario:</label>
+                <div class="col-sm-10">
+                  <select required id="tipoComida" class="form-control form-control-lg" style="margin-left: 50px;">
+                    <option>Desayuno</option>
+                    <option>Almuerzo</option>
+                    <option>Merienda</option>
+                    <option>Cena</option>
+                    <option>Postre</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success" style="margin-top:20px; margin-bottom: 20px;"
+            id="btnAgregar10">Agregar</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
