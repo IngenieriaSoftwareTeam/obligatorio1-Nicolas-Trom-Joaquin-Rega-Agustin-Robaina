@@ -34,3 +34,8 @@ Durante todo el trabajo fuimos gradualmente mejorando nuestra habilidad de traba
 ### Agustin Robaina
 
 ### Nicolas Trombotti
+
+En el proceso de desarrollo aprendi y reforcé conocimientos de tecnología que considero útiles para el
+futuro, como pueden ser las herramientas de testing, jest y Eslint las cuales fueron nuevas para mi, además de poner a prueba mis conocimientos previos en JavaScript o HTML.
+A diferencia de la primera parte ahora tuvimos que desarrollar en conjunto, lo cual conlleva un aprendizaje que nos servirá en otros proyectos.
+Me llevo una buena experiencia de trabajo y muy conforme con la disposición de mis compañeros.
