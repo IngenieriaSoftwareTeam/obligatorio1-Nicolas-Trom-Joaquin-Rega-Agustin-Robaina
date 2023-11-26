@@ -27,9 +27,7 @@ Faltan funcionalidades como la de filtrar por materia, horario y precio/hora. En
 ## Reflexiones
 
 ### Grupal
-En cuanto a la parte grupal, pudimos observar que el trabajo en equipo fue muy bueno, ya que todos los integrantes del grupo aportaron ideas y soluciones a los problemas que se fueron presentando. En cuanto a la comunicacion, la misma fue muy buena, ya que todos los integrantes del grupo estaban al tanto de lo que se estaba haciendo y de los problemas que se fueron presentando.
-
-Los tres integrantes destacamos haber aprendido a utilizar nuevas tecnologias y formas de organizacion del trabjo.
+Durante todo el trabajo fuimos gradualmente mejorando nuestra habilidad de trabajo en grupo, al principio era dificil e incomodo pero de a poco se volvio muy facil. Todo este trabajo nos enseño varios elementos sobre el desarollo de software que en nuetra vida laboral vamos a poner en practica, aprendimos sobre herramientas nuevas como git, o sobre testing de varios tipos. Creemos que la clave para el resultado obtenido en este proyecto fue la comunicacion, el grupo no solo individualmente trabajaba mucho pero sino que a traves de la comunicacion logramos adquirir un ritmo de trabajo alto y calidad exepcional.
 
 ### Joaquin Rega
 
