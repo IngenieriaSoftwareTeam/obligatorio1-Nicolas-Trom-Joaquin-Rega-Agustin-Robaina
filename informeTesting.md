@@ -27,15 +27,18 @@ Faltan funcionalidades como la de filtrar por materia, horario y precio/hora. En
 ## Reflexiones
 
 ### Grupal
+
 Durante todo el trabajo fuimos gradualmente mejorando nuestra habilidad de trabajo en grupo, al principio era dificil e incomodo pero de a poco se volvio muy facil. Todo este trabajo nos enseño varios elementos sobre el desarollo de software que en nuetra vida laboral vamos a poner en practica, aprendimos sobre herramientas nuevas como git, o sobre testing de varios tipos. Creemos que la clave para el resultado obtenido en este proyecto fue la comunicacion, el grupo no solo individualmente trabajaba mucho pero sino que a traves de la comunicacion logramos adquirir un ritmo de trabajo alto y calidad exepcional.
 
 ### Joaquin Rega
+
+En esta etapa del proyecto mi enfoque de trabajo fue mas hacia la parte de html, css y javascript, aunque hice aportes significativos hacia las otras partes. Use nuevas herramientas como bootstrap que ayudaros mucho a la agilides del proyecto sin dejar de lado calidad de resultado final. Termino este proyecto muy feliz no solo por lo que entregamos sino que tambien cultivamos un grupo de trabajo serio y activo. Creo que esta entrega me ayudo mucho a preparame para lo que se viene en el futuro en la vida laboral.
 
 ### Agustin Robaina
 
 ### Nicolas Trombotti
 
-En el proceso de desarrollo aprendi y reforcé conocimientos de tecnología que considero útiles para el
+En el proceso de desarrollo aprendi y reforcé conocimientos de tecnología que considero útiles para el 
 futuro, como pueden ser las herramientas de testing, jest y Eslint las cuales fueron nuevas para mi, además de poner a prueba mis conocimientos previos en JavaScript o HTML.
 A diferencia de la primera parte ahora tuvimos que desarrollar en conjunto, lo cual conlleva un aprendizaje que nos servirá en otros proyectos.
 Me llevo una buena experiencia de trabajo y muy conforme con la disposición de mis compañeros.
