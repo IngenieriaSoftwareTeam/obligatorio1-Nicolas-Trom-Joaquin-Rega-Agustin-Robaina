@@ -24,7 +24,7 @@ Proyecto asignado: [https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izqui
 Habiendo probado y testeado el sistema, pudimos obsevar que el mismo es poco intuitivo y cuenta con una interfaz poca amigable para el usurio. En cuanto a funcionalidades del sistema, el mismo no cumple con lo que se esperaba de el.
 Faltan funcionalidades como la de filtrar por materia, horario y precio/hora. En conclusion, la calidad del sistema es baja.
 
-## Refelxiones
+## Reflexiones
 
 ### Grupal
 En cuanto a la parte grupal, pudimos observar que el trabajo en equipo fue muy bueno, ya que todos los integrantes del grupo aportaron ideas y soluciones a los problemas que se fueron presentando. En cuanto a la comunicacion, la misma fue muy buena, ya que todos los integrantes del grupo estaban al tanto de lo que se estaba haciendo y de los problemas que se fueron presentando.
