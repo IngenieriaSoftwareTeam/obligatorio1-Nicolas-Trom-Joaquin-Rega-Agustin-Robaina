@@ -7,6 +7,18 @@
 
 * Aplicar prácticas de calidad de código y test unitario
 
+# Funcionalidad
+
+* El sistema permite filtar las recetas disponibles por dificultad y por tiempo estimado. Y también ordenarlas tanto en orden ascendente como descendente
+
+* El sistema permite agregar las recetas a favoritos. Y también acceder a la lista que contiene a todas las recetas favoritas que se hayan seleccionado
+
+* El sistema permite buscar las comidas en función de la comida del día ("Desayuno", "Almuerzo", "Merienda", "Cena") y también por una sección de "Postres"
+
+* El sistema permite agregar nuevas recetas, donde el usuario deberá completar con los datos correspondientes a la misma
+
+* Cada receta cuenta con un botón "Mas Info" el cual muestra toda la información con respecto al precio, duración, difcultad e ingredientes de la misma
+
 # Construcción
 
 Para el desarrollo de la aplicación utilizamos HTML5 para diseñar la estrucutra de la misma , en conjunto con Boostrap para darle una apariencia mas estética a la página y que sea responsive. Luego para darle funcionalidad a la página utilizamos Javascript ES12, aplicando buenas practicas de POO, separando la parte lógica de la interfaz. A la hora de codificar aplicamos el estándar de Google utilizando la herramienta ESLint.
