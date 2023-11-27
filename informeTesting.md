@@ -28,7 +28,7 @@ Proyecto asignado: [https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izqui
 | NOTAS DE PRUEBAS     |  1 Presiono Filtro Materia, 2 Presiono Filtro Horario, 3 Presiono Filtro Precio/h, 4 Preciono barra de busqueda, 5 Presiono "Borrar Registros" |
 |DEFECTOS |   1,2,3,4 No tienen Funcionalidad, 5 No queda claro que funcionalidad tiene           |
 | INCONVENIENTES |Desde las 17:00 y hasta las 17:15 el ambiente de pruebas no estuvo disponible, debido a inconvenientes con el servidor web. La sesión se pausó y se retomaron las actividades a partir de las 17:17.    |  
-| Link ISSUE | https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/57,  https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/56, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/59  |  
+| Link ISSUE | https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/57,  https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/56, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/59, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/58  |  
 
 # Informe de Calidad Del Sistema
 Habiendo probado y testeado el sistema, pudimos obsevar que el mismo es poco intuitivo y cuenta con una interfaz poca amigable para el usurio. En cuanto a funcionalidades del sistema, el mismo no cumple con lo que se esperaba de el.
