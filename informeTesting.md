@@ -25,10 +25,10 @@ Proyecto asignado: [https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izqui
 | TESTER     |   Joaquin Rega, Agustin Robaina, Nicolas Trombotti  |
 | ESTRUCTURA DE DIVISIÓN      | DURACIÓN: Media (60 minutos) DISEÑO Y EJECUCIÓN DE PRUEBAS:65% INVESTIGACIÓN Y REPORTES DE DEFECTOS: 20 % ARMADO DE LA SESIÓN:15% OBJETIVO vs. OPORTUNIDAD: 80/20|
 | ARCHIVOS DE DATOS     |  ![Imagen](img/issueFiltro.jpg)  ![Imagen2](img/botonesSinFuncionalidad.jpg)![Imagen3](img/botonRegistro.jpg) |
-| NOTAS DE PRUEBAS     |  1 Presiono Filtro Materia, 2 Presiono Filtro Horario, 3 Presiono Filtro Precio/h, 4 Preciono barra de busqueda, 5 Presiono "Borrar Registros" |
-|DEFECTOS |   1,2,3,4 No tienen Funcionalidad, 5 No queda claro que funcionalidad tiene           |
+| NOTAS DE PRUEBAS     |  1 Presiono Filtro Materia, 2 Presiono Filtro Horario, 3 Presiono Filtro Precio/h, 4 Preciono barra de busqueda, 5 Presiono "Borrar Registros", 6 agrego y borro una reseña |
+|DEFECTOS |   1,2,3,4 No tienen Funcionalidad, 5 No queda claro que funcionalidad tiene, 6 la aplicacion no muestra un indicativo cuando se agrega una reseña exitosamente ni cuando se borra|
 | INCONVENIENTES |Desde las 17:00 y hasta las 17:15 el ambiente de pruebas no estuvo disponible, debido a inconvenientes con el servidor web. La sesión se pausó y se retomaron las actividades a partir de las 17:17.    |  
-| Link ISSUE | https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/57,  https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/56, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/59, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/58  |  
+| Link ISSUE | https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/57,  https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/56, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/59, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/58, https://github.com/IngenieriaSoftwareTeam/obligatorio1-Izquierdo-Preza-Kuster/issues/60  |  
 
 # Informe de Calidad Del Sistema
 Habiendo probado y testeado el sistema, pudimos obsevar que el mismo es poco intuitivo y cuenta con una interfaz poca amigable para el usurio. En cuanto a funcionalidades del sistema, el mismo no cumple con lo que se esperaba de el.
